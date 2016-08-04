@@ -1,0 +1,37 @@
+.container {
+    width:1000px;
+    height:500px;
+    background: red;
+    position: relative;
+    font-size: 0px;
+}
+.social__list {
+    position: absolute;
+    right:0;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background: green;
+    text-align: center;
+    width: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 330px;
+}
+.social__item {
+    width: 50px;
+    height:50px;
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+}
+.social__link {
+    font-size: 20px;
+    text-decoration: none;
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    overflow: hidden;       
+}
