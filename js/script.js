@@ -1,10 +1,15 @@
-var delay = 20;
+
+var delay = 0;
 var socialIconsIsAnimated = false;
 var mouseOnSocial = false;
+var timerForMouse = null;
 
 $(document).ready(function() {
-    $(".social__list").on("mouseenter", function() {
-        mouseOnSocial = true;
+    $(".social").on("mouseenter", function() {
+        clearTimeout(timerForMouse);
+        timerForMouse = null;
+        
+        $(".social__list").css("display", "block");
         
         if(!socialIconsIsAnimated) {
             
@@ -16,23 +21,22 @@ $(document).ready(function() {
                 
                 var timer = setTimeout(function() {
                     $(elem).css({
-                        "right" : 70,
-                        "top" : 25,
+                        "top" : 70,
+                        "left" : 0,
                         "width" : 1,
                         "height" : 1,
                         "display": "inline-block"
                     }).animate({
-                        "right" : "-10",
+                        "top" : "-10",
                         "width" : 60,
                         "height" : 60,
-                        "top" : 0
                     }, {
                         duration: 200,
                         specialEasing:  {
                             "right": "swing"
                         }
                     }).animate({
-                        "right" : 0,
+                        "top" : 0,
                         "width" : 50,
                         "height" : 50,
                     }, {
@@ -47,16 +51,41 @@ $(document).ready(function() {
         }
         
     });
-    $(".social__list").on("mouseleave", function() {
-        mouseOnSocial = false;
-        
-            var timer = setTimeout(function(){
-                if (socialIconsIsAnimated && !mouseOnSocial) {
+    
+    $(".social").on("mouseleave", function() {
+            timerForMouse = setTimeout(function(){
+                if (socialIconsIsAnimated) {
+                    $(".social__list").css({
+                        "display" : "none"
+                    })
                     $(".social__link").css({
                         "display" : "none"
                     })
                     socialIconsIsAnimated = false;
+                    delay = 0;
                 }
             }, 2000);
     });
+    
+    $(".social__link").on("mouseenter", function(){
+        $(this).animate({
+            "width": 55,
+            "height": 55,
+            "top": "-5",
+            "left": "-2.5"
+        }, {
+            duration: 100
+        });
+    }).on("mouseleave", function(){
+        $(this).animate({
+            "width": 50,
+            "height": 50,
+            "top": 0,
+            "left": 0
+        }, {
+            duration: 100
+        });
+    });
+    
 });
+
