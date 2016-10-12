@@ -1,29 +1,437 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Beko social</title>
-        <script src="js/jquery-1.12.4.js" type="text/javascript" ></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-    
-    <div class="container">
-        <div class="social">
-            <ul id="social__list" class="social__list">
-                <li class="social__item"><a href="#" class="social__link">1</a></li>
-                <li class="social__item"><a href="#" class="social__link">2</a></li>
-                <li class="social__item"><a href="#" class="social__link">3</a></li>
-                <li class="social__item"><a href="#" class="social__link">4</a></li>
-                <li class="social__item"><a href="#" class="social__link">5</a></li>
-                <li class="social__item"><a href="#" class="social__link">6</a></li>
-            </ul>
-        </div>
+<head>
+    <title>Магазин01</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="body__wrap">
+        <header class="header">
+            <div class="header__top">
+                <div class="logo__wrap">
+                   <a href="#" class="logo__link">
+                       <img src="" alt="Торговая сеть Магазин01" class="logo__img">
+                   </a>
+                </div>
+                
+                <div class="phone">
+                    <div class="phone__number">8 495 983-01-01</div>
+                    <div class="phone__number">8 800-200-91-01 <span class="phone__number-caption">(для регионов)</span></div>
+                </div>
+                
+                <div class="contact-us">
+                    <a href="#" class="contact-us__link">Заказать звонок</a>
+                    <a href="#" class="contact-us__link">Подать заявку</a>
+                </div>
+                
+                <div class="search">
+                    <input type="search" name="q" placeholder="Поиск">
+                    <div class="search__icon"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="header__bottom">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__link">Компания</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Продукция</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Цены</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Азбука 01</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="auth">
+                    <a href="" class="auth__button">Авторизация<div class="auth__icon"></div></a>
+                </div>
+                
+                <div class="cart">
+                    <div class="cart__icon"></div>
+                    
+                    <span class="cart__counter"></span>
+                    
+                    <p class="cart__caption">Корзина</p>
+                </div>
+            </div>
+        </header>
+        
+        
+        
+        <main class="main">
+            <section class="carousel">
+                
+            </section>
+            
+            
+            
+            <section class="catalog">
+                <h2 class="main__title catalog__title">Каталог продукции</h2>
+                <div class="catalog__wrap">
+                   <!-- .catalog__item*20>(.catalog__item-img-wrap>img.catalog__item-img)+p.catalog__item-caption -->
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">NEW! Пеналы и ящики DAKEN (Италия)</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Огнетушители</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Самоспасатели, противогазы, респираторы и комплектующие</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Знаки безопасности и эвакуационные светильники</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Журналы, плакаты, стенды, справочники</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Пожарные рукава, арматура, гидранты, колонки</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Пожарные шкафы, щиты, стенды, ящики, урны, ключницы</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Аптечки, носилки, фонари</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Защитная одежда, обувь, перчатки и др. (безопасность труда)</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Системы спасения, пояса, веревки, лестницы</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Огнезащитные составы и аксессуары</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Противопожарные двери, ворота, перегородки, люки</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Пожарно-охранная сигнализация и оповещение</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Системы автоматического пожаротушения</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Все для монтажа (кабель, аксессуары, коммутация)</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Фотолюминесцентные эвакуационные системы</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Оборудование и товары для профессионалов</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Мобильные установки пожаротушения NATISK (Натиск)</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">NEW! Газовое оборудование и арматура</p>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-img-wrap"><img src="" alt="" class="catalog__item-img"></div>
+                        <p class="catalog__item-caption">Сувенирная продукция</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            <section class="services">
+                <h2 class="main__title services__title">Услуги</h2>
+                
+                <div class="services__item">
+                    <div class="serveces__item-img-wrap"><img src="" alt="" class="services__item-img"></div>
+                    <p class="services__item-caption">Перезарядка всех видов огнетушителей и перекатка рукавов</p>
+                </div>
+                <div class="services__item">
+                    <div class="serveces__item-img-wrap"><img src="" alt="" class="services__item-img"></div>
+                    <p class="services__item-caption">Обучение пожарной безопасности</p>
+                </div>
+                <div class="services__item">
+                    <div class="serveces__item-img-wrap"><img src="" alt="" class="services__item-img"></div>
+                    <p class="services__item-caption">Изготовление планов эвакуации</p>
+                </div>
+                <div class="services__item">
+                    <div class="serveces__item-img-wrap"><img src="" alt="" class="services__item-img"></div>
+                    <p class="services__item-caption">Научно-технический комплекс</p>
+                </div>
+                <div class="services__item">
+                    <div class="serveces__item-img-wrap"><img src="" alt="" class="services__item-img"></div>
+                    <p class="services__item-caption">Монтаж систем пожарной сигнализации и автоматического пожаротушения</p>
+                </div>
+                
+            </section>
+            
+            
+            
+            <section class="advantages">
+                <h2 class="main__title advantages__title">Наши преимущества</h2>
+                
+                <div class="advantages__item">
+                    <div class="advantages__item-img-wrap"><img src="" alt="" class="advantages__item-img"></div>
+                    <div class="advantages__icon"></div>
+                    <p class="advantages__caption">Более 3500 наименований продукции</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img-wrap"><img src="" alt="" class="advantages__item-img"></div>
+                    <div class="advantages__icon"></div>
+                    <p class="advantages__caption">Мы отбираем лучшее для своих клиентов</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img-wrap"><img src="" alt="" class="advantages__item-img"></div>
+                    <div class="advantages__icon"></div>
+                    <p class="advantages__caption">А также послепродажный сервис</p>
+                </div>
+            </section>
+            
+            
+            <section class="leaders">
+                <h2 class="main__title leaders__title">Лидеры продаж</h2>
+                  
+                <div class="leaders__carousel">
+                    <div class="leaders__item">
+                        <a href="" class="leaders__item-link">
+                            <div class="leaders__item-img-wrap"><img src="" alt="" class="leaders__item-img"></div>
+                            <p class="leaders__caption">Огнетушитель порошковый ОП-4 (А,В,С,Е) без кронштейна (МИГ, г.Витебск)</p>
+                        </a>
+                        <span class="leaders__price">395<span class="span leaders__price-caption">руб.</span></span>
+                        <a href="" class="leaders__buy">Купить</a>
+                    </div>
+                    <div class="leaders__item">
+                        <a href="" class="leaders__item-link">
+                            <div class="leaders__item-img-wrap"><img src="" alt="" class="leaders__item-img"></div>
+                            <p class="leaders__caption">Подставка для огнетушителя П-15</p>
+                        </a>
+                        <span class="leaders__price">595<span class="span leaders__price-caption">руб.</span></span>
+                        <a href="" class="leaders__buy">Купить</a>
+                    </div>
+                    <div class="leaders__item">
+                        <a href="" class="leaders__item-link">
+                            <div class="leaders__item-img-wrap"><img src="" alt="" class="leaders__item-img"></div>
+                            <p class="leaders__caption">Огнетушитель порошковый ОП-4 (А,В,С,Е) без кронштейна (МИГ, г.Витебск)</p>
+                        </a>
+                        <span class="leaders__price">395<span class="span leaders__price-caption">руб.</span></span>
+                        <a href="" class="leaders__buy">Купить</a>
+                    </div>
+                    <div class="leaders__item">
+                        <a href="" class="leaders__item-link">
+                            <div class="leaders__item-img-wrap"><img src="" alt="" class="leaders__item-img"></div>
+                            <p class="leaders__caption">Подставка для огнетушителя П-15</p>
+                        </a>
+                        <span class="leaders__price">595<span class="span leaders__price-caption">руб.</span></span>
+                        <a href="" class="leaders__buy">Купить</a>
+                    </div>
+                    <div class="leaders__item">
+                        <a href="" class="leaders__item-link">
+                            <div class="leaders__item-img-wrap"><img src="" alt="" class="leaders__item-img"></div>
+                            <p class="leaders__caption">Огнетушитель порошковый ОП-4 (А,В,С,Е) без кронштейна (МИГ, г.Витебск)</p>
+                        </a>
+                        <span class="leaders__price">395<span class="span leaders__price-caption">руб.</span></span>
+                        <a href="" class="leaders__buy">Купить</a>
+                    </div>
+                    <div class="leaders__item">
+                        <a href="" class="leaders__item-link">
+                            <div class="leaders__item-img-wrap"><img src="" alt="" class="leaders__item-img"></div>
+                            <p class="leaders__caption">Подставка для огнетушителя П-15</p>
+                        </a>
+                        <span class="leaders__price">595<span class="span leaders__price-caption">руб.</span></span>
+                        <a href="" class="leaders__buy">Купить</a>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            <div class="news-blog-wrap">
+                <section class="news">
+                    <h2 class="main__title news__title">Новости</h2>
+
+                    <div class="news__items-wrap">
+                        <div class="news__item">
+                            <span class="news__item-date">18.05.2016</span>
+                            <a href="" class="news__item-link"><h3 class="news__title">Пульс пожарной безопасности №2</h3></a>
+                            <p class="news__text">"Магазин 01" рад представить Вашему вниманию второй выпуск журнала "Пульс пожарной безопасности", посвященный пожарной безопасности в строительстве. </p>
+                        </div>
+
+                        <div class="news__item">
+                            <span class="news__item-date">12.05.2016</span>
+                            <a href="" class="news__item-link"><h3 class="news__title">Модернизация производственных площадок НПО "Пульс"</h3></a>
+                            <p class="news__text">Компания НПО «Пульс» завершила  программу модернизации собственных производственных площадок. В рамках ее реализации дверное производство сконцентрировано на заводе ЗМК (г. Липки). Одновременно с этим завод «Пульс-Эко» (г. Орел) запустил дополнительные цеха для специализированного шкафного производства. </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="decor-devider"></div>
+                
+                <section class="blog">
+                    <h2 class="main__title blog__title">Блог</h2>
+                    
+                    <div class="blog__item">
+                        <div class="blog__item-img-wrap"><img src="" alt="" class="blog__item-img"></div>
+                        <span class="blog__date"></span>
+                        <a href="" class="blog__item-link">
+                            <h3 class="blog__title">Пульс пожарной безопасности №4</h3>
+                        </a>
+                        <p class="blog__item-text">Представляем вашему вниманию четвертый выпуск журнала "Пульс пожарной безопасности", посвященный системам автоматической пожарной защиты.</p>
+                    </div>
+                </section>
+            </div>
+            
+            
+            
+            <section class="clients">
+                <h2 class="main__title clients__title">Наши клиенты</h2>
+                <div class="clients__carousel">
+                    <div class="clients__item">
+                        <div class="clients__item-img-wrap">
+                            <div class="clients__item-img"></div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <div class="clients__item-img-wrap">
+                            <div class="clients__item-img"></div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <div class="clients__item-img-wrap">
+                            <div class="clients__item-img"></div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <div class="clients__item-img-wrap">
+                            <div class="clients__item-img"></div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <div class="clients__item-img-wrap">
+                            <div class="clients__item-img"></div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <div class="clients__item-img-wrap">
+                            <div class="clients__item-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            <section class="comments">
+                <h2 class="main__title clients__title">Отзывы</h2>
+                <div class="comments__item">
+                    <p class="comments__comment"></p>
+                    <p class="comments__author"></p>
+                </div>
+                <div class="comments__item">
+                    <p class="comments__comment"></p>
+                    <p class="comments__author"></p>
+                </div>
+                <div class="comments__item">
+                    <p class="comments__comment"></p>
+                    <p class="comments__author"></p>
+                </div>
+            </section>
+            
+            
+            
+            <section class="caption">
+                <p class="caption__first"></p>
+                
+                <h2 class="main__title clients__title">Отзывы</h2>
+                
+                <p class="caption__second"></p>
+                
+                <h2 class="main__title clients__title">Отзывы</h2>
+                
+                <ul class="caption__list">
+                    <li class="caption__list-item"></li>
+                    <li class="caption__list-item"></li>
+                    <li class="caption__list-item"></li>
+                    <li class="caption__list-item"></li>
+                    <li class="caption__list-item"></li>
+                </ul>
+                
+                <p class="caption__third"></p>
+                
+                <p class="caption__fourth"></p>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__left-column">
+                <div class="footer__copy copy">
+                    <p class="copy__caption">&#169; 2006-2016 «Магазин 01»</p>
+                </div>
+                
+                <address class="address">
+                    <p class="address__mail">Email: 01@magazin01.ru</p>
+                    <p class="address__phone">Тел.: 8 (495) 983-01-01, 8-800-200-91-01</p>
+                </address>
+            </div>
+            
+            <div class="footer__right-column">
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                    <li class="footer__links-item"><a href="" class="footer__links"></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    
-    
-    <script src="js/script.js" type="text/javascript" ></script>    
-    </body>
-    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
