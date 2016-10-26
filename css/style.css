@@ -404,7 +404,6 @@ body {
     display: -moz-box;
     display: flex;
     -webkit-justify-content: flex-end;
-    -ms-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     height: 100%;
