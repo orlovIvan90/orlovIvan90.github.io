@@ -455,12 +455,16 @@ body {
 }
 .catalog {
     background-color: #f6f6f6;
+    -webkit-flex: 1 1 600px;
+    -ms-flex: 1 1 600px;
     flex: 1 1 600px;
     margin-left: 20px;
     
 }
 .services {
     background-color: #ffffff;
+    -webkit-flex: 0 1 210px;
+    -ms-flex: 0 1 210px;
     flex: 0 1 210px;
     padding-left: 20px;
     padding-right: 20px;
