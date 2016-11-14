@@ -443,3 +443,74 @@ a {
     margin-bottom: 11px;
     display: table;
 }
+/*
+.screen-4__button {
+    width: 169px;
+    height: 93px;
+    background: none;
+    border: 0px;
+    background-image: url("../img/spritesheet2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    color: #044061;
+    padding: 0px;
+    line-height: 20px;
+}
+.button-text {
+    display: block;
+    margin-top: -20px;
+}
+.screen-4__button:active {
+    background-position: -179px 5px;
+}
+*/
+.screen-4__button {
+    width: 169px;
+    height: 93px;
+    background: none;
+    border: 0px;
+    background-image: url("../img/bg-button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    color: #044061;
+    padding: 0px;
+    line-height: 20px;
+}
+.screen-4__button--top {
+    z-index: 2;
+}
+.screen-4__button--bottom {
+    background-image: url("../img/bg-button-pushed.png");
+    z-index: 1;
+    background-position: 0px 5px;
+}
+.button-text {
+    display: block;
+    margin-top: -25px;
+}
+.screen-4__button--bottom .button-text {
+    margin-top: -20px;
+}
+.screen-4__button--top:active {
+    display: none;
+}
