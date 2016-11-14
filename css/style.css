@@ -420,3 +420,6 @@ a {
 	text-align: center;
     line-height: 15px;
 }
+.screen-4 label {
+    cursor: pointer;
+}
