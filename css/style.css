@@ -443,37 +443,7 @@ a {
     margin-bottom: 11px;
     display: table;
 }
-/*
-.screen-4__button {
-    width: 169px;
-    height: 93px;
-    background: none;
-    border: 0px;
-    background-image: url("../img/spritesheet2.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    bottom: -9px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 900;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'opensans';
-    color: #044061;
-    padding: 0px;
-    line-height: 20px;
-}
-.button-text {
-    display: block;
-    margin-top: -20px;
-}
-.screen-4__button:active {
-    background-position: -179px 5px;
-}
-*/
+
 .screen-4__button {
     width: 169px;
     height: 93px;
@@ -513,4 +483,549 @@ a {
 }
 .screen-4__button--top:active {
     display: none;
+}
+
+/* ---------- screen-5 ---------- */
+
+.screen-5 {
+    background-image: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+}
+.screen-5__frame {
+    background-image: url("../img/bg-main-fraim.png");
+    background-repeat: no-repeat;
+    height: 593px;
+    left: 246px;
+    position: absolute;
+    top: 89px;
+    width: 737px;
+}
+.screen-5__clock {
+    background-image: url("../img/bg-corner-clock.png");
+    background-repeat: no-repeat;
+    height: 77px;
+    position: absolute;
+    right: -20px;
+    top: 18px;
+    width: 129px;
+}
+.screen-5__time {
+    font-size: 24px;
+    font-weight: 900;
+    display: block;
+    padding-top: 18px;
+    color: #044061;
+    text-align: center;
+}
+.screen-5__decor {
+    background-image: url("../img/bg-decor-1.png");
+    background-repeat: no-repeat;
+    height: 171px;
+    left: 299px;
+    position: absolute;
+    top: -21px;
+    width: 137px;
+}
+
+.screen-5__title {
+    color: #fae280;
+    font-size: 18px;
+    font-weight: 900;
+    padding-top: 163px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 22px;
+    margin-bottom: 19px;
+}
+
+.screen-5__caption {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+}
+.screen-5 label {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 800;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 8px;
+}
+.screen-5 .jq-radio {
+    width: 37px;
+    height: 37px;
+    background: none;
+    background-image: url("../img/bg-radio.png");
+    background-repeat: no-repeat;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    display: table-cell !important;
+    vertical-align: middle;
+    background-position: left center;
+    margin: 0px;
+}
+
+.screen-5 .jq-radio.checked .jq-radio__div {
+    background: none;
+    background-image: url("../img/bg-radio-checked.png");
+    background-repeat: no-repeat;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    height: 37px;
+    margin: inherit;
+    width: 37px;
+    margin: 0px;
+}
+.screen-5__form {
+    padding-left: 121px;
+    padding-right: 40px;
+    padding-top: 19px;
+}
+.screen-5__wrap {
+    margin-bottom: 12px;
+    display: table;
+}
+
+.screen-5__button {
+    width: 169px;
+    height: 93px;
+    background: none;
+    border: 0px;
+    background-image: url("../img/bg-button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    color: #044061;
+    padding: 0px;
+    line-height: 20px;
+}
+.screen-5__button--top {
+    z-index: 2;
+}
+.screen-5__button--bottom {
+    background-image: url("../img/bg-button-pushed.png");
+    z-index: 1;
+    background-position: 0px 5px;
+}
+.button-text {
+    display: block;
+    margin-top: -25px;
+}
+.screen-5__button--bottom .button-text {
+    margin-top: -20px;
+}
+.screen-5__button--top:active {
+    display: none;
+}
+
+/* ---------- screen-6 ---------- */
+.screen-6 {
+    background-image: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+}
+.screen-6__frame {
+    background-image: url("../img/bg-main-fraim.png");
+    background-repeat: no-repeat;
+    height: 593px;
+    left: 246px;
+    position: absolute;
+    top: 89px;
+    width: 737px;
+}
+.screen-6__decor {
+    background-image: url("../img/bg-decor-2.png");
+    background-repeat: no-repeat;
+    height: 154px;
+    left: 271px;
+    position: absolute;
+    top: 84px;
+    width: 165px;
+}
+
+.screen-6__title {
+    color: #fae280;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 277px;
+    text-align: center;
+}
+
+.screen-6__caption {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+}
+
+
+.screen-6__button {
+    width: 169px;
+    height: 93px;
+    background: none;
+    border: 0px;
+    background-image: url("../img/bg-button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    color: #044061;
+    padding: 0px;
+    line-height: 20px;
+}
+.screen-6__button--top {
+    z-index: 2;
+}
+.screen-6__button--bottom {
+    background-image: url("../img/bg-button-pushed.png");
+    z-index: 1;
+    background-position: 0px 5px;
+}
+.button-text {
+    display: block;
+    margin-top: -25px;
+}
+.screen-6__button--bottom .button-text {
+    margin-top: -15px;
+}
+.screen-6__button--top:active {
+    display: none;
+}
+.screen-6__button-1 {
+    left: 182px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-6__button-2 {
+    left: 380px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-6__button-2 .button-text-2 {
+    margin-top: -20px;
+}
+
+/* ---------- screen-7 ---------- */
+
+.screen-7 {
+    background-image: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+}
+.screen-7__frame {
+    background-image: url("../img/bg-main-fraim.png");
+    background-repeat: no-repeat;
+    height: 593px;
+    left: 246px;
+    position: absolute;
+    top: 89px;
+    width: 737px;
+}
+.screen-7__decor {
+    background-image: url("../img/bg-decor-3.png");
+    background-repeat: no-repeat;
+    height: 184px;
+    left: 260px;
+    position: absolute;
+    top: 61px;
+    width: 210px;
+}
+
+.screen-7__title {
+    color: #fae280;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 277px;
+    text-align: center;
+}
+
+.screen-7__caption {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+}
+
+
+.screen-7__button {
+    width: 169px;
+    height: 93px;
+    background: none;
+    border: 0px;
+    background-image: url("../img/bg-button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    color: #044061;
+    padding: 0px;
+    line-height: 20px;
+}
+.screen-7__button--top {
+    z-index: 2;
+}
+.screen-7__button--bottom {
+    background-image: url("../img/bg-button-pushed.png");
+    z-index: 1;
+    background-position: 0px 5px;
+}
+
+.screen-7__button--bottom .button-text {
+    margin-top: -15px;
+}
+.screen-7__button--top:active {
+    display: none;
+}
+.screen-7__button-1 {
+    left: 182px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-7__button-2 {
+    left: 380px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-7__button-2 .button-text-2 {
+    margin-top: -20px;
+}
+
+/* ---------- screen-8 ---------- */
+.screen-8 {
+    background-image: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+}
+.screen-8__frame {
+    background-image: url("../img/bg-main-fraim.png");
+    background-repeat: no-repeat;
+    height: 593px;
+    left: 246px;
+    position: absolute;
+    top: 89px;
+    width: 737px;
+}
+.screen-8__decor {
+    background-image: url("../img/bg-decor-4.png");
+    background-repeat: no-repeat;
+    height: 265px;
+    left: 267px;
+    position: absolute;
+    top: -20px;
+    width: 206px;
+}
+
+.screen-8__title {
+    color: #fae280;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 277px;
+    text-align: center;
+}
+
+.screen-8__caption {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+}
+
+
+.screen-8__button {
+    width: 169px;
+    height: 93px;
+    background: none;
+    border: 0px;
+    background-image: url("../img/bg-button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    color: #044061;
+    padding: 0px;
+    line-height: 20px;
+}
+.screen-8__button--top {
+    z-index: 2;
+}
+.screen-8__button--bottom {
+    background-image: url("../img/bg-button-pushed.png");
+    z-index: 1;
+    background-position: 0px 5px;
+}
+
+.screen-8__button--bottom .button-text {
+    margin-top: -15px;
+}
+.screen-8__button--top:active {
+    display: none;
+}
+.screen-8__button-1 {
+    left: 182px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-8__button-2 {
+    left: 380px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-8__button-2 .button-text-2 {
+    margin-top: -20px;
+}
+
+/* ---------- screen-9 ---------- */
+.screen-9 {
+    background-image: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+}
+.screen-9__frame {
+    background-image: url("../img/bg-main-fraim.png");
+    background-repeat: no-repeat;
+    height: 593px;
+    left: 246px;
+    position: absolute;
+    top: 89px;
+    width: 737px;
+}
+.screen-9__decor {
+    background-image: url("../img/bg-decor-5.png");
+    background-repeat: no-repeat;
+    height: 315px;
+    left: 268px;
+    position: absolute;
+    top: -63px;
+    width: 217px;
+}
+
+.screen-9__title {
+    color: #fae280;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 277px;
+    text-align: center;
+}
+
+.screen-9__caption {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+}
+
+.screen-9__button {
+    width: 169px;
+    height: 93px;
+    background: none;
+    border: 0px;
+    background-image: url("../img/bg-button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    color: #044061;
+    padding: 0px;
+    line-height: 20px;
+}
+.screen-9__button--top {
+    z-index: 2;
+}
+.screen-9__button--bottom {
+    background-image: url("../img/bg-button-pushed.png");
+    z-index: 1;
+    background-position: 0px 5px;
+}
+
+.screen-9__button--bottom .button-text {
+    margin-top: -15px;
+}
+.screen-9__button--top:active {
+    display: none;
+}
+.screen-9__button-1 {
+    left: 182px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-9__button-2 {
+    left: 380px;
+    margin: inherit;
+    top: 415px;
+}
+.screen-9__button-2 .button-text-2 {
+    margin-top: -20px;
 }
