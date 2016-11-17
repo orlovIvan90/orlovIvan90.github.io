@@ -1,0 +1,1280 @@
+@font-face {font-family: 'PT Sans';
+	src: url('../pts55f.eot')/*tpa=http://www.avgust.com/pts55f.eot*/;
+	src: local('PT Sans'), url('../pts55f.woff')/*tpa=http://www.avgust.com/pts55f.woff*/ format('woff'), url('../pts55f.ttf/index.htm')/*tpa=http://www.avgust.com/pts55f.ttf*/ format('truetype')}
+
+@font-face {font-family: 'PT Sans Bold';
+    src: url('../PTS75F_W.eot')/*tpa=http://www.avgust.com/PTS75F_W.eot*/;
+    src: local('PT Sans Bold'), url('../PTS75F_W.woff')/*tpa=http://www.avgust.com/PTS75F_W.woff*/ format('woff'), url('../PTS75F_W.ttf')/*tpa=http://www.avgust.com/PTS75F_W.ttf*/ format('truetype')}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../newfonts/opensans-regular.eot');
+    src: url('../newfonts/opensans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-regular.woff2') format('woff2'), url('../newfonts/opensans-regular.woff') format('woff'), url('../newfonts/opensans-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+nav ul{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title], dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input, select{vertical-align:middle}
+
+html{height:100%}
+body{height:100%;font:85% 'PT Sans', Tahoma,Geneva,sans-serif;background:#fff;color:#676767}
+table{border-collapse:collapse}
+a{color:#73BBE7}
+a:hover{text-decoration:none}
+a img{border:none;vertical-align:bottom}
+sup{position: relative; top: -3px;font-size: 9px;}
+#wrapper{width:1440px;margin:auto}
+
+.green_links a{color:#80bd00}
+
+#header{position:relative;height:142px;background:url(../images/map.png)/*tpa=http://www.avgust.com/images/map.png*/ no-repeat 100% 40px;z-index: 999;}
+	#header .nav a{	z-index: 999;}
+	#header h1,#header span.logo{position:absolute;left:5px;top:44px}
+	#header .nav{position:absolute;left:5px;bottom:6px;list-style:none;text-transform:uppercase}
+		#header .nav li{float:left;margin:0 40px 0 0}
+		#header .nav a{text-decoration:none;color: #474F51}
+		#header .nav a:hover{text-decoration:underline}
+	#header .lang-nav{position:absolute;right:5px;top:18px;list-style:none;overflow:hidden;font-size:0.8em;line-height:100%}
+		#header .lang-nav li{float:left;margin:0 0 0 -1px;padding:0 5px;background:url(../images/border.gif)/*tpa=http://www.avgust.com/images/border.gif*/ no-repeat 0 50%}
+		#header .lang-nav a{color:#A7A9AC}
+		#header .lang-nav .current a{color:#55C2EA}
+	#header .add-nav{position:absolute;right:270px;top:15px;list-style:none;font-size:0.8em;line-height:100%}
+		#header .add-nav li{float:left;margin:0 0 0 6px}
+		#header .add-nav a{color:#A7A9AC}
+	#header .search{border: 1px solid #d5d5d6;bottom: 7px;overflow: hidden;position: absolute;right: 7px;width: 240px;}
+		#header .search .input-text{float:left;width:129px;padding:2px 0 0 12px;background:#fff;border:none;font:italic 0.8em/100% Tahoma,Geneva,sans-serif;color:#BABBBC}
+		#header .search button{float:right;width:68px;height:18px;padding:0 0 2px;background:#B6B7B9;border:none;font:0.8em/100% 'PT Sans', Tahoma,Geneva,sans-serif;color:#fff;cursor:pointer;behavior:url("js/ie6hover.htc/index.htm")/*tpa=http://www.avgust.com/css/js/ie6hover.htc*/}
+			#header .search button span{text-decoration:underline}
+			#header .search button:hover span, #header .search .hover span{text-decoration:none}
+	#header .user-bar{position:absolute;right:230px;bottom:7px;font-size:0.8em;line-height:100%}
+		#header .user-bar a{float:left;padding:4px 5px;color:#87BF57;text-decoration:none}
+		#header .user-bar a:hover{text-decoration:underline}
+		#header .user-bar .login{padding:4px 20px;background:#87BF57;color:#fff;text-decoration:underline}
+		#header .user-bar .login:hover{text-decoration:none}
+	#header .slogan{position:absolute;left:280px;top:46px;font-size:1.9em;line-height:100%;color:#474F51}
+	select#selectIB{ 
+			 
+			background-image:url(about:blank);background-color:transparent;
+		    border: 0px  ;
+		    color: #C9C7C6;
+		    font-size: 11px; 
+		    width: 160px;
+		    padding: 0px 0 0 0;
+		    float: left;
+		    height: 18px;
+		    line-height: 18px;
+		    margin: -2px !ie;
+		    height: 21px !ie;
+		     
+		     
+	}	
+	select#selectIB option{ 
+		 color: #C9C7C6  !important !ie;
+		  
+	}
+	#header .search .styled-select {
+	    background: url("../images/arrow.jpg")/*tpa=http://www.avgust.com/images/arrow.jpg*/ no-repeat scroll right center rgba(0, 0, 0, 0);
+	    float: left;
+	     
+	    overflow: hidden;
+	    width: 130px;
+	    border-left: 1px solid #C8C8C8;
+	}
+	#header .search select#selectIB option{ 
+			color: #636363;	
+	}
+#main-section{padding:0;}
+
+#intro{position:relative;overflow:hidden;height:434px;margin:0 0 10px}
+	#intro #photo{position:absolute;left:0;top:0;width:100%}
+		#intro #photo img{-ms-interpolation-mode: bicubic;height:auto}
+        #intro #photo .title{position:absolute;left:45px;top:40px;font-size:3.5em;color:#fff;line-height:120%}
+	#intro .nav{position:absolute;right:12px;top:15px;list-style:none;width:278px;font-size:1.2em;line-height:100%}
+		#intro .nav li{margin:0 0 12px;background-position:12px 50%;background-repeat:no-repeat;border:1px solid #fff; height:115px; position:relative;}
+		#intro .nav .item-1{background-image:url(../images/intro-nav-item-bg-4.jpg)/*tpa=http://www.avgust.com/images/intro-nav-item-bg-4.jpg*/;background-color:#00B3E4}
+		#intro .nav .item-2{background-image:url(../images/intro-nav-item-bg-5.jpg)/*tpa=http://www.avgust.com/images/intro-nav-item-bg-5.jpg*/;background-color:#76B944}
+		#intro .nav .item-3{background-image:url(../images/intro-nav-item-bg-6.jpg)/*tpa=http://www.avgust.com/images/intro-nav-item-bg-6.jpg*/;background-color:#F4A524}
+		#intro .nav a{color:#fff}
+
+#section-photo{position:relative;overflow:hidden;height:250px;background:#44ABB0}
+	#section-photo img{position:absolute;right:0;top:0}
+	#section-photo .title{position:absolute;left:45px;bottom:15px;font-size:3.5em;color:#fff;line-height:120%}
+
+#content{overflow:hidden;padding:10px 0px 0}
+	#content .aside{float:left;width:180px;padding:10px 0 0}
+	#content .add-aside{float:right;width:175px;padding:0 0 0 20px}
+	#content .main-content{overflow:hidden;height:1%;padding:0 0 0 20px}
+    #content .main-content img{margin-right:10px; }
+	#content h1,#content h2{margin:0 0 20px;font-size:1.9em;font-weight:normal;line-height:130%;color:#5EB1E3}
+	#content h3{margin:0 0 15px;font-size:1.5em;line-height:120%}
+	#content .aside h3, #content .add-aside h3{padding:0 0 3px;border-bottom:1px solid #C0C0C0;font-size:1.2em;font-weight:normal}
+	#content h4{margin:0 0 5px;font:bold 0.95em/120% Tahoma,Geneva,sans-serif}
+	#content p{margin:0 0 20px;font:12px Tahoma,Geneva,sans-serif}
+	#content small{font:italic 0.8em Tahoma,Geneva,sans-serif;color:#aaa}
+	#content cite{font-weight:bold;line-height:180%}
+	#content ul{margin:0 0 20px;padding:0 0 0 40px;line-height:130%}
+    .content-wrapper li{font:Tahoma,Geneva,sans-serif; padding-bottom:5px;}
+    .content-wrapper div{font-family:Tahoma,Geneva,sans-serif;font-size:12px;margin:20px 0px 0px 0px}
+	#content .aside ul, #content .add-aside ul{padding:0;list-style:none}
+	#content dl{padding:0 0 25px;line-height:120%}
+	#content dd{margin:0 0 5px}
+	#content ul.nav{margin:0;padding:0 0 40px 0px;font-size:1.1em;color:#5EB1E3}
+        .green_links ul.nav{color:#80bd00}
+		#content ul.nav li{padding:0 0 15px}
+        #content ul.nav li.second-menu{padding-left: 15px;}
+		#content ul.nav a{color:#A7A9AC}
+		#content ul.nav .current a{color:#5EB1E3}
+
+        #content a.current{color:#5EB1E3 !important}
+        /*#content ul.nav .current ul .current a{color:#5EB1E3}*/
+        .green_links ul#green .current a{color:#80bd00}
+        #content.green_links ul#green .current ul .current a{color:#80bd00}
+        #content ul.nav ul.drugs {line-height: 110%;}
+        #content ul.nav ul.drugs a{color:#A7A9AC !important; font-size: 0.85em;}
+        #content ul.nav ul.drugs .current a{text-decoration: none;}
+        #content ul.nav ul.drugs .current a.item-70{color:#A7207C !important}
+        #content ul.nav ul.drugs .current a.item-71{color:#E44F47 !important}
+		#content ul.nav ul.drugs .current a.item-83{color:#EF9341 !important}
+		#content ul.nav ul.drugs .current a.item-72{color:#009D61 !important}
+		#content ul.nav ul.drugs .current a.item-73{color:#0097C3 !important}
+		#content ul.nav ul.drugs .current a.item-155{color:#3563aa !important}
+		#content ul.nav ul.drugs .current a.item-229{color:#54b3e9 !important}
+		#content ul.nav ul.drugs .current a.item-198{color:#ee119b !important}
+
+	#content ul.nav ul{margin:0;padding:5px 0 0 15px}
+	#content ul.nav ul li{padding:0}
+	#content ul.nav ul .current a{color:#5EB1E3}
+	#content ul.nav .current ul a{color:#A7A9AC}
+	#content ul.nav .current ul li.current a{color:#5EB1E3}
+	#content ul.nav .current ul li ul a{color:#A7A9AC}
+	#content ul.nav .current ul li.current ul a{color:#A7A9AC}
+        #content ul.nav ul li ul li a{color:#A7A9AC}
+        #content ul.nav ul li a{color:#A7A9AC}
+        #content ul.nav ul li ul li a{color:#A7A9AC}
+        #content ul.nav .current ul li.current ul li.current a{color:#5EB1E3}
+        #content ul.nav ul li ul li.current a{color:#5EB1E3}
+        #content ul.nav ul li ul li ul li a{color:#A7A9AC}
+        #content ul.nav ul li ul li ul li.current a{color:#5EB1E3}
+
+
+	#content ul.add-nav{margin:0;font-size:1.0em;color:#5EB1E3}
+        .green_links ul.add-nav{color:#80bd00}
+		#content ul.add-nav li{margin:0 0 10px}
+		#content ul.add-nav a{display:block;height:1%;padding:26px 0 42px 100px;background-position:0 50%;background-repeat:no-repeat}
+        #content ul.add-nav a{padding:26px 0 22px 72px;}
+		#content ul.add-nav .item-1 a{background-image:url(../images/add-nav-item-bg-1.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-1.jpg*/}
+		#content ul.add-nav .item-2 a{background-image:url(../images/add-nav-item-bg-2.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-2.jpg*/}
+		#content ul.add-nav .item-3 a{background-image:url(../images/add-nav-item-bg-3.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-3.jpg*/}
+		#content ul.add-nav .item-4 a{background-image:url(../images/add-nav-item-bg-4.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-4.jpg*/}
+		#content ul.add-nav .item-5 a{background-image:url(../images/add-nav-item-bg-5.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-5.jpg*/}
+		#content ul.add-nav .item-6 a{background-image:url(../images/add-nav-item-bg-6.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-6.jpg*/}
+		#content ul.add-nav .item-7 a{background-image:url(../images/add-nav-item-bg-7.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-7.jpg*/}
+		#content ul.add-nav .item-8 a{background-image:url(../images/add-nav-item-bg-8.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-8.jpg*/}
+		#content ul.add-nav .item-9 a{background-image:url(../images/add-nav-item-bg-9.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-9.jpg*/}
+		#content ul.add-nav .item-10 a{background-image:url(../images/add-nav-item-bg-10.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-10.jpg*/}
+        #content ul.add-nav .item-1 a{background-image:url(../images/add-nav-item-bg-1_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-1_small.jpg*/}
+        #content ul.add-nav .item-2 a{background-image:url(../images/add-nav-item-bg-2_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-2_small.jpg*/}
+        #content ul.add-nav .item-3 a{background-image:url(../images/add-nav-item-bg-3_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-3_small.jpg*/}
+        #content ul.add-nav .item-4 a{background-image:url(../images/add-nav-item-bg-4_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-4_small.jpg*/}
+        #content ul.add-nav .item-5 a{background-image:url(../images/add-nav-item-bg-5_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-5_small.jpg*/}
+        #content ul.add-nav .item-6 a{background-image:url(../images/add-nav-item-bg-6_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-6_small.jpg*/}
+        #content ul.add-nav .item-7 a{background-image:url(../images/add-nav-item-bg-7_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-7_small.jpg*/}
+        #content ul.add-nav .item-8 a{background-image:url(../images/add-nav-item-bg-8_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-8_small.jpg*/}
+        #content ul.add-nav .item-9 a{background-image:url(../images/add-nav-item-bg-9_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-9_small.jpg*/}
+        #content ul.add-nav .item-10 a{background-image:url(../images/add-nav-item-bg-10_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-10_small.jpg*/}
+        #content ul.add-nav .item-12 a{background-image:url(../images/add-nav-item-bg-12_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-12_small.jpg*/}
+        #content ul.add-nav .item-13 a{background-image:url(../images/add-nav-item-bg-13_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-13_small.jpg*/}
+        #content ul.add-nav .item-14 a{background-image:url(../images/add-nav-item-bg-14_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-14_small.jpg*/}
+        #content ul.add-nav .item-15 a{background-image:url(../images/add-nav-item-bg-15_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-15_small.jpg*/}
+        #content ul.add-nav .item-16 a{background-image:url(../images/add-nav-item-bg-16_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-16_small.jpg*/}
+        #content ul.add-nav .item-17 a{background-image:url(../images/add-nav-item-bg-17_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-17_small.jpg*/}
+        #content ul.add-nav .item-18 a{background-image:url(../images/add-nav-item-bg-18_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-18_small.jpg*/}
+        #content ul.add-nav .item-19 a{background-image:url(../images/add-nav-item-bg-19_small.jpg)/*tpa=http://www.avgust.com/images/add-nav-item-bg-19_small.jpg*/}
+	#content .breadcrumbs{overflow:hidden;width:100%;margin:0 0 10px;padding:4px 0 3px;border-bottom:1px solid #C0C0C0;list-style:none;font-size:0.9em}
+		#content .breadcrumbs li{float:left;margin:0 5px 0 0}
+		#content .breadcrumbs a{margin:0 5px 0 0;text-decoration:none;color:#A7A9AC}
+		#content .breadcrumbs a:hover{text-decoration:underline}
+	#content .cont-b{margin:0 0 18px;padding:10px 7px;background:#eee}
+	#content .cont-b-2{margin:0 0 18px;padding:10px 7px;background:#F4F1E0}
+	#content .cont-b h3, #content .cont-b-2 h3{padding:0;border:none}
+	#content .archive{height:1%;margin:0;font-size:0.80em;line-height:100%}
+		#content .archive li{overflow:hidden;height:1%;margin:0 0 5px;padding:0 0 1px}
+		#content .archive a{float:left;height:1%}
+		#content .archive ul{float:left;margin:0;line-height:100%}
+			#content .archive ul li{float:left;display:inline;margin:0 0 0 5px}
+			#content .archive ul a{float:none;color:#676767}
+	#content .newspaper .item{overflow:hidden;width:100%;margin:0 0 15px}
+	#content .newspaper .photo{float:left;padding:0 10px 0 0}
+	#content .newspaper .inner{overflow:hidden;height:1%}
+	#content .newspaper h3{margin:0 0 5px}
+	#content .newspaper p{margin:0}
+	#content .article .date, #content .news .date, #content .news-item .date{margin:0 0 5px}
+	#content .article img{margin:0 10px}
+	#content .intro{color:#73BBE7}
+	#content .photo-b{overflow:hidden;width:100%;margin:0 0 15px;line-height:120%}
+		#content .photo-b img{float:left;margin:0 10px 0 0}
+		#content .photo-b .zoom{padding:0 0 0 20px;background:url(../images/icon-zoom.gif)/*tpa=http://www.avgust.com/images/icon-zoom.gif*/ no-repeat 0 50%;color:#676767}
+
+	#content .news .item{overflow:hidden;width:100%;margin:0 0 10px;}
+	#content .news .photo{position:relative;float:left;overflow:hidden;width:88px;height:88px;margin:0 10px 0 0}
+    #content .news .photo{width:60px;height:60px;}
+		#content .news .photo span{position:absolute;left:0;top:0;display:block;width:88px;height:88px;background:url(../images/photo-border.png)/*tpa=http://www.avgust.com/images/photo-border.png*/ no-repeat 0 0}
+        #content .news .photo span{width:60px;height:60px;background:url(../images/photo-border2.png)/*tpa=http://www.avgust.com/images/photo-border2.png*/ no-repeat 0 0}
+	#content .news .inner{overflow:hidden;height:1%;margin:0px;}
+
+    #content .main-content .news .item{padding-bottom:10px;border-bottom:1px solid #b0b0b0}
+    #content .main-content .news .photo{width:100px;height:100px;}
+        #content .main-content .news .photo span{width:100px;height:100px;background:url(../images/photo-border.png)/*tpa=http://www.avgust.com/images/photo-border.png*/ no-repeat 0 0}
+
+        #content .add-aside .news .inner a{font-size:0.85em}
+        #content .add-aside .news .inner .date{font-size:0.80em}
+	#content .news h4{font-weight:normal}
+	#content .news h4 a{font-size:130%;}
+	#content .news p{margin:0}
+	#content .pager{padding:20px 0 0;font-size:130%}
+		#content .pager .prev{padding:0 0 0 20px;background:url(../images/button-prev.gif)/*tpa=http://www.avgust.com/images/button-prev.gif*/ no-repeat 0 -83px}
+		#content .pager .next{padding:0 20px 0 0;background:url(../images/button-next.gif)/*tpa=http://www.avgust.com/images/button-next.gif*/ no-repeat 100% -83px}
+		#content .pager span.prev{background-position:0 9px}
+		#content .pager span.next{background-position:0 9px}
+		#content .pager ul{overflow:hidden;width:100%;padding:5px 0 0;list-style:none;line-height:100%}
+			#content .pager ul li{float:left;margin:0 10px 0 0;padding:5px 0}
+			#content .pager ul .current{padding:5px;background:#5EB1E3;color:#fff}
+			#content .pager img{vertical-align:middle}
+	#content .cont-nav{position:relative;left:-5px;overflow:hidden;width:100%;padding:0;list-style:none;font-size:0.9em;line-height:100%}
+		#content .cont-nav li{float:left;margin:0 0 0 -1px;padding:0 6px 1px 5px;border-left:1px solid #aaa}
+		#content .cont-nav a{color:#A7A9AC}
+		#content .product-category-1 .cont-nav .current a{color:#B61681}
+	#content .product h3{font-size:1.2em;font-weight:normal}
+	/*#content .product-category-1 h2, #content .product-category-1 h3{color:#B61681}*/
+    #content .culture_menu {margin: 20px 0px}
+    #content .culture_menu a{font-size:1em;}
+    /* ????? ??? ????????? ????????? ??????? ?? ?????????, ???? ??? */
+    #content .color-70 h1,
+    #content .color-70 h2,
+    #content .color-70 h3,
+    #content .color-70 .cont-nav .current a,
+    #content .catalog .item-70 a,
+    #content .catalog .item-70 h4,
+
+ 	#content .color-280 h1,
+    #content .color-280 h2,
+    #content .color-280 h3,
+    #content .color-280 .cont-nav .current a,
+    #content .catalog .item-280 a,
+    #content .catalog .item-280 h4
+        {color:#b2187f}
+
+    #content .color-70 h3 {color:#676767;font-family:'PT Sans Bold';}
+
+    #content .color-71 h1,
+    #content .color-71 h2,
+    #content .color-71 .cont-nav .current a,
+    #content .catalog .item-71 a,
+    #content .catalog .item-71 h4
+        {color:#df4c4a}
+
+	#content .color-71 h3 {color:#676767;font-family:'PT Sans Bold';}
+
+    #content .color-83 h1,
+    #content .color-83 h2,
+    #content .color-83 h3,
+    #content .color-83 .cont-nav .current a,
+    #content .catalog .item-83 a,
+    #content .catalog .item-83 h4
+        {color:#eea73a}
+
+    #content .color-83 h3 {color:#676767;font-family:'PT Sans Bold';}
+
+    #content .color-72 h1,
+    #content .color-72 h2,
+    #content .color-72 h3,
+    #content .color-72 .cont-nav .current a,
+    #content .catalog .item-72 a,
+    #content .catalog .item-72 h4
+        {color:#009c62}
+
+    #content .color-72 h3 {color:#676767;font-family:'PT Sans Bold';}
+
+    #content .color-73 h1,
+    #content .color-73 h2,
+    #content .color-73 h3,
+    #content .color-73 .cont-nav .current a,
+    #content .catalog .item-73 a,
+    #content .catalog .item-73 h4
+        {color:#0091c5}
+
+    #content .catalog .item-198 a {color:rgb(238,77,155);}
+
+    #content .color-73 h3 {color:#676767;font-family:'PT Sans Bold';}
+
+    #content .color-155 h1,
+    #content .color-155 h2,
+    #content .color-155 h3,
+    #content .color-155 .cont-nav .current a,
+    #content .catalog .item-155 a,
+    #content .catalog .item-155 h4
+        {color:#3563aa}
+
+    #content .color-229 h1,
+    #content .color-229 h2,
+    #content .color-229 .cont-nav .current a,
+    #content .catalog .item-229 a,
+    #content .catalog .item-229 h4
+        {color:#54b3e9}
+
+	#content .color-229 h3 {color:#676767;font-family:'PT Sans Bold';}    
+
+    #content .color-152 h3,
+    #content .color-153 h3,
+    #content .color-154 h3 {font-family:'PT Sans Bold';}
+    #content .color-155 h3 {color:#676767;font-family:'PT Sans Bold';}
+
+	#content .color-152 h1,
+	#content .color-152 h2,
+	#content .color-152 .cont-nav .current a,
+	#content .catalog .item-152 a,
+	#content .catalog .item-152 h4
+		{color:#eea73a}
+
+	#content .color-154 h1,
+	#content .color-154 h2,
+	#content .color-154 .cont-nav .current a,
+	#content .catalog .item-154 a,
+	#content .catalog .item-154 h4
+		{color:#ee119b}
+
+
+    #content .color-198 h1,
+    #content .color-198 h2,
+    #content .color-198 .cont-nav .current a,
+    #content .catalog .item-198 a,
+    #content .catalog .item-198 h4
+        {color:#ee119b}
+
+    #content .color-198 h3 {color:#ee119b;font-family:'PT Sans Bold';}     
+
+    /* Protection Scheme */
+    #content .protection_scheme {
+        border-top:1px solid #c0c0c0;
+        border-bottom:1px solid #c0c0c0;
+        padding:10px 0px;
+        display:inline-block;
+        width:100%;
+        margin:0px 0px 20px 0px;
+    }
+    #content .protection_scheme img {
+        float:left;
+        margin-right:10px;
+    }
+    #content .protection_scheme .scheme_title {
+        color:#a7a9ac;
+        padding-top:10px;
+    }
+
+	#content .alphabet{overflow:hidden;width:100%;margin:0 0 10px;padding:0;list-style:none;font-size:0.95em}
+		#content .alphabet li{float:left;padding:0 8px 0 0}
+		#content .alphabet a{color:#676767}
+	#content .diseases h4 a{font-weight:normal}
+	#content .diseases p{margin:0 0 5px}
+		#content .diseases p a{color:#676767}
+	#content .data{width:100%;margin:0 0 20px}
+		#content .data th{padding:6px 5px 6px 15px;background:#F4F1E0;text-align:left;font:bold 0.9em Tahoma,Geneva,sans-serif}
+		#content .data td{padding:5px 5px 5px 15px}
+		#content .data .title td{padding-top:15px;border-bottom:1px solid #C0C0C0;font:bold 0.9em Tahoma,Geneva,sans-serif}
+
+
+
+#footer{height:76px;margin:0 12px;padding:10px 0 0;border-top:2px solid #BFC0C2;color:#A7A9AC}
+	#footer address{float:left;width:220px;font-size:0.8em;font-style:normal;line-height:100%}
+	#footer .copyright{float:right;width:220px;text-align:right}
+	#footer p{margin:0 0 10px;font-size:0.8em;line-height:100%}
+	#footer .nav{position:relative;overflow:hidden;text-align:center}
+		#footer .nav div{position:relative;left:50%;float:left;text-align:center}
+		#footer .nav ul{position:relative;left:-50%;overflow:hidden;float:left;list-style:none;line-height:130%}
+			#footer .nav ul li{float:left;margin:0 0 0 -1px;padding:0 18px;border-left:1px solid #BFC0C2}
+			#footer .nav ul a{color: #474F51;}
+
+
+
+
+
+
+#slideshow img {
+	width:300px;
+}
+#slideshow img.visible {
+	display:block !important;
+}
+#slideshow img.hidden {
+    display:none !important;
+}
+#slideshow a {
+	width:300px;
+}
+#slideshow .img_wrapper {
+    width:300px;
+    height:200px;
+    overflow:hidden;
+}
+#slideshow {
+	width:300px;
+	overflow:hidden;
+	float:left;
+	margin:0px 10px 5px 0px;
+}
+#slideshow #control {
+	height:20px;
+	width:300px;
+	background-color:#cfedff;
+	text-align:center;
+	float:left;
+	margin:0px;
+}
+#slideshow #control span {
+	color:#333333;
+	font-size:12px;
+}
+#slideshow #control .no_show_l, #slideshow #control .no_show_r{
+    float: left;
+    height: 20px;
+    margin: 0;
+    width: 20px;
+    background:none !important;
+    cursor:default;
+}
+#slideshow #control .no_show_r{
+  float: right;
+}
+
+#slideshow #zoom {
+	position:absolute;
+	margin:200px 0px 0px 280px;
+	width:15px;
+	height:15px;
+	cursor:pointer;
+	background: url('../images/zoom.png')/*tpa=http://www.avgust.com/images/zoom.png*/ no-repeat 0px 0px;
+}
+#slideshow #scroll_left {
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	float:left;
+	background: url('../images/zoom.png')/*tpa=http://www.avgust.com/images/zoom.png*/ no-repeat 5px -397px;
+	margin:0px;
+}
+#slideshow #scroll_right {
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    float:right;
+    background: url('../images/zoom.png')/*tpa=http://www.avgust.com/images/zoom.png*/ no-repeat 5px -297px;
+    margin:0px;
+}
+#slideshow #slide_title {
+	color:#390;
+	font-size:12px;
+	margin:3px;
+}
+
+/* slideshowCol */
+#slideshowCol {
+	/*width:200px;*/
+	margin:0px 10px 10px 0px;
+	float:left;
+	display:inline-block;
+}
+.vertical-slideshow{
+	position:relative;
+	overflow:hidden;
+	width:578px;
+}
+.vertical-slideshow img {
+	display:block;
+	margin:10px 3px;
+	text-align:center;
+	/*margin:auto;*/
+}
+#content #slideshowPanorama img {
+	margin:0
+}
+.slideshowTextWrapper {
+	overflow:hidden;
+	height:1%
+}
+
+/*для заголовков h1*/
+#content .catalog .item-70 h1,#content .catalog .item-70 h2 {color:#b2187f;}
+#content .catalog .item-71 h1,#content .catalog .item-71 h2 {color:#df4c4a;}
+#content .catalog .item-83 h1,#content .catalog .item-83 h2 {color:#eea73a;}
+#content .catalog .item-72 h1,#content .catalog .item-72 h2 {color:#009c62;}
+#content .catalog .item-73 h1,#content .catalog .item-73 h2 {color:#0091c5;}
+#content .catalog .item-152 h2,#content .catalog .item-152 h1 {color:#eea73a;}
+#content .catalog .item-154 h2,#content .catalog .item-154 h1 {color:#ee119b;}
+#content .catalog .item-155 h1,#content .catalog .item-155 h2 {color:#3563aa;}
+#content .catalog .item-198 h1,#content .catalog .item-198 h2 {color:#ee119b;}
+#content .catalog .item-229 h1,#content .catalog .item-229 h2 {color:#54b3e9;}
+#content .catalog .item-280 h1,#content .catalog .item-280 h2 {color:#b2187f;}
+ 
+
+#content .catalog .item-214 h1, #content .catalog .item-214 h2, #content .catalog .item-214 a,
+#content .color-214 h1, #content ul.nav ul.drugs .current a.item-214,
+#content .catalog .item-221 h1, #content .catalog .item-221 h2, #content .catalog .item-221 a,
+#content .color-221 h1, #content ul.nav ul.drugs .current a.item-221, #content .color-221 h2, #content .color-221 h3,
+#content .color-214 h2, #content .color-214 h3
+{
+    color:#e44d5c;
+}
+
+#content ul.nav ul.drugs .current a.item-214, #content ul.nav ul.drugs .current a.item-221
+{
+    color:#e44d5c !important;
+}
+
+#content .catalog .item-215 h1, #content .catalog .item-215 h2, #content .catalog .item-215 a,
+#content .color-215 h1,
+#content .catalog .item-222 h1, #content .catalog .item-222 h2, #content .catalog .item-222 a,
+#content .color-222 h1,
+#content .color-215 h2, #content .color-215 h3,
+#content .color-222 h2, #content .color-222 h3
+{
+    color:#19986d;
+}
+
+#content ul.nav ul.drugs .current a.item-215, #content ul.nav ul.drugs .current a.item-222
+{
+    color:#19986d !important;
+}
+
+#content .catalog .item-216 h1, #content .catalog .item-216 h2, #content .catalog .item-216 a,
+#content .color-216 h1,
+#content .catalog .item-223 h1, #content .catalog .item-223 h2, #content .catalog .item-223 a,
+#content .catalog .item-233 h2, #content .catalog .item-233 a,
+#content .catalog .item-234 h2, #content .catalog .item-234 a,
+#content .color-223 h1,
+#content .color-216 h2, #content .color-216 h3,
+#content .color-223 h2, #content .color-223 h3
+{
+    color:#1488c3;
+}
+#content .item-235 h2, #content .item-235 h3,  #content .item-235 a
+{
+   color: #df4c4a;
+}
+#content .item-237 h2, #content .item-237 h3,  #content .item-237 a, #content .item-237 h1, #content  .color-237 h3
+{
+   color: #df4c4a;
+}
+ 
+#content ul.nav ul.drugs .current a.item-215, #content ul.nav ul.drugs .current a.item-223
+{
+    color:#1488c3 !important;
+}
+
+#content .catalog .item-70 h2, #content .catalog .item-214 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-71 h2, #content .catalog .item-215 h2,
+#content .catalog .item-221 h2, #content .catalog .item-222 h2, #content .catalog .item-223 h2, 
+#content .catalog .item-233 h2, #content .catalog .item-234 h2, #content .catalog .item-235 h2, #content .catalog .item-237 h2
+{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-83 h2, #content .catalog .item-216 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-72 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-73 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-152 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-154 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-155 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-198 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content .catalog .item-229 h2{font: bold 0.95em/120% Tahoma,Geneva,sans-serif;margin: 0 0 5px;}
+#content h1.sngTtl{margin: 0 0 8px;}
+
+#content li p { margin: 0px !important; padding: 0px !important; }
+
+.inc-sect-left-menu {
+    border-bottom: 1px solid #C0C0C0;
+    /*color: #73BBE7;*/
+    color: #A7A9AC;
+    font-size: 16px;
+    line-height: 130%;
+    margin: -8px 0 10px;
+}
+
+.price-list th{
+  height:100%
+}
+
+.price-list .group-caption a{color: #fff;}
+.calendSm
+{
+	font-size:0.9em;
+}
+
+#content table.data
+{
+	border:#676767 solid;
+	border-width:1px 1px 0 0;
+}
+#content table.data td, #content table.data th
+{
+	border:#676767 solid;
+	border-width:0 0 1px 1px;
+	padding:5px;
+	vertical-align:middle;
+}
+#content table.data p
+{
+	margin:0;
+}
+#intro .nav a
+{
+	text-decoration:none;
+	font-size:24px;
+	line-height:1.1em;
+	height: 115px;
+	padding: 0 20px 0 118px;
+	display:block;
+	position:relative;
+	width:140px;
+}
+#intro .nav a .sp3
+{
+	height: 115px;
+	display:table-cell;
+	vertical-align:middle;
+	position:relative;
+}
+.footer-txt h1, .footer-txt
+{
+    color: #808284;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight:normal;
+}
+#intro .nav.avgust .item-1
+{
+	 background-image: url("../images/intro-nav-item-bg-1.jpg")/*tpa=http://www.avgust.com/images/intro-nav-item-bg-1.jpg*/;
+}
+#intro .nav.avgust .item-2
+{
+	 background-image: url("../images/intro-nav-item-bg-2.jpg")/*tpa=http://www.avgust.com/images/intro-nav-item-bg-2.jpg*/;
+}
+#intro .nav.avgust .item-3
+{
+	 background-image: url("../images/intro-nav-item-bg-3.jpg")/*tpa=http://www.avgust.com/images/intro-nav-item-bg-3.jpg*/;
+}
+
+/* 404 styles */
+
+.clear
+{
+    clear:both;
+}
+
+.title_404
+{
+    color: #00b3e3;
+    font-size:44px;
+    padding: 20px 0 10px;
+}
+.title_404 span
+{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.text_404
+{
+    float: left;
+    font-size: 18px;
+    width: 600px;
+    text-align: left;
+}
+
+    .text_404 p
+    {
+        padding-bottom: 15px;
+    }
+
+.menu_404
+{
+    float: right;
+}
+
+.menu_404 ul
+{
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.menu_404 li
+{
+    padding-bottom: 22px;
+}
+
+.cont_404
+{
+    padding: 0 12px;
+}
+
+.cont_404
+{
+    padding-bottom: 50px;
+}
+
+/* pdf styles */
+
+.catalog_pdf
+{
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    padding: 35px 0 35px 100px;
+    background: url('../images/catalog2017.jpg')/*tpa=http://www.avgust.com/images/catalog2017.jpg*/ 14px center no-repeat; 
+    color:#9e9a9a;
+    line-height: 1.5em;
+    font-size: 12px;
+}
+
+
+.catalog_pdf_new
+{
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    padding: 35px 0 35px 100px;
+    background: url('../upload/68447adca7.jpg')/*tpa=http://www.avgust.com/upload/68447adca7.jpg*/ 14px center no-repeat; 
+    color:#9e9a9a;
+    line-height: 1.5em;
+    font-size: 12px;
+    
+}
+
+.catalog_pdf_new a
+{
+    color:#9e9a9a;
+    text-decoration: none;
+}
+
+
+.catalog_pdf a
+{
+    color:#9e9a9a;
+    text-decoration: none;
+}
+
+.catalog_pdf_padd
+{
+    padding-bottom: 20px;
+}
+
+#content #prod_left_menu > li.current > ul > li.current > a
+{
+    color: #5EB1E3;
+}
+
+/* внутренняя форма поиска */
+.search_form_page{
+	height: 30px;
+}
+.search_form_page input.inputtext, .search_form_page select{
+	border: 1px solid #D5D5D6;
+ 	background: none repeat scroll 0 0 #FFFFFF;
+    
+    float: left;
+    margin: 0px;
+}
+.search_form_page input.inputtext{
+	margin-right: 5px;
+	width: 416px;
+}
+.search_form_page input.inputbutton {
+    background: none repeat scroll 0 0 #B6B7B9;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer; 
+    width: 106px;
+    margin: 0px;
+  	 
+  	border: 1px solid #B6B7B9;
+  	 float: left;
+}
+.search_form_page .styled-select2 {
+    background: url("../images/arrow.jpg")/*tpa=http://www.avgust.com/images/arrow.jpg*/ no-repeat scroll right center rgba(0, 0, 0, 0);
+    border-right: 1px solid #C8C8C8;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    float: left;
+    overflow: hidden;
+    width: 242px;
+}
+
+.search_form_page #selectIB_inner {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    
+    
+    
+    width: 260px;
+}
+
+/* страница агроотдела */
+ .fblock{
+                float: left;
+			    margin-right: 10px;
+			    width: 237px;
+            }
+            .fblock.last{ 
+                margin-right: 0px; 
+            }
+            .fbborder {
+			    border: 1px solid #D5D5D6;
+			    height: 300px;
+			    padding: 5px;
+			}
+            .fb_title{
+                color: #FFFFFF;
+                font-size: 17px;
+                height: 62px;
+                line-height: 20px;
+                padding: 10px 18px;         
+            }
+            .fb_title.blue{ 
+                background: #0191c5;
+            }
+            .fb_title.red{ 
+                background: #df4b4b;
+            }
+            .fb_title.green{ 
+                background: #079c64;
+            }
+            .fb_title.pink{ 
+                background: #a4278b;
+            }
+             
+            .fblock .fb_info{               
+                padding: 18px 12px 0 12px;
+                height: 160px;
+                font-size: 100%;
+                line-height: 18px;
+                color: #676767;
+            }
+            .fblock .fb_info ul{                
+                padding: 0px; 
+                margin: 0px 0px 0px 10px;
+                line-height: 20px
+            }
+            .fblock .fb_link{
+                padding: 0px 12px;
+            }
+            .fblock .i_title{
+                font-size: 14px;
+            }
+            .fblock p{
+                padding: 4px 0;
+            }
+            .front_page_sec{
+                margin-top:  -16px;   
+            }
+            .front_page_sec #content .breadcrumbs{
+                margin-bottom:  20px;   
+            }
+            .front_page_sec h1, .front_page_sec .main_title{
+                color: #50AFDF;
+                font-size: 24px;
+                font-weight: normal;
+                line-height: 30px; 
+            }
+            .front_page_sec h1{ 
+                margin: 0 0 13px;
+            }
+            .front_page_sec .main_title{ 
+                margin: 0 0 10px;
+            }
+            .small_title{
+                color: #6f6f71;
+                border-bottom: 1px solid #c8c8c8;
+                font-size: 16px;
+                margin:  0px 0 15px 0;
+                padding: 0px 0px 4px 0px;
+            }
+            .box_text, .box_seotext{
+                font-size: 100%;
+                line-height: 18px;
+                color: #676767;
+                margin:  0px 0 30px 0;
+            }
+            #for_blocks{
+                margin:  0px 0 8px 0;
+
+            }
+             
+            .smal_sp2{
+                display: block;
+                font-size: 13px;
+                line-height: 14px;
+                padding-top: 10px;
+
+            }
+            .column_text .col1{
+                width: 469px;
+                float: left;
+            }
+            .column_text .col2{
+                width: 469px;
+                float: left;
+            }
+            .column_text div.col1{
+                padding: 0px 40px 0px 0px;
+            }
+            .clear{
+                clear: both;
+            }
+              
+.sp11{
+	position: relative;
+    top: 15px;
+    display: block;
+} 
+.sp12{
+	position: relative;
+    top: 10px;
+    display: block;
+}              
+.title_blue,
+#content .vertical-slideshow  p.title_blue,
+.title_orange,
+#content .vertical-slideshow p.title_orange,
+.title_pink, 
+#content .vertical-slideshow p.title_pink,
+.title_green, 
+#content .vertical-slideshow p.title_green,
+.title_red,
+#content .vertical-slideshow p.title_red { 
+	font: bold 15px 'PT Sans',Tahoma,Geneva,sans-serif;
+	line-height: 18px;
+}
+.title_color, #content .vertical-slideshow p.title_color{ 
+	font: bold 15px 'PT Sans',Tahoma,Geneva,sans-serif;
+	line-height: 18px;
+}
+.title_blue{
+	color: #56abe1;
+}
+.title_orange{
+	color: #e77a01;
+}
+.title_pink{
+	color: #ac1983;
+}
+.title_green{
+	color: #009562;
+}
+.title_red{
+	color: #e04c4a;
+}
+#content .vertical-slideshow p{
+	line-height: 18px;
+}
+/* дистрибьюторы, кнопка наверх*/
+#content  ul.list-menu  { 
+	margin: 0px;
+	padding: 0px;
+}
+#content  ul.list-menu ul { 
+	display: none;
+	margin: 0px;
+	padding:  0px 0px 10px 20px;
+}
+#content  ul.list-menu   li{ 
+	margin: 0px;
+	padding:  0px 0px 10px 0px;
+}
+#content ul.list-menu ul li {
+	font-size: 13px;
+	list-style-type: disc;
+	margin: 0;
+	padding: 0 0 6px;
+} 
+#content  ul.list-menu   li a{ 
+	cursor: pointer;
+}
+#content  ul.list-menu  li.shownext a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+#content  ul.list-menu  li.shownext a:hover { 
+	border-bottom: 0px;
+}
+.line{
+	border-bottom: 1px solid #ccc;
+	height: 1px;
+	width: 100%;
+}
+/* Back to top button */
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	float: right; 
+	margin-left: 590px;
+}
+#back-top a {
+	width: 50px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #676767;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-bottom: 7px;
+	background: url("../images/up-arrow.png")/*tpa=http://www.avgust.com/images/up-arrow.png*/ no-repeat scroll center center #73bbe7;
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #32a8f3;
+}
+#content .publications   {
+    padding: 15px 0 0px 0;
+}
+#content .publications h3 {
+    margin: 0 0 5px;
+}
+#content .public-item{
+    padding: 15px 0  0 0;
+}
+#content .public-item .date {
+    margin: 0 0 15px;
+}
+
+
+
+
+ /* страница защита культур */
+ #content .page-cultures  ul.add-nav li{
+	float: left;
+    list-style-type: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom:  30px;
+    text-align: center;
+    width: 147px;
+}
+#content  .page-cultures ul.add-nav a {
+    padding: 70px 0 0px 0px;
+    height: 20px;
+}
+#content .page-cultures ul.add-nav a{
+	background-position: top;
+}
+#content  .page-cultures ul.add-nav {
+	padding: 0px;
+	margin: 0px;
+}
+
+ .box_text h1, .box_text .main_title{
+    color: #50AFDF;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0 0 13px;
+}
+
+#content ul.add-nav .item-11 a{background-image:url(../images/industrialnye_obekty.jpg)/*tpa=http://www.avgust.com/images/industrialnye_obekty.jpg*/}
+
+
+/* popup окно */
+.overlay{
+    background:transparent url('../images/main/overlay.png')/*tpa=http://www.avgust.com/images/main/overlay.png*/ repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100000;
+}
+.box_form{
+    display:none;
+    position:absolute;
+    top:-1200px;
+   left: 50%;
+   margin-left:-480px;
+    background-color:#fff;
+
+    padding:30px;
+z-index: 100001;
+width: 900px;
+-moz-border-radius: 10px; /* Firefox */
+-webkit-border-radius: 10px; /* Safari, Chrome */
+-khtml-border-radius: 10px; /* KHTML */
+border-radius: 10px; /* CSS3 */
+
+}
+
+#box_form2{
+        position:absolute !important;
+}
+
+.banner_content{
+    font-size: 14px;
+    text-align: left;
+}
+.banner_content p{
+    padding: 0px 0 10px 0px;
+}
+
+a.boxclose{
+     color: #000000;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 14px;
+    height: 51px;
+    margin-right: -3px;
+    margin-top: -26px;
+    position: absolute;
+    right: -13px;
+    top: 8px;
+    width: 51px;
+    background:transparent url('../images/main/close.png')/*tpa=http://www.avgust.com/images/main/close.png*/  ;
+}
+.box_form .column{
+    width: 300px;
+    float: left;
+    text-align: center;
+    font-family: Arial;
+}
+
+.box_form .block{
+        margin:0px;
+        padding:0px;
+        width:100%;
+        border:none;
+}
+
+.box_form .m-column{
+        float:none;
+        width:100%;
+        left:0px;
+}
+.for_mess
+{
+    text-align:center;
+    line-height:1.5em;
+}
+.for_mess_butt a
+{
+    display:block;
+    width:40px;
+    margin:0 auto;
+    background:#eaeaea;
+    border:1px solid #aeaeae;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    color:#333;
+    text-decoration:none;
+    text-align:center;
+    padding:5px 0;
+    font-size:14px;
+}
+.for_mess_butt
+{
+    padding-top:15px;
+}
+
+a.boxclose-2{
+     background: none repeat scroll 0 0 #59b215;
+    border-radius: 13px;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 20px;
+    text-decoration: none;
+     
+}
+a.boxclose-2:hover{ 
+    text-decoration: underline;
+}
+
+.contacts-list .region-name{
+	color: #5eb1e3;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 130%;
+    margin: 0 0 12px;
+}
+.content-wrapper .contact-item{
+	margin: 0 0 40px;
+}
+
+#content  .contact-item h2{
+	color: #676767;
+    font-family: 'PT Sans Bold';
+    font-size: 15px;
+    font-weight: normal;
+     margin: 0 0 6px;
+}
+#content  .contact-item h3{
+	color: #a7a9ac;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 130%;
+    margin: 4px 0 10px;
+}
+#content  .contact-item .g-title{
+	color: #a7a9ac;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 130%;
+    margin: 4px 0 10px;
+}
+
+
+/* вакансии */
+.vacancy-item a.v-title{
+	font-size: 14px;
+	font-weight: bold;
+}
+.vacancy-item{
+	
+}
+.vacancy-text{
+	display: none;
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 20px;
+}
+
+.app-link a.apple {
+    float: left;
+}
+.app-link a.google {
+    float: right;
+}
+.app-link input {
+    outline: 0;
+}
