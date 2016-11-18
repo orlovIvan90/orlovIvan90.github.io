@@ -1,0 +1,350 @@
+*{margin:0;padding:0}
+html{height:100%}
+body{font:75% Georgia,serif;height:100%;background:#fff}
+.error404{background:#1F262D;color:#CBCBCC}
+table{border-collapse:collapse}
+a{color:#3BB3E6}
+a:hover{text-decoration:none}
+a img{border:none;vertical-align:bottom}
+
+#main-wrapper{min-width:1440px;height:100%}
+#wrapper{min-height:100%}
+#wrap{margin:0 5%;padding:0 0 170px 0;height:1%}
+.portfolio-i #wrap{padding:0 0 275px 0}
+#wrap:after{content:"";display:block;height:0;clear:both}
+
+#header{height:1%;padding: 0px 0 20px 24%;position:relative}
+	#header #top-contact{height:120px; width: 100%; }
+	#header h1,#header span.logo{position:absolute;left: 12px;top: 34px}
+	#header ul{list-style-type:none;font-size:1.8em;line-height:100%;width:100%;overflow:hidden}
+		#header ul li{float:left;padding:0 3% 0 0;height:35px;white-space:nowrap}
+		#header ul a{text-decoration:none;background:url(../images/border2.gif)/*tpa=http://www.aft.ru/images/border2.gif*/ repeat-x left bottom;float:left}
+		#header ul a:hover{background:none}
+		#header ul .current a{background:none;color:#000}
+	#header .request{position:absolute;right:0;top: 30px;background: #dae13d;padding: 5px 12px;border-radius: 5px;}
+	  #header .request a {color: #000;text-decoration: none;border-bottom: 1px dashed #000;font: bold 1.1em Georgia,serif;}
+		#header .request a:hover {border-bottom: none;}
+	#header .lang{position:absolute;right:182px;top:37px;font:0.9em Arial,Helvetica,sans-serif;padding:0 0 0 15px;color:#747474}
+	#header .langEN{position:absolute;right:190px;top:36px;font:0.9em Arial,Helvetica,sans-serif;padding:0 0 0 15px;color:#747474}
+	.error404 #header .request{background:url(../images/request-bg2.gif)/*tpa=http://www.aft.ru/images/request-bg2.gif*/ no-repeat left center;color:#3BB3E6}
+	#header address{padding-top: 60px; float: right;right:0;top:60px;font-size:1.8em;font-style:normal;line-height:100%;color:#747474}
+		#header address big{font-size:1.7em;line-height:110%;}
+		.error404 #header address big{color:#fff}
+
+#request-form{width:510px;height:395px;padding:25px 80px 0 80px}
+#order-form{width:510px;height:426px;padding:25px 80px 0 80px}
+	#seminar-form h2, #order-form h2, #request-form h2,#request-form h4{font:2.6em/120% Georgia,serif;margin:0 0 15px 0;color:#000}
+	#request-form .title4{font:2.6em/120% Georgia,serif;margin:0 0 15px 0;color:#000}
+	#seminar-form label, #order-form label, #request-form label{color:#747474}
+	#seminar-form th, #order-form th, #request-form th{width:120px;font-weight:normal;text-align:left;vertical-align:top;padding:0 15px 15px 0}
+	#seminar-form td, #order-form td, #request-form td{padding:0 0 15px 0}
+	#seminar-form textarea, #order-form textarea, #request-form textarea{width:342px;height:154px;padding:1px 4px;font:1em Georgia,serif;border-left:2px inset #404040;border-top:2px inset #404040;border-right:1px solid #D4D0C8;border-bottom:1px solid #D4D0C8}
+	#seminar-form .inputtext, #order-form .input-text, #request-form .input-text{width:342px;padding:1px 4px;font:1em Georgia,serif;border-left:2px solid #404040;border-top:2px solid #404040;border-right:1px solid #D4D0C8;border-bottom:1px solid #D4D0C8}
+	#seminar-form .inputselect {width:353px;padding:0 0 0 1px;font:1em Georgia,serif;border-left:2px solid #404040;border-top:2px solid #404040;border-right:1px solid #D4D0C8;border-bottom:1px solid #D4D0C8}
+	#seminar-form .inputselect option {padding:0 0 0 5px;}
+	#seminar-form .seminars-checkboxes div{width:345px;padding:1px 4px}
+
+#footer{border-top:1px solid #eee;padding:10px 0 0 0;height:130px;margin:-141px 5% 0 5%;color:#747474;position:relative}
+.error404 #footer{border-top:1px solid #878A8E;color:#fff}
+	#footer .content-nav{border-top:1px solid #eee;padding:22px 0 0 0;position:absolute;left:0;top:-120px;height:100px;width:100%}
+	#footer .content-nav ul{list-style:none;font-size:1.5em;overflow:hidden;width:100%}
+		#footer .content-nav ul li{float:left;width:250px;padding:0 50px 0 130px;position:relative;min-height:70px}
+		#footer .content-nav ul .last{float:right;width:auto;max-width:200px}
+			#footer .content-nav ul li img{position:absolute;left:50px;top:0}
+			#footer .content-nav ul li span{display:block;padding:10px 0 0 0}
+	#footer .content-nav .trigger{position:absolute;top:45px;display:block;padding:5px}
+	#footer .content-nav .prev{left:15px}
+	#footer .content-nav .next{right:15px}
+	#footer .add-nav{position:absolute;right:0;top:-25px;list-style:none}
+	.portfolio-i #footer .add-nav{top:-145px}
+		#footer .add-nav li{float:left;margin:0 0 0 5px}
+	#footer p{float:left;font-size:1.1em;line-height:140%}
+	#footer a{color:#747474}
+	.error404 #footer a{color:#3BB3E6}
+	#footer .copyright{width:24%;float:left}
+	#footer .contacts{float:left;width:40%}
+	#footer .contacts .item{float:left;width:49.9%}
+	#footer .contacts a span{color:#000}
+	#footer form{float:right;width:299px;height:19px;background:url(../images/search-bg.png)/*tpa=http://www.aft.ru/images/search-bg.png*/ no-repeat left top}
+	.error404 #footer form{background:url(../images/search-bg2.png)/*tpa=http://www.aft.ru/images/search-bg2.png*/ no-repeat left top}
+		#footer form div{padding:3px 4px 0 15px}
+		#footer form .input-text{float:left;width:258px;padding:0 4px;font:0.9em Arial,Helvetica,sans-serif;color:#999;border:none;background:#fff}
+		#footer form .input-button{float:right;width:11px;height:11px;border:none;background:url(../images/search-button-bg.gif)/*tpa=http://www.aft.ru/images/search-button-bg.gif*/ no-repeat center top;cursor:pointer;position:relative;top:1px}
+	#footer .social{position:absolute;left:24%;top:-30px;width:500px;list-style:none}
+		#footer .social li{float:left}
+
+#fancybox-loading{position:fixed;top:50%;left:50%;height:40px;width:40px;margin-top:-20px;margin-left:-20px;cursor:pointer;overflow:hidden;z-index:1104;display:none}
+* html #fancybox-loading{position:absolute;margin-top:0}
+#fancybox-loading div{position:absolute;top:0;left:0;width:40px;height:480px;background-image:url('fancybox.png')/*tpa=http://www.aft.ru/css/fancybox.png*/}
+#fancybox-overlay{position:fixed;top:0;left:0;bottom:0;right:0;background:#000;z-index:1100;display:none}
+* html #fancybox-overlay{position:absolute;width:100%}
+#fancybox-tmp{padding:0;margin:0;border:0;overflow:auto;display:none}
+#fancybox-wrap{position:absolute;top:0;left:0;margin:0;padding:20px;z-index:1101;display:none}
+#fancybox-outer{position:relative;width:100%;height:100%;background:#FFF}
+#fancybox-inner{position:absolute;top:0;left:0;width:1px;height:1px;padding:0;margin:0;outline:none;overflow:hidden}
+#fancybox-hide-sel-frame{position:absolute;top:0;left:0;width:100%;height:100%;background:transparent}
+#fancybox-close{position:absolute;top:15px;right:15px;width:96px;height:17px;background:url('../images/closelabel.gif')/*tpa=http://www.aft.ru/images/closelabel.gif*/ no-repeat 0 0;cursor:pointer;z-index:1103;display:block}
+#fancybox_error{color:#444;font:normal 12px/20px Arial;padding:7px;margin:0}
+#fancybox-content{height:auto;width:auto;padding:0;margin:0}
+#fancybox-img{width:100%;height:100%;padding:0;margin:0;border:none;outline:none;line-height:0;vertical-align:top;-ms-interpolation-mode:bicubic}
+#fancybox-frame{position:relative;width:100%;height:100%;border:none;display:block}
+#fancybox-title{position:absolute;bottom:0;left:0;font-family:Arial;font-size:12px;z-index:1102}
+.fancybox-title-inside{padding:10px 0;text-align:center;color:#333}
+.fancybox-title-outside{padding-top:5px;color:#FFF;text-align:center;font-weight:bold}
+.fancybox-title-over{color:#FFF;text-align:left}
+#fancybox-title-over{padding:10px;background-image:url('fancy_title_over.png')/*tpa=http://www.aft.ru/css/fancy_title_over.png*/;display:block}
+#fancybox-title-wrap{display:inline-block}
+#fancybox-title-wrap span{height:32px;float:left}
+#fancybox-title-left{padding-left:15px;background-image:url('fancybox.png')/*tpa=http://www.aft.ru/css/fancybox.png*/;background-position:-40px -90px;background-repeat:no-repeat}
+#fancybox-title-main{font-weight:bold;line-height:29px;background-image:url('fancybox-x.png')/*tpa=http://www.aft.ru/css/fancybox-x.png*/;background-position:0px -40px;color:#FFF}
+#fancybox-title-right{padding-left:15px;background-image:url('fancybox.png')/*tpa=http://www.aft.ru/css/fancybox.png*/;background-position:-55px -90px;background-repeat:no-repeat}
+#fancybox-left, #fancybox-right{position:absolute;bottom:0px;height:100%;width:35%;cursor:pointer;outline:none;background-image:url('blank.gif')/*tpa=http://www.aft.ru/css/blank.gif*/;z-index:1102;display:none}
+#fancybox-left{left:0px}
+#fancybox-right{right:0px}
+#fancybox-left-ico, #fancybox-right-ico{position:absolute;top:50%;left:-9999px;width:30px;height:30px;margin-top:-15px;cursor:pointer;z-index:1102;display:block}
+#fancybox-left-ico{background-image:url('fancybox.png')/*tpa=http://www.aft.ru/css/fancybox.png*/;background-position:-40px -30px}
+#fancybox-right-ico{background-image:url('fancybox.png')/*tpa=http://www.aft.ru/css/fancybox.png*/;background-position:-40px -60px}
+#fancybox-left:hover, #fancybox-right:hover{visibility:visible}
+#fancybox-left:hover span{left:20px}
+#fancybox-right:hover span{left:auto;right:20px}
+
+/* IE */
+
+#fancybox-loading.fancybox-ie div	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale'); }
+
+.fancybox-ie #fancybox-title-over	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale'); zoom: 1; }
+.fancybox-ie #fancybox-title-left	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-title-main	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-title-right	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale'); }
+
+.fancybox-ie #fancybox-left-ico		{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-right-ico	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale'); }
+
+#footer .contacts .vcard {
+    float: left;
+    width: 49.9%;
+    font-size: 1.1em;
+    line-height: 140%;
+}
+
+/*����� hcard ���������*/
+#footer #contactsFooterID .vcard #company{display:none;}
+#footer #contactsFooterID .vcard span.street-address{float:left; width:100%;}
+#footer #contactsFooterID .vcard span.locality, #footer #contactsFooterID .vcard span.locality a{color:#000000; text-decoration:underline;cursor:pointer;}
+#footer #contactsFooterID .vcard span.locality:hover{text-decoration:none;}
+
+#content #contactsPageID .vcard #company{display:none;}
+#content #contactsPageID .vcard{
+    color: #000000;
+    font-size: 1.6em;
+    font-style: normal;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+#content #contactsPageID .vcard span.street-address{float:left; width:100%;}
+#content #contactsPageID .vcard .tel abbr.value{font-size: 2em; color:#000000;}
+#content #contactsPageID .vcard .tel abbr.value span.phone-code{color: #747474; font-size: 0.7em;}
+#content #contactsPageID .vcard span.building{color: #747474;}
+
+#rezume_form{padding-bottom:20px}
+#rezume_form table{font-size:1.1em;margin:0 0 20px;width:100%}
+#rezume_form td{color:#747474;padding:10px 2px 0 0;vertical-align:top}
+#rezume_form .inputtext{border-color:#404040 #d4d0c8 #d4d0c8 #404040;border-left:2px solid #404040;border-style:solid;border-width:2px 1px 1px 2px;font:1em Georgia,serif;padding:1px 4px;width:342px}
+#rezume_form .inputselect{border-color:#404040 #d4d0c8 #d4d0c8 #404040;border-left:2px solid #404040;border-style:solid;border-width:2px 1px 1px 2px;font:1em Georgia,serif;padding:0 0 0 1px;width:353px}
+#rezume_form textarea{border-color:#404040 #d4d0c8 #d4d0c8 #404040;border-left:2px inset #404040;border-style:inset solid solid inset;border-width:2px 1px 1px 2px;font:1em Georgia,serif;height:154px;padding:1px 4px;width:342px}
+#rezume_form .send_button input{background:url(../images/send-button.png)/*tpa=http://www.aft.ru/images/send-button.png*/;width:118px;height:39px;border:0;text-indent:-999px}
+#rezume_form .work{background:#fff;border-radius:8px 8px;margin-bottom:10px;width:600px;padding:5px 5px 0}
+#rezume_form .date input{width:100px}
+#rezume_form .format_date{padding-left:5px;position:relative;top:-2px}
+#rezume_form .r_line{border-bottom:1px dotted #6B6B6B;height:1px;margin-bottom:20px;padding-top:20px;width:600px}
+#rezume_form .add_work{paddig-left:10px}
+
+.left_menu_padd #aside-entry {
+	padding-top: 37px;
+}
+
+
+
+
+.for_h2, #content p.for_h2 {
+	color:#000000; 
+	font: 2.6em/120% Georgia,serif; 
+	margin: 0 0 15px;
+}
+
+
+#content .for_h2{
+    color: #000;
+    font-size: 2em;
+    font-weight: normal;
+    height: 1%;
+    line-height: 120%;
+    margin: 0 0 15px;
+    overflow: hidden;
+}
+
+.for_h3, #content p.for_h3 {
+	font-size: 1.4em;
+    font-weight: normal;
+    line-height: 120%;
+    margin: 0 0 15px;
+}
+
+#content .h4_size h4, #content .h4_size a {
+	font-size: 23px;
+	margin: 0;
+}
+
+#content .h4_size a {
+	font-style: italic;
+}
+
+#content .h4_size {
+	margin: 0 0 10px 0;
+}
+
+.for_h4 {
+	font-size: 1.9em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.for_h2 a {
+	font-style: normal;
+	font-size: 24px;
+	line-height: 120%;
+	margin: 0 0 15px 0;
+	overflow: hidden;
+	height: 1%;
+	color: #000;
+	text-decoration: none;
+}
+
+.for_h2 a:hover {
+	text-decoration: underline;
+}
+
+.client_title_link {
+	font-size: 1.5em;
+	font-style: normal;
+	margin: 0 0 10px 0;
+}
+
+.client_title_link  a {
+	color: #000;
+}
+
+.bitrix24_link{
+	width: 100%;
+	height: 93px;
+	padding: 50px 0;
+}
+.bitrix24_link .b-img-left{
+	float: left;
+}
+.bitrix24_link .buttton-right{
+	float: right;
+    padding-top: 20px;
+}
+/* ����� ������ */
+#feedback-request-form{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 20px;
+}
+#feedback-request-form .form-title{
+     font-size: 24px;
+     font-weight: bold;
+     padding: 0 0 10px 0;
+}
+#feedback-request-form .form-text{
+    color: #6d6d6d;
+    padding: 0 0 10px 0;
+}
+#feedback-request-form .column{
+    width: 390px;
+    padding: 0 40px 15px 0;
+    float: left;
+}
+#feedback-request-form .f-field{ 
+    padding: 0 0 8px 0;
+}
+#feedback-request-form .f-name{
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 0 3px 0;
+}
+#feedback-request-form .column input[type=text], #feedback-request-form .column textarea{
+    width: 100%;
+    border-radius: 6px;
+    padding: 7px;
+    background: #f2f2f2; 
+    border-color: #e6e6e6;
+    border: 0px;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+
+}
+#feedback-request-form .column textarea{
+    height: 77px;
+}
+#feedback-request-form .column input.contacts-invalid-field {
+    background-color: #ffcabf;
+}
+.check-group .checkbox{
+    float: left;
+    color: #848484;
+    font-size: 13px;
+    margin: 00px 20px 00px 10px;
+}
+#feedback-request-form .check-group{
+    padding: 6px 0 0 0;
+}
+#feedback-request-form .check-group .checkbox label{ 
+   padding-left: 5px;
+    position: relative;
+    top: -2px;
+}
+#feedback-request-form  input[type=submit]{
+      
+    background: #3cb3e8; 
+    background: none repeat scroll 0 0 #3cb3e8;
+    border: 0 none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-family: times new roman;
+    font-size: 18px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 18px;
+    padding: 0 10px;
+}
+
+.clear{
+    clear: both;
+}
+.form_note{
+	color: #108c24;
+	font-size: 16px;
+}
+
+a.blueButton{
+	background: #3cb3e8 none repeat scroll 0 0;
+	border: 0 none;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	font-family: times new roman;
+	font-size: 18px;
+	font-weight: bold;
+	height: 32px;
+	padding: 0 10px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 167px;
+	line-height: 32px;
+
+}
