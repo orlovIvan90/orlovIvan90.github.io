@@ -1,0 +1,3 @@
+#wrapper{height:100%}
+#content, #content h2, #content .pager, #content .new-works, #content .partners, #content .inner-photo-block, #content .inner-photo-block2{overflow:visible}
+#footer .content-nav ul .last{width:expression(this.scrollWidth > 200 ? "200px" : "auto")}

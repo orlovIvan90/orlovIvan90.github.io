@@ -1,0 +1,33 @@
+.contacts-invalid-field  {
+    background-color: #FFCABF;
+}
+
+.feedback_answer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.map-level-0 > li > a {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+#map-columns .map-level-1 {
+    padding-top: 10px;
+}
+#map-columns .map-level-1 li {
+    background: none;
+}
+
+#play_button {
+    position: absolute; 
+    left: 50%;
+    top: 50%; 
+    margin-top: -51px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: -51px; 
+	width:102px;
+	height:102px;
+	background:url(../images/play.png)/*tpa=http://www.aft.ru/images/play.png*/ no-repeat left top;
+    /*opacity: 0.5;*/
+}
