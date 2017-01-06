@@ -223,6 +223,7 @@ body {
     border-radius: 4px;
     margin-top: 20px;
     border: 2px solid #50b320;
+    outline: inherit;
 }
 .tariff__option-order:hover {
     background-color: #ffffff;
