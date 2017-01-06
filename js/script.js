@@ -1,7 +1,7 @@
 (function($) {
     $(document).ready(function() {
-        $( function() {
-          $( "#tabs" ).tabs();
-        } );
+          $( "#tabs" ).tabs({
+              active: 1
+          });
     });
 })(jQuery);
