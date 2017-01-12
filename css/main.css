@@ -305,6 +305,10 @@ body {
     padding-left: 6px;
     padding-right: 6px;
 }
+.content__button:focus,
+.content__button:active {
+    outline: inherit;
+}
 .content__title-2 {
     display: none;
     margin-bottom: 45px;
