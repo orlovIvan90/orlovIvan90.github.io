@@ -309,6 +309,10 @@ body {
 .content__button:active {
     outline: inherit;
 }
+.content__input:focus,
+.content__input:active {
+    outline: inherit;
+}
 .content__title-2 {
     display: none;
     margin-bottom: 45px;
