@@ -41,7 +41,8 @@
                 $("#social").css("display", "block");
                 
                 isShown = true;
-
+                
+              return false; // Will stop the submission of the form
             }
         });
     });
