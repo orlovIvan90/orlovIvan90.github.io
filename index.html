@@ -24,16 +24,16 @@
    
     <div class="cover">
         <div class="videoContainer">
-            <video src="video/video.mp4" id="video" class="video" type="video/mp4" loop preload="auto" ></video>
+            <video src="video/video.mp4" id="video" class="video" type="video/mp4" autoplay loop muted preload="auto" ></video>
             <div class="filter"></div>
         </div>
         <div class="content__top">
-            <a href="#" class="content__logo"></a>
+            <a id="content__logo" href="#" class="content__logo"></a>
             <a href="https://www.facebook.com/AFTru" class="social-link--top" target="_blank"></a>
         </div>
         <div class="content">
             <div class="content__main">
-                <h1 id="content__title-1" class="content__title">Brand Recommend.<br> Мы создаем лучшие рекомендательные сообщества<br> с 2007 года и скоро расскажем как.*</h1>
+                <h1 id="content__title-1" class="content__title">Brand Recommend.<br> Мы создаем лучшие рекомендательные сообщества<br> с 2007 года<span class="content__star">*</span>. И скоро расскажем как.</h1>
                 <h1 id="content__title-2" class="content__title content__title-2">Е-мейл принят. Добро пожаловать на борт!</h1>
                 <p id="content__caption-1" class="content__caption">Хочешь узнать о запуске первым? Добавь сюда свой е-мейл и мы непременно отправим приглашение.</p>
                 <p id="content__caption-2" class="content__caption content__caption-2">Поделиться новостью в социальных сетях:</p>
@@ -42,22 +42,22 @@
                 <div id="social" class="social">
                     <ul class="social-list">
                        <li class="social-item">
-                       <a class="facebook social-link social-link-fb" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')" href="http://www.facebook.com/sharer/sharer.php?u=http://brcmnd.ru/&title=BRCMND&description=Компания AFT Digital, разработчик технологии BrandRecommend — устойчивый лидер в области обучения крупных компаний. Узнай о запуске первым!&picture=http://brcmnd.ru/img/logo.png">Facebook</a></li>
-                        <li class="social-item"><script type="text/javascript">document.write(VK.Share.button({url: 'http://brcmnd.ru/', title: 'BRCMND', image:"http://brcmnd.ru/img/logo.png", description: 'Компания AFT Digital, разработчик технологии BrandRecommend — устойчивый лидер в области обучения крупных компаний. Узнай о запуске первым!'}, {type: 'custom', text: '<div class="social-link social-link-vk"></div>'}));</script></li>
+                       <a class="facebook social-link social-link-fb" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')" href="http://www.facebook.com/sharer/sharer.php?u=http://brcmnd.ru/&title=BRCMND&description=Компания AFT Digital, разработчик технологии BrandRecommend — устойчивый лидер в области обучения крупных компаний. Узнай о запуске первым!&picture=http://brcmnd.ru/img/logo-blue.png">Facebook</a></li>
+                        <li class="social-item"><script type="text/javascript">document.write(VK.Share.button({url: 'http://brcmnd.ru/', title: 'BRCMND', image:"http://brcmnd.ru/img/logo-blue.png", description: 'Компания AFT Digital, разработчик технологии BrandRecommend — устойчивый лидер в области обучения крупных компаний. Узнай о запуске первым!'}, {type: 'custom', text: '<div class="social-link social-link-vk"></div>'}));</script></li>
                         <li class="social-item"><a href="https://twitter.com/share?url=http://brcmnd.ru/&text=AFT Digital, разработчик BrandRecommend — лидер в области обучения крупных компаний. Узнай о запуске первым!" class="social-link social-link-tw" target="_blank"></a></li>
                         
                     </ul>
                 </div>
-                <form id="content__form" action="" name="mail">
-                    <input class="content__input" type="text" placeholder="Отлично, вот мой е-мейл">
-                    
+                <form id="content__form" action="" name="mail" class="content__form">
+                    <input class="content__input" type="text" placeholder="Отлично, вот мой е-мейл" data-validation="email" data-validation-error-msg="(ошибка) Таких не берут в космонавты :( Введи свой е-мейл еще разок." data-validation-error-msg-container="#data-email-error-dialog">
+                    <div id="data-email-error-dialog" class="data-email-error-dialog"><div class="data-email-decor"></div></div>
                     <button id="content__button" class="content__button">Пуск!</button>
                 </form>
             </div>
             
             <div class="footer">
             <div id="footer__caption" class="footer__caption">*Компания AFT Digital, разработчик технологии BrandRecommend — устойчивый лидер в области обучения<br> крупных компаний (1 место по данным ежегодного рейтинга «Рейтинг Рунета 2016, 2015 и 2014»)</div>
-            <div class="footer__project">Проект компании <a href="http://www.aft.ru/" class="footer__link">AFT DIGITAL</a></div>
+            <div class="footer__project">Проект компании <a href="http://www.aft.ru/" class="footer__link" target="_blank">AFT DIGITAL</a></div>
             <div class="footer__mail"><a href="mailto:hello@brcmnd.ru" class="footer__mail-link">hello@brcmnd.ru</a></div>
             <div class="footer__phone"><a href="tel:+74956468005" class="footer__phone-link">+7 (495) 646-80-05</a></div>
         </div>
@@ -65,6 +65,7 @@
         
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.form-validator.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>    

@@ -41,7 +41,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a:active,
+a:focus {
+    outline: inherit;
+}
 body {
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
@@ -230,7 +233,7 @@ body {
     height: 50px;
     background: none;
     border: 0px;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff !important;
     padding-left: 30px;
     padding-right: 30px;
     width: 595px;
@@ -322,6 +325,10 @@ body {
     display: none;
     margin-bottom: 28px;
 }
+.content__star {
+    font-size: 30px;
+    vertical-align: middle;
+}
 .social {
     display: none;
     text-align: center;
@@ -363,4 +370,33 @@ body {
 .social-link-tw {
     background-image: url("../img/tw-full.png");
     background-repeat: no-repeat;
+}
+.content__form {
+    position: relative;
+}
+.has-error {
+    position: absolute;
+    background-color: #ffffff;
+    color: firebrick;
+    padding: 10px 20px;
+    left: 0px;
+    right: 0px;
+    bottom: -90px;
+    margin: auto;
+    display: inline-block;
+    width: 350px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.has-error .data-email-decor {
+    width: 0px;
+    height: 0px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid #ffffff;
+    top: -15px;
+    left:0px;
+    right: 0px;
+    margin: auto;
+    position: absolute;
 }
