@@ -1,29 +1,29 @@
 
-function send_mail(email){ 
-    if(email){ 
-          $.ajax({
-            url: '/mail/send_mail_presentation.php',
-            type: "POST",
-            data: 'USER_EMAIL='+email,
-            dataType : 'html',
-            success: function(html){  
-                
-              } 
-          });  
-    }
-}
-function send_feedback(params){  
-    if(params){ 
-          $.ajax({
-            url: '/mail/send_feedback.php',
-            type: "POST",
-            data: params,
-            dataType : 'html',
-            success: function(html){  
-              } 
-          });  
-    }
-}
+//function send_mail(email){ 
+//    if(email){ 
+//          $.ajax({
+//            url: '/mail/send_mail_presentation.php',
+//            type: "POST",
+//            data: 'USER_EMAIL='+email,
+//            dataType : 'html',
+//            success: function(html){  
+//                
+//              } 
+//          });  
+//    }
+//}
+//function send_feedback(params){  
+//    if(params){ 
+//          $.ajax({
+//            url: '/mail/send_feedback.php',
+//            type: "POST",
+//            data: params,
+//            dataType : 'html',
+//            success: function(html){  
+//              } 
+//          });  
+//    }
+//}
 
 (function($) {
     $(document).ready(function() {
@@ -73,23 +73,59 @@ function send_feedback(params){
             
             var bannerNailText = TweenMax.to("#banner__nail-text", 1, { bottom: "45%", ease: Linear.easeNone});
 
-            var scene1 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#banner__nail-trigger", duration: "60%"}).setTween(bannerNailText).addTo(controller);
+            var scene2 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#banner__nail-trigger", duration: "60%"}).setTween(bannerNailText).addTo(controller);
 
 
-//            var do__text1 = TweenMax.to("#do__text1", 1, { opacity: 1, y: "-100", ease: Linear.easeNone});
-//
-//            var scene2 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#do__text1-trigger", duration: "40%"}).setTween(do__text1).addTo(controller);
-//
-//
-//
-//            var do__green2 = TweenMax.to("#do__green2", 1, { opacity: 1, y: "-100", ease: Linear.easeNone});
-//
-//            var scene3 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#do__green2-trigger", duration: "30%"}).setTween(do__green2).addTo(controller);
-//
-//
-//            var do__text2 = TweenMax.to("#do__text2", 1, { opacity: 1, y: "-100", ease: Linear.easeNone});
-//
-//            var scene4 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#do__text2-trigger", duration: "40%"}).setTween(do__text2).addTo(controller);
+            var socialText = TweenMax.to("#social__caption", 1, { opacity: 0, ease: Linear.easeNone});
+
+            var scene3 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#social__trigger", duration: "30%"}).setTween(socialText).addTo(controller);
+
+
+
+            var socialInst = TweenMax.to("#social__inst", 1, { opacity: 0, ease: Linear.easeNone});
+
+            var scene3 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#social__trigger", duration: "30%"}).setTween(socialInst).addTo(controller);
+            
+            
+            var socialVk = TweenMax.to("#social__vk", 1, { opacity: 0, x: "-70", ease: Linear.easeNone});
+
+            var scene4 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#social__trigger", duration: "30%"}).setTween(socialVk).addTo(controller);
+            
+            
+            var socialTw = TweenMax.to("#social__tw", 1, { opacity: 0, x: "70", ease: Linear.easeNone});
+
+            var scene5 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#social__trigger", duration: "30%"}).setTween(socialTw).addTo(controller);
+
+
+            var masterImg1 = TweenMax.to("#master__img-wrap-1", 1, { opacity: 1, top: "-400px", ease: Linear.easeNone});
+
+            var scene6 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#master__animation-trigger", duration: "130%"}).setTween(masterImg1).addTo(controller);
+            
+            
+            var masterImg2 = TweenMax.to("#master__img-wrap-2", 1, { opacity: 1, top: "100px", ease: Linear.easeNone});
+
+            var scene7 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#master__animation-trigger", duration: "130%"}).setTween(masterImg2).addTo(controller);
+            
+            var masterPink1 = TweenMax.to("#master__img-wrap-4", 1, { opacity: 1, top: "430px", ease: Linear.easeNone});
+
+            var scene8 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#master__animation-trigger", duration: "60%"}).setTween(masterPink1).addTo(controller);
+            
+
+            
+            
+            var masterPink2 = TweenMax.to("#master__img-wrap-5", 1, {rotation: 45, repeat: 2, yoyo: true, ease: Linear.easeNone});
+            
+            var scene9 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#master__animation-brush-trigger", duration: "120%"}).setTween(masterPink2).addTo(controller);
+            
+            var masterPink22 = TweenMax.to("#master__img-wrap-5", 1, {right: "800px", ease: Linear.easeNone});
+            
+            var scene10 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#master__animation-brush-trigger", duration: "120%"}).setTween(masterPink22).addTo(controller);
+            
+            
+            
+            var masterPink3 = TweenMax.to("#master__img-wrap-6", 1, { opacity: 1, top: "50px", ease: Linear.easeNone});
+
+            var scene8 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#master__animation-trigger", duration: "100%"}).setTween(masterPink3).addTo(controller);
 //
 //
 //
@@ -212,12 +248,14 @@ function send_feedback(params){
             };
             
         });
-//        
-//        
-//        /* nav scrolly */
-//        $('.scrolly').scrolly({
-//				speed: 2000
-//			});
+        
+        
+        /* nav scrolly */
+        $('.scrolly').scrolly({
+			speed: 2000
+		});
+        
+        
 //        
 //        /* content__form validate */
 //        var errorMesIsShown = false,
