@@ -225,7 +225,21 @@
     left: -50px;
     top: 150px;
 }
-
+/* tubes */
+.tubes {
+    height: 48px;
+    position: absolute;
+    top: -48px;
+    left: 0px;
+    right: 0px;
+    background: url("../img/green__tube.png"), url("../img/blue__tube.png"), url("../img/yellow__tube.png"), url("../img/red__tube.png");
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    background-position: 0px 0px, 48px 0px, 96px 0px, 144px 0px;
+}
+.tubes__trigger {
+    position: absolute;
+    top: 50%;
+}
 /* banner2 */
 .banner2 {
     height: 515px;
@@ -234,6 +248,40 @@
 .banner2 .bcg {
     background-image:url('../img/banner2.jpg');
 }
+.ad {
+    position: absolute;
+    left: 42%;
+    top: 40%;
+    font-size: 100px;
+    line-height: 100px;
+    color: #ffffff;
+}
+.ad--big {
+    position: absolute;
+    left: 60%;
+    top: -80px;
+    width: 500px;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 52px;
+}
+.ad--big__trigger {
+    position: absolute;
+    top:0px;
+}
+.scissors {
+    position: absolute;
+    left: 10%;
+    bottom: -150px;
+    width: 256px;
+    height: 256px;
+    background-image: url("../img/scissors-blue.png");
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+/* banner3 */
 @media screen and (max-width: 1400px) {
     .banner__nail-wrap {
         width: 250px;
