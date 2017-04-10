@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,6 +6,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -19,6 +20,14 @@
     </div>
     
     <div id="music-wrap" class="music-wrap">
+        
+    </div>
+    
+    <div id="timer-wrap" class="timer-wrap">
+        
+    </div>
+    
+    <div id="mount-point">
         
     </div>
     
@@ -199,6 +208,44 @@
             <Music />,
             document.getElementById("music-wrap")
         );
+
+/* Timer */
+
+        var Timer = React.createClass({
+            getInitialState: function() {
+                return {
+                    seconds: 0    
+                };   
+            },
+            
+            componentDidMount: function() {
+                this.timer = setInterval(this.tick, 1000);    
+            },
+            
+            componentWillUnmount: function() {
+                clearInterval(this.timer);    
+            },
+            
+            tick: function() {
+                this.setState({ seconds: this.state.seconds + 1 });    
+            },
+            
+            render: function() {
+                return (
+                    <h4>  {this.state.seconds} </h4>
+                );
+            }
+        });
+
+        ReactDOM.render(
+            <Timer />,
+            document.getElementById("timer-wrap")
+        );
+
+/* Notes App */
+        
     </script>
+    
+    <script type="text/babel" src="notes.js"></script>
 </body>
 </html>
