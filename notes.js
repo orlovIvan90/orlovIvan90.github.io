@@ -16,7 +16,8 @@ var Note = React.createClass({
 var NoteEditor = React.createClass({
     getInitialState: function() {
         return {
-            text: ''    
+            text: '',
+            color: 'yellow'
         };    
     },
     
@@ -24,10 +25,14 @@ var NoteEditor = React.createClass({
         this.setState({ text: event.target.value });    
     },
     
+    handleNoteColor: function(event) {
+        this.setState({ color: event.target.value });
+    },
+    
     handleNoteAdd: function() {
         var newNote = {
             text: this.state.text,
-            color: 'yellow',
+            color: this.state.color,
             id: Date.now()
         };
         
@@ -46,6 +51,7 @@ var NoteEditor = React.createClass({
                     onChange={this.handleTextChange}
                 />
                 <button className="add-button" onClick={this.handleNoteAdd}> Add </button>
+                <input type="color" className="chooseColor" onChange={this.handleNoteColor}/>
             </div>
         );
     }

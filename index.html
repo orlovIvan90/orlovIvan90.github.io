@@ -214,7 +214,15 @@
         var Timer = React.createClass({
             getInitialState: function() {
                 return {
-                    seconds: 0    
+                    seconds: 0,
+                    isPaused: false,
+                    stateInner: function() {
+                        if (!this.isPaused) {
+                            return "Пауза";
+                        } else {
+                            return "Старт";
+                        }
+                    }
                 };   
             },
             
@@ -230,9 +238,31 @@
                 this.setState({ seconds: this.state.seconds + 1 });    
             },
             
+            handleClick: function() {                
+                if (!this.state.isPaused) {
+//                    this.pausedSeconds = this.state.seconds;
+                    clearInterval(this.timer);
+                    this.state.isPaused = true;
+                    this.setState(); 
+                } else {
+                    this.timer = setInterval(this.tick, 1000); 
+                    this.state.isPaused = false;
+                    this.setState(); 
+                }
+            },
+            
+            handleDrop: function() {
+                this.setState({ seconds: 0 });          
+            },
+            
             render: function() {
                 return (
-                    <h4>  {this.state.seconds} </h4>
+                    <div className="timer-inner">
+                        <h4> Секунд прошло {this.state.seconds} </h4>
+                        <div className="timer-state" onClick={this.handleClick}>{this.state.stateInner()}
+                        </div>
+                        <div className="timer-reload" onClick={this.handleDrop}>Сбросить</div>
+                    </div>
                 );
             }
         });
