@@ -1,281 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>ReactJS</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ONEFIt</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css?1703302340">
 </head>
-<body>
+<body class="body">
 
-    <div id="content">
-        
-    </div>
-    
-    <div id="carousel-wrap">
-        
-    </div>
-    
-    <div id="music-wrap" class="music-wrap">
-        
-    </div>
-    
-    <div id="timer-wrap" class="timer-wrap">
-        
-    </div>
-    
-    <div id="mount-point">
-        
-    </div>
-    
-    <script type="text/babel">
-        var CONTACTS = [
-            {
-                id: 1,
-                name: 'Darth Vader',
-                phoneNumber: '+250966666666',
-                image: 'img/darth.gif'
-            }, {
-                id: 2,
-                name: 'Princess Leia',
-                phoneNumber: '+250966344466',
-                image: 'img/leia.gif'
-            }, {
-                id: 3,
-                name: 'Luke Skywalker',
-                phoneNumber: '+250976654433',
-                image: 'img/luke.gif'
-            }, {
-                id: 4,
-                name: 'Chewbacca',
-                phoneNumber: '+250456784935',
-                image: 'img/chewbacca.gif'
-            }
-        ];
-        
-        var Contact = React.createClass({
-            render: function() {
-                return (
-                       <li className="contact">
-                           <img className="contact-image" src={this.props.image} width="60px" height="60px" />
-                           <div className="contact-info">
-                               <div className="contact-name">{this.props.name}</div>
-                               <div className="contact-number">{this.props.phoneNumber}</div>
-                           </div>
-                       </li>
-                );
-            }
-        });
-        
-        var ContactsList = React.createClass({
-            getInitialState: function() {
-                return {
-                    displayedContacts: CONTACTS
-                };    
-            },
-            
-            handleSearch: function(event) {
-                var searchQuery = event.target.value.toLowerCase(); //берем значение из инпута и приводим к нижнему регистру
-                var displayedContacts = CONTACTS.filter(function(el) { //создаем новый массив контактов, который отображается, для этого на списке контактов используем метод filter, который возвращает новый массив только тех элементов, для которых эта функция вернула true
-                    var searchValue = el.name.toLowerCase();
-                    return searchValue.indexOf(searchQuery) !== -1;
-                })
-                
-                this.setState({
-                    displayedContacts: displayedContacts    
-                }); 
-            },
-            
-            render: function() {
-                return (
-                    <div className="contacts">
-                        <input type="text" className="search-field" onChange={this.handleSearch}/>
-                        <ul className="contacts-list">
-                            {
-                                this.state.displayedContacts.map(function(el) {
-                                    return <Contact key={el.id}
-                                                    name={el.name}
-                                                    phoneNumber={el.phoneNumber}
-                                                    image={el.image}
-                                            />;
-                                })
-                            }
-                        </ul>
-                    </div>
-                );
-            }    
-        });
-        
-/* Carousel */
-        var IMAGES = [
-            {
-                id: 1,
-                img: 'img/car1.jpg'
-            },
-            {
-                id: 2,
-                img: 'img/car2.jpg'
-            },
-            {
-                id: 3,
-                img: 'img/car3.jpg'
-            }
-        ];
-        
 
-        var Carousel = React.createClass({
-            curElem: false,
-            
-            handleLeft: function() {
-                var carouselInner = document.querySelector('.carousel__inner');
-                
-                var firstChild = carouselInner.removeChild(carouselInner.firstChild);
-                
-                carouselInner.appendChild(firstChild);
-            },
-            
-            handleRight: function() {
-                var carouselInner = document.querySelector('.carousel__inner');
-                
-                var lastChild = carouselInner.removeChild(carouselInner.lastChild);
-                
-                carouselInner.insertBefore(lastChild, carouselInner.firstChild);
-            },
-            
-            render: function() {
-                return (
-                    <div className="carousel">
-                        <div className="carousel__left" onClick={this.handleLeft}></div>
-                        <div className="carousel__right" onClick={this.handleRight}></div>
-                        <div className="carousel__inner">
+    <div class="body__wrap">
+        <form method="post" name="form" action="" class="form">
+           
+           
+           
+            <div class="body__top">
+                <div class="order">
+                    <div class="order__top">
+                        <h2 class="body__title body__title--order">Ваш заказ</h2>
                         
-                            {
-                                IMAGES.map(function(el) {
-                                    return <div key={el.id} className="carousel__item"><img className="carousel__img" src={el.img} alt=""/></div>;
-                                })
-                            }
-
+                        <a href="#" class="order__add-button">Добавить тариф</a>    
+                    </div>
+                    
+                    <div class="order__tariffs">
+                        <div class="order__tariff">
+                           
+                            <div class="order__tariff-section order__tariff-section--select">
+                                <select name="" id="" class="order__select order__select--tariff">
+                                     <option>Тариф "Серебро"</option>
+                                     <option>Тариф "Золото"</option>
+                                </select>
+                            </div>
+                            
+                            <div class="order__tariff-section order__tariff-section--amount">
+                                <label for="order__amount-input" class="order__caption">Кол-во:</label>
+                                
+                                <div class="order__btn-group">
+                                    <a href="" class="order__btn-group-left">-</a>
+                                    <input id="order__amount-input" type="text" class="order__amount-input">
+                                    <a href="" class="order__btn-group-right">+</a>
+                                </div>
+                                
+                                <select name="" id="" class="order__select order__select--amount">
+                                     <option>На 1 месяц</option>
+                                     <option>На 2 месяца</option>
+                                </select>
+                            </div>
+                            
+                            <div class="order__tariff-section order__tariff-section--value">
+                                <div class="order__caption order__value">Стоимость: <span class="order__value-sum">3800 руб.</span></div>
+                            </div>
+                            
+                            <div class="order__tariff-section order__tariff-section--discount">
+                                <div class="order__caption order__value">Со скидкой: <span class="order__discount-sum">3200 руб.</span></div>    
+                            </div>
+                            
                         </div>
                     </div>
-                );
-            }
-        });
-        
+                    
+                    <div class="order__total">
+                        <div class="order__total-left">
+                           
+                            <div class="order__promo-wrap">
+                                <a href="#" class="order__promo-button">У меня есть промокод</a>
+                                <input type="text" class="order__promo-input">
+                            </div>
 
-        ReactDOM.render(
-            <Carousel />,
-            document.getElementById("carousel-wrap")
-        );
-
-        ReactDOM.render(
-            <ContactsList />,
-            document.getElementById("content")
-        );
-
-
-/* Music */
-        var Music = React.createClass({
-            isPlay: false,
-            handlePlay: function() {
-                var audio = document.getElementById('audio');
-                var music = document.querySelector('.music');
-                if (!this.isPlay) {
-                    audio.play();
-                    audio.volume = 0.5;
-                    music.classList.add("music__pause");
-                    this.isPlay = true;
-                } else {
-                    audio.pause();
-                    music.classList.remove("music__pause");
-                    this.isPlay = false;
-                }
+                        </div>
+                        
+                        <div class="order__total-right">
+                            <div class="order__total-tariff order__total-wrap">
+                                <span class="order__total-caption">Тарифы</span>
+                                <span class="order__total-old">9 900 руб.</span>
+                                <span class="order__total-money order__total-tariff-money">7 900 руб.</span>
+                            </div>
+                            
+                            <div class="order__total-promo order__total-wrap">
+                                <span class="order__total-caption">Промокод</span>
+                                <span class="order__total-money order__total-promo-money">-225 руб.</span>
+                            </div> 
+                            
+                            <div class="order__total-delivery order__total-wrap">
+                                <span class="order__total-caption">Доставка</span>
+                                <span class="order__total-money order__total-delivery-money">300 руб.</span>
+                                <div class="order__total-decor"></div>
+                            </div>
+                            
+                            <div class="order__total-total order__total-wrap">
+                                <span class="order__total-caption">Итого</span>
+                                <span class="order__total-money order__total-total-money">8 200 руб.</span>
+                            </div>     
+                        </div>
+                    </div>
+                    
+                    
+                </div>    
+            </div>
+            
+            
+            
+            <div id="button-step-1" class="body__bottom">
+                <div class="body__left-column">
+                    <a href="#" class="next-button next-button--order">Оформить заказ</a>
+                    <p class="next-button__caption">Примерно 2 минуты</p>
+                </div>
                 
-            },
-            render: function() {
-                return (
-                    <div className="music" onClick={this.handlePlay}>
-                        <audio id="audio" src="sound/watchtower.mp3" autoplay>
-                        </audio>
-                    </div>
-                );
-            }    
-        });
-
-        ReactDOM.render(
-            <Music />,
-            document.getElementById("music-wrap")
-        );
-
-/* Timer */
-
-        var Timer = React.createClass({
-            getInitialState: function() {
-                return {
-                    seconds: 0,
-                    isPaused: false,
-                    stateInner: function() {
-                        if (!this.isPaused) {
-                            return "Пауза";
-                        } else {
-                            return "Старт";
-                        }
-                    }
-                };   
-            },
-            
-            componentDidMount: function() {
-                this.timer = setInterval(this.tick, 1000);    
-            },
-            
-            componentWillUnmount: function() {
-                clearInterval(this.timer);    
-            },
-            
-            tick: function() {
-                this.setState({ seconds: this.state.seconds + 1 });    
-            },
-            
-            handleClick: function() {                
-                if (!this.state.isPaused) {
-//                    this.pausedSeconds = this.state.seconds;
-                    clearInterval(this.timer);
-                    this.state.isPaused = true;
-                    this.setState(); 
-                } else {
-                    this.timer = setInterval(this.tick, 1000); 
-                    this.state.isPaused = false;
-                    this.setState(); 
-                }
-            },
-            
-            handleDrop: function() {
-                this.setState({ seconds: 0 });          
-            },
-            
-            render: function() {
-                return (
-                    <div className="timer-inner">
-                        <h4> Секунд прошло {this.state.seconds} </h4>
-                        <div className="timer-state" onClick={this.handleClick}>{this.state.stateInner()}
+                <div id="step2-make-order" class="body__bottom-section">
+                    <div class="body__left-column">
+                    
+                    <div class="make-order">
+                       
+                        <h2 class="body__title body__title--order">Оформление заказа</h2> 
+                        
+                        <h3 class="small-title small-title--make-order">Введите контактные данные</h3>
+                        
+                        <p class="make-order__caption">* Поля обязательные для заполнения</p>
+                        
+                        <div class="input__wrap">
+                            <input type="text" class="input" name="input-name" placeholder="* Ваше имя">
+                            <div class="input__error">Вы не указали имя</div>    
                         </div>
-                        <div className="timer-reload" onClick={this.handleDrop}>Сбросить</div>
+                         
+                        <div class="input__wrap">           
+                            <input type="text" class="input" name="input-mail" placeholder="* Электронная почта">
+                            <div class="input__error">Электронная почта</div>
+                        </div>
+                        
+                        <div class="input__wrap">                        
+                            <input type="text" class="input" name="input-phone" placeholder="* Телефон">
+                            <div class="input__error">Телефон</div>
+                        </div>            
                     </div>
-                );
-            }
-        });
+                     
+                    </div>    
+                </div>
+                
+                <div id="step2-address" class="body__bottom-section  body__step-2">
+                    <div class="body__left-column">
+                       
+                        <div class="address">
+                            <h3 class="small-title small-title--address">Адрес доставки</h3>
+                            
+                            <div class="address__free">
+                                <div class="address__free-caption">Бесплатная доставка по Москве от 3 000 рублей.</div>
+                                <div class="address__free-not">Вам не хватает 370 рублей.</div>
+                                <a href="#" class="address__tariff">Добавить тариф</a>
+                            </div>
+                            
+                            <input type="text" class="input" name="input-address" placeholder="Улица, номер дома и квартиры" value="Адрес">
+                            
+                            <textarea name="" id="" name="textarea-comment" cols="30" rows="10" placeholder="Все, что считаете нужным сообщить курьеру" value="Комментарий"></textarea>            
+                        </div>
+                        
+                    </div>  
+                </div>
+                
+                <div id="button-step-2" class="body__left-column">
+                    <a href="#" class="next-button next-button--step2">Выбрать способ оплаты</a>
+                    <p class="next-button__caption">Еще примерно 1 минута</p>
+                </div>
+                
+                <div id="step3-pay" class="body__bottom-section body__step-3">
+                    <div class="body__left-column">
+                       
+                        <div class="pay">
+                            <h3 class="small-title small-title--pay">Выбор способа оплаты</h3>
+                            
+                            <div class="pay__way pay__way--card">
+                                <div class="pay__way-icon pay__way-icon--card"></div>
+                                <p class="pay__way-caption">Банковская карта</p>
+                            </div>
+                            
+                            <div class="pay__way pay__way--cash">
+                                <div class="pay__way-icon pay__way-icon--cash"></div>
+                                <p class="pay__way-caption">Наличными</p>
+                            </div>
+                            
+                            <div class="pay__cards">
+                                <div class="pay__card pay__card--visa"></div>
+                                <div class="pay__card pay__card--master"></div>
+                                <div class="pay__card pay__card--maestro"></div>
+                            </div>        
+                        </div>
+                           
+                    </div>    
+                </div>
+                
+                <div id="step3-order" class="body__bottom-section body__step-3">
+                    <div class="body__left-column">
+                       
+                        <div class="your-order">
+                            <h3 class="small-title small-title--pay">Ваш заказ</h3>
+                            
+                            <table class="your-order__table">
+                               <tr class="table__row your-order__tariff">
+                                   <td class="table__td table__td-caption">Тариф "Серебро"</td>
+                                   <td class="table__td table__td-old">2 шт. на 1 мес.</td>
+                                   <td class="table__td table__td-price">3 200 руб.</td>
+                               </tr>
+                               
+                               <tr class="table__row your-order__tariff">
+                                   <td class="table__td table__td-caption">Тариф "Золото"</td>
+                                   <td class="table__td table__td-old">1 шт. на 3 мес.</td>
+                                   <td class="table__td table__td-price">2 900 руб.</td>
+                               </tr>
+                               
+                               <tr class="table__row your-order__discounts">
+                                   <td class="table__td table__td-caption">Скидки</td>
+                                   <td class="table__td table__td-old"></td>
+                                   <td class="table__td table__td-price table__td-price--discounts">- 225 руб.</td>
+                               </tr> 
+                               
+                               <tr class="table__row your-order__delivery">
+                                   <td class="table__td table__td-caption">Доставка</td>
+                                   <td class="table__td table__td-old"></td>
+                                   <td class="table__td table__td-price table__td-price--delivery"> 300 руб.</td>
+                               </tr>    
+                            </table>
+                            
+                            <div class="your-order__total">
+                                <span class="your-order__total-caption">Всего к оплате</span>
+                                <span class="your-order__total-money order__total-total-money">5 050 руб.</span>    
+                            </div>
+                            
+                             <p class="your-order__caption">Нажимая “Продолжить”, Вы принимаете условия оферты и согласны с политикой обработки персональных данных.</p>
+                        </div>   
+                        
+                        <div class="specials">
+                            <div class="specials__item specials__item-guarantee">
+                                <div class="specials__icon"></div>
+                                <h4 class="specials__title">Гарантия возврата денег</h4>
+                                <p class="specials__caption">Если выбранное предложение вам не понравится</p>
+                            </div>
+                            
+                            <div class="specials__item specials__item-safe">
+                                <div class="specials__icon"></div>
+                                <h4 class="specials__title">Безопасная оплата</h4>
+                                <p class="specials__caption">Все ваши данные останутся конфиденциальными</p>
+                            </div>
+                        </div>  
+                        
+                          
+                    </div> 
+                    
+                    <div id="button-step-3" class="body__left-column">
+                        <button href="#" class="next-button next-button--step3">Оплатить</button>
+                    </div> 
+                </div>
+            </div>
+            
+            
+            
+        </form>
+    </div>
 
-        ReactDOM.render(
-            <Timer />,
-            document.getElementById("timer-wrap")
-        );
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/script.js?1703031230"></script>
 
-/* Notes App */
-        
-    </script>
-    
-    <script type="text/babel" src="notes.js"></script>
 </body>
-</html>
+</html>    
