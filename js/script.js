@@ -18,7 +18,7 @@
 			  $("#order__promo-input-button").css("display", "block");
 		  });
 		  
-		  $("#popover").webuiPopover({url:'#popover-1',closeable:true,trigger:'hover',placement="top"});
+//		  $("#popover").webuiPopover({url:'#popover-1', closeable:true, trigger:'hover', placement="top"});
 //		  $("#popover").webuiPopover({title:'Title',content:'Content'});
 //        
 //        $("#avatar__sex").styler();
