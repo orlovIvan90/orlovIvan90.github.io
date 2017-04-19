@@ -113,12 +113,13 @@ body {
 }
 .order__tariff-section--discount {
     width: 19.5%;
+	border-right: 0px;
 }
 .order__tariff-section--trash {
     width: 3.8%;
 	border-right: 0px;
 	position: relative;
-    
+    border-left: 1px solid #ebeff1;
 }
 .order__tariff-section-trash-inner {
 	background-image: url("../img/icon-trash.png");
