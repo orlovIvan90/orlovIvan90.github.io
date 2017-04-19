@@ -11,7 +11,15 @@
 //             $("#work__result").html(filename);
 //        });
         
-//        $('#check1').styler();
+          $('.order__select').styler();
+		  
+		  $("#order__promo-button").on("click", function() {
+			  $(this).css("display", "none");
+			  $("#order__promo-input-button").css("display", "block");
+		  });
+		  
+		  $("#popover").webuiPopover({url:'#popover-1',closeable:true,trigger:'hover',placement="top"});
+//		  $("#popover").webuiPopover({title:'Title',content:'Content'});
 //        
 //        $("#avatar__sex").styler();
 //        

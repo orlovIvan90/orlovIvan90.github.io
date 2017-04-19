@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css?1703302340">
+	<link rel="stylesheet" type="text/css" href="css/jquery.webui-popover.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="body">
 
@@ -21,26 +22,28 @@
                     <div class="order__top">
                         <h2 class="body__title body__title--order">Ваш заказ</h2>
                         
-                        <a href="#" class="order__add-button">Добавить тариф</a>    
+                        <a href="#" class="order__add-button"><span class="order__add-button-plus">+</span> Добавить тариф</a>    
                     </div>
                     
                     <div class="order__tariffs">
                         <div class="order__tariff">
                            
                             <div class="order__tariff-section order__tariff-section--select">
-                                <select name="" id="" class="order__select order__select--tariff">
+                                <select name="" id="order__select-tariff" class="order__select order__select--tariff">
                                      <option>Тариф "Серебро"</option>
                                      <option>Тариф "Золото"</option>
                                 </select>
                             </div>
                             
                             <div class="order__tariff-section order__tariff-section--amount">
-                                <label for="order__amount-input" class="order__caption">Кол-во:</label>
                                 
-                                <div class="order__btn-group">
-                                    <a href="" class="order__btn-group-left">-</a>
+                                
+                                <div id="popover-1" class="order__btn-group">
+                                    <label for="order__amount-input" class="order__label order__caption">Кол-во:</label>
+                                    <a href="" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
                                     <input id="order__amount-input" type="text" class="order__amount-input">
-                                    <a href="" class="order__btn-group-right">+</a>
+                                    <a href="" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
+                                    <div id="popover" class="popover">dsa</div>
                                 </div>
                                 
                                 <select name="" id="" class="order__select order__select--amount">
@@ -50,36 +53,71 @@
                             </div>
                             
                             <div class="order__tariff-section order__tariff-section--value">
-                                <div class="order__caption order__value">Стоимость: <span class="order__value-sum">3800 руб.</span></div>
+                                <div class="order__caption order__value">Стоимость: <span class="order__value-sum">3 800 руб.</span></div>
                             </div>
                             
                             <div class="order__tariff-section order__tariff-section--discount">
-                                <div class="order__caption order__value">Со скидкой: <span class="order__discount-sum">3200 руб.</span></div>    
+                                <div class="order__caption order__value">Со скидкой: <span class="order__discount-sum">3 200 руб.</span></div>    
                             </div>
                             
+                            <a href="#" class="order__tariff-section order__tariff-section--trash">
+                            	<div class="order__tariff-section-trash-inner"></div>
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="order__tariff">
+                           
+                            <div class="order__tariff-section order__tariff-section--select">
+                                <select name="" id="order__select-tariff" class="order__select order__select--tariff">
+                                     <option>Тариф “Серебро”</option>
+                                     <option>Тариф “Золото”</option>
+                                </select>
+                            </div>
+                            
+                            <div class="order__tariff-section order__tariff-section--amount">
+                                
+                                
+                                <div class="order__btn-group">
+                                    <label for="order__amount-input" class="order__label order__caption">Кол-во:</label>
+                                    <a href="" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
+                                    <input id="order__amount-input" type="text" class="order__amount-input">
+                                    <a href="" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
+                                </div>
+                                
+                                <select name="" id="" class="order__select order__select--amount">
+                                     <option>На 1 месяц</option>
+                                     <option>На 2 месяца</option>
+                                </select>
+                            </div>
+                            
+                            <div class="order__tariff-section order__tariff-section--value">
+                                <div class="order__caption order__value">Стоимость: <span class="order__value-sum">3 800 руб.</span></div>
+                            </div>
+                            
+                            <div class="order__tariff-section order__tariff-section--discount">
+                                <div class="order__caption order__value">Со скидкой: <span class="order__discount-sum">3 200 руб.</span></div>    
+                            </div>
+                            
+                            <a href="#" class="order__tariff-section order__tariff-section--trash">
+                            	<div class="order__tariff-section-trash-inner"></div>
+                            </a>
                         </div>
                     </div>
                     
                     <div class="order__total">
-                        <div class="order__total-left">
-                           
-                            <div class="order__promo-wrap">
-                                <a href="#" class="order__promo-button">У меня есть промокод</a>
-                                <input type="text" class="order__promo-input">
-                            </div>
-
-                        </div>
+                        
                         
                         <div class="order__total-right">
                             <div class="order__total-tariff order__total-wrap">
                                 <span class="order__total-caption">Тарифы</span>
-                                <span class="order__total-old">9 900 руб.</span>
                                 <span class="order__total-money order__total-tariff-money">7 900 руб.</span>
+                                <span class="order__total-old">9 900 руб.</span>
                             </div>
                             
                             <div class="order__total-promo order__total-wrap">
                                 <span class="order__total-caption">Промокод</span>
-                                <span class="order__total-money order__total-promo-money">-225 руб.</span>
+                                <span class="order__total-money order__total-promo-money">- 225 руб.</span>
                             </div> 
                             
                             <div class="order__total-delivery order__total-wrap">
@@ -93,6 +131,18 @@
                                 <span class="order__total-money order__total-total-money">8 200 руб.</span>
                             </div>     
                         </div>
+                        
+                        <div class="order__total-left">
+                           
+                            <div class="order__promo-wrap">
+                                <a href="#" id="order__promo-button" class="order__promo-button">У меня есть промокод</a>
+                                <div id="order__promo-input-button" class="order__promo-input-wrap">
+									<input type="text" class="order__promo-input">
+									<div class="order__promo-input-status"></div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     
                     
@@ -103,8 +153,10 @@
             
             <div id="button-step-1" class="body__bottom">
                 <div class="body__left-column">
-                    <a href="#" class="next-button next-button--order">Оформить заказ</a>
-                    <p class="next-button__caption">Примерно 2 минуты</p>
+                    <div class="next-button__wrap next-button__wrap--step1">
+                    	<a href="#" class="next-button next-button--order">Оформить заказ</a>
+                    	<p class="next-button__caption">Примерно 2 минуты</p>	
+                    </div>
                 </div>
                 
                 <div id="step2-make-order" class="body__bottom-section">
@@ -112,11 +164,11 @@
                     
                     <div class="make-order">
                        
-                        <h2 class="body__title body__title--order">Оформление заказа</h2> 
+                        <h2 class="body__title body__title--make-order">Оформление заказа</h2> 
                         
                         <h3 class="small-title small-title--make-order">Введите контактные данные</h3>
                         
-                        <p class="make-order__caption">* Поля обязательные для заполнения</p>
+                        <p class="make-order__caption">* Поля обязательны для заполнения</p>
                         
                         <div class="input__wrap">
                             <input type="text" class="input" name="input-name" placeholder="* Ваше имя">
@@ -125,12 +177,12 @@
                          
                         <div class="input__wrap">           
                             <input type="text" class="input" name="input-mail" placeholder="* Электронная почта">
-                            <div class="input__error">Электронная почта</div>
+                            <div class="input__error">Вы не указали электронную почту</div>
                         </div>
                         
-                        <div class="input__wrap">                        
+                        <div class="input__wrap input__wrap--error">                        
                             <input type="text" class="input" name="input-phone" placeholder="* Телефон">
-                            <div class="input__error">Телефон</div>
+                            <div class="input__error">Вы не указали телефон</div>
                         </div>            
                     </div>
                      
@@ -145,37 +197,43 @@
                             
                             <div class="address__free">
                                 <div class="address__free-caption">Бесплатная доставка по Москве от 3 000 рублей.</div>
-                                <div class="address__free-not">Вам не хватает 370 рублей.</div>
+                                <div class="address__free-not">Вам не хватает 370 рублей</div>
                                 <a href="#" class="address__tariff">Добавить тариф</a>
                             </div>
                             
-                            <input type="text" class="input" name="input-address" placeholder="Улица, номер дома и квартиры" value="Адрес">
+                            <input type="text" class="input" name="input-address" placeholder="Адрес">
                             
-                            <textarea name="" id="" name="textarea-comment" cols="30" rows="10" placeholder="Все, что считаете нужным сообщить курьеру" value="Комментарий"></textarea>            
+                            <textarea name="" id="" name="textarea-comment" cols="30" rows="10" placeholder="Комментарий" class="input textarea"></textarea>            
                         </div>
                         
-                    </div>  
+                    </div> 
+                    
+                    <div id="button-step-2" class="body__left-column">
+                    	<div class="next-button__wrap next-button__wrap--step2">
+							<a href="#" class="next-button next-button--step2">Выбрать способ оплаты</a>
+							<p class="next-button__caption">Еще примерно 1 минута</p>
+               			</div>
+                	</div> 
                 </div>
                 
-                <div id="button-step-2" class="body__left-column">
-                    <a href="#" class="next-button next-button--step2">Выбрать способ оплаты</a>
-                    <p class="next-button__caption">Еще примерно 1 минута</p>
-                </div>
                 
-                <div id="step3-pay" class="body__bottom-section body__step-3">
+                
+                <div id="step3-pay" class="body__bottom-section body__bottom-section--pay body__step-3">
                     <div class="body__left-column">
                        
                         <div class="pay">
                             <h3 class="small-title small-title--pay">Выбор способа оплаты</h3>
                             
-                            <div class="pay__way pay__way--card">
-                                <div class="pay__way-icon pay__way-icon--card"></div>
-                                <p class="pay__way-caption">Банковская карта</p>
-                            </div>
-                            
-                            <div class="pay__way pay__way--cash">
-                                <div class="pay__way-icon pay__way-icon--cash"></div>
-                                <p class="pay__way-caption">Наличными</p>
+                            <div class="pay__ways-wrap clearfix">
+								<div class="pay__way pay__way--card pay__way--active">
+									<div class="pay__way-icon pay__way-icon--card"></div>
+									<p class="pay__way-caption">Банковская карта</p>
+								</div>
+
+								<div class="pay__way pay__way--cash">
+									<div class="pay__way-icon pay__way-icon--cash"></div>
+									<p class="pay__way-caption">Наличными</p>
+								</div>
                             </div>
                             
                             <div class="pay__cards">
@@ -194,53 +252,59 @@
                         <div class="your-order">
                             <h3 class="small-title small-title--pay">Ваш заказ</h3>
                             
-                            <table class="your-order__table">
-                               <tr class="table__row your-order__tariff">
-                                   <td class="table__td table__td-caption">Тариф "Серебро"</td>
-                                   <td class="table__td table__td-old">2 шт. на 1 мес.</td>
-                                   <td class="table__td table__td-price">3 200 руб.</td>
-                               </tr>
-                               
-                               <tr class="table__row your-order__tariff">
-                                   <td class="table__td table__td-caption">Тариф "Золото"</td>
-                                   <td class="table__td table__td-old">1 шт. на 3 мес.</td>
-                                   <td class="table__td table__td-price">2 900 руб.</td>
-                               </tr>
-                               
-                               <tr class="table__row your-order__discounts">
-                                   <td class="table__td table__td-caption">Скидки</td>
-                                   <td class="table__td table__td-old"></td>
-                                   <td class="table__td table__td-price table__td-price--discounts">- 225 руб.</td>
-                               </tr> 
-                               
-                               <tr class="table__row your-order__delivery">
-                                   <td class="table__td table__td-caption">Доставка</td>
-                                   <td class="table__td table__td-old"></td>
-                                   <td class="table__td table__td-price table__td-price--delivery"> 300 руб.</td>
-                               </tr>    
-                            </table>
-                            
-                            <div class="your-order__total">
-                                <span class="your-order__total-caption">Всего к оплате</span>
-                                <span class="your-order__total-money order__total-total-money">5 050 руб.</span>    
+                            <div class="your-order__table-wrap">
+                            	<table class="your-order__table">
+								   <tr class="table__row your-order__tariff">
+									   <td class="table__td table__td-caption">Тариф “Серебро”</td>
+									   <td class="table__td table__td-old">2 шт. на 1 мес.</td>
+									   <td class="table__td table__td-price">3 200 руб.</td>
+								   </tr>
+
+								   <tr class="table__row your-order__tariff">
+									   <td class="table__td table__td-caption">Тариф “Золото”</td>
+									   <td class="table__td table__td-old">1 шт. на 3 мес.</td>
+									   <td class="table__td table__td-price">2 900 руб.</td>
+								   </tr>
+
+								   <tr class="table__row your-order__discounts">
+									   <td class="table__td table__td-caption">Скидки</td>
+									   <td class="table__td table__td-old"></td>
+									   <td class="table__td table__td-price table__td-price--discounts">- 225 руб.</td>
+								   </tr> 
+
+								   <tr class="table__row your-order__delivery">
+									   <td class="table__td table__td-caption">Доставка</td>
+									   <td class="table__td table__td-old"></td>
+									   <td class="table__td table__td-price table__td-price--delivery"> 300 руб.</td>
+								   </tr>    
+								</table>	
                             </div>
                             
-                             <p class="your-order__caption">Нажимая “Продолжить”, Вы принимаете условия оферты и согласны с политикой обработки персональных данных.</p>
+                            
+                            <div class="your-order__total clearfix">
+                                <span class="your-order__total-caption">Всего к оплате</span>
+                                <span class="your-order__total-money order__total-total-money">5 050 руб.</span>
+                                <div class="your-order__total-total"></div>    
+                            </div>
+                            
+                             <p class="your-order__caption">Нажимая “Продолжить”, Вы принимаете <a href="" class="your-order__link">условия оферты</a> и согласны с <a href="" class="your-order__link">политикой обработки</a> персональных данных.</p>
+                             
+                             <div class="specials">
+								<div class="specials__item specials__item-guarantee">
+									<div class="specials__icon specials__icon--guarantee"></div>
+									<h4 class="specials__title">Гарантия возврата денег</h4>
+									<p class="specials__caption">Если выбранное предложение вам не понравится</p>
+								</div>
+
+								<div class="specials__item specials__item-safe">
+									<div class="specials__icon specials__icon--safe"></div>
+									<h4 class="specials__title">Безопасная оплата</h4>
+									<p class="specials__caption">Все ваши данные останутся конфиденциальными</p>
+								</div>
+							</div>  
                         </div>   
                         
-                        <div class="specials">
-                            <div class="specials__item specials__item-guarantee">
-                                <div class="specials__icon"></div>
-                                <h4 class="specials__title">Гарантия возврата денег</h4>
-                                <p class="specials__caption">Если выбранное предложение вам не понравится</p>
-                            </div>
-                            
-                            <div class="specials__item specials__item-safe">
-                                <div class="specials__icon"></div>
-                                <h4 class="specials__title">Безопасная оплата</h4>
-                                <p class="specials__caption">Все ваши данные останутся конфиденциальными</p>
-                            </div>
-                        </div>  
+                        
                         
                           
                     </div> 
@@ -258,6 +322,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.webui-popover.min.js"></script>
     <script src="js/script.js?1703031230"></script>
 
 </body>
