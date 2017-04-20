@@ -123,7 +123,8 @@ body {
     border-left: 1px solid #ebeff1;
 }
 .order__tariff-section-trash-inner {
-	background-image: url("../img/icon-trash.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -247px -99px;
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 14px;
@@ -166,7 +167,8 @@ body {
     width: 14px;
     height: 8px;
     border: 0px;
-    background-image: url("../img/icon-arrow-down-bl.png");
+    background-image: url("../img/spritesheet.png");
+	background-position: -29px -5px;
     background-repeat: no-repeat;
     right: 9px;
     top: 15px;
@@ -181,7 +183,8 @@ body {
 .jq-selectbox.focused .jq-selectbox__trigger-arrow,
 .jq-selectbox__select:active .jq-selectbox__trigger-arrow,
 .opened .jq-selectbox__trigger-arrow {
-    background-image: url("../img/icon-arrow-up-b.png") !important;
+    background-image: url("../img/spritesheet.png") !important;
+	background-position: -53px -5px !important;
 }
 .jq-selectbox__dropdown {
     border: 1px solid #d5e6ed;
@@ -290,8 +293,10 @@ body {
 }
 .order__select--amount .jq-selectbox__trigger-arrow {
     right: 14px;    
-    background-image: url("../img/icon-arrow-down-b.png");
+    background-image: url("../img/spritesheet.png");
+	background-position: -5px -5px;
 }
+
 .order__tariff-section--value,
 .order__tariff-section--discount {
 	text-align: center;
@@ -308,7 +313,8 @@ body {
 	margin-left: 7px;
 }
 .order__btn-group-left-inner {
-	background-image: url("../img/icon-minus-b.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -177px -75px;
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 12px;
@@ -317,7 +323,8 @@ body {
 	top: 18px;
 }
 .order__btn-group-right-inner {
-	background-image: url("../img/icon-plus-b.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -226px -75px;
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 14px;
@@ -398,7 +405,8 @@ body {
 	position: relative;
 }
 .order__total-decor {
-	background-image: url("../img/icon-q.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -177px -99px;
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 16px;
@@ -425,7 +433,8 @@ body {
 	position: relative;
 }
 .order__promo-input-status {
-	background-image: url("../img/icon-ok-b.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -201px -75px;
 	background-repeat: no-repeat;
 	position: absolute;
 	right: 20px;
@@ -477,7 +486,7 @@ body {
 	margin-bottom: 25px;
 }
 .next-button:hover {
-	background-color: #ffffff;
+	background: none;
 	color: #02aaec;
 }
 .next-button__caption {
@@ -493,7 +502,8 @@ body {
 	content: "";
 	width: 16px;
 	height: 16px;
-	background-image: url("../img/icon-clock.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -151px -75px;
 	background-repeat: no-repeat;
 	left: 1px;
 	top: -1px;
@@ -501,11 +511,7 @@ body {
 .next-button__wrap {
 	text-align: center;
 }
-/*
-.next-button__wrap--step1 {
-	margin-bottom: 100px;
-}
-*/
+
 /* make-order */
 .body__title--make-order {
 	margin-bottom: 38px;
@@ -720,28 +726,32 @@ body {
 	width: 40px;
 	height: 40px;
 	top: 28px;
-	background-image: url("../img/icon-card-gr.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -5px -75px;
 	z-index: 2;
 }
 .pay__way-icon--card-blue {
 	width: 40px;
 	height: 40px;
 	top: 28px;
-	background-image: url("../img/icon-card-bl.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -77px -5px;
 	z-index: 1;
 }
 .pay__way-icon--cash {
 	width: 38px;
 	height: 40px;
 	top: 28px;
-	background-image: url("../img/icon-cash-gr.png");
+	background-image: url("../img/spritesheet.png");
+	 background-position: -103px -75px;
 	z-index: 2;
 }
 .pay__way-icon--cash-blue {
 	width: 38px;
 	height: 40px;
 	top: 28px;
-	background-image: url("../img/icon-cash-bl.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -55px -75px;
 	z-index: 1;
 }
 .pay__way--active .pay__way-icon--card,
@@ -773,20 +783,23 @@ body {
 .pay__card--visa {
 	width: 55px;
 	height: 17px;
-	background-image: url("../img/icon-visa.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -5px -199px;
 	margin-left: 22px;
     margin-top: 4px;
 }
 .pay__card--master {
 	width: 46px;
 	height: 26px;
-	background-image: url("../img/icon-master.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -127px -125px;
 	margin-left: 18px;
 }
 .pay__card--maestro {
 	width: 46px;
 	height: 26px;
-	background-image: url("../img/icon-maestro.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -71px -125px;
 	margin-left: 17px;
 }
 .body__bottom-section--pay {
@@ -911,12 +924,14 @@ body {
 	
 }
 .specials__icon--guarantee {
-	background-image: url("../img/icon-spec-g.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -183px -149px;
 	width: 35px;
 	height: 40px;
 }
 .specials__icon--safe {
-	background-image: url("../img/icon-spec-c.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -203px -99px;
 	width: 35px;
 	height: 40px;
 }
@@ -993,7 +1008,8 @@ body {
 	width: 60px;
 	height: 60px;
 	margin: auto;
-	background-image: url("../img/icon-card-bl-big.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -127px -5px;
 	background-repeat: no-repeat;
 	margin-bottom: 20px;
 }
@@ -1026,7 +1042,8 @@ body {
 	padding-top: 11px;
 }
 .thanks-ya--order .thank-ya__icon {
-	background-image: url("../img/icon-ok.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -197px -5px;
 }
 .thanks-ya--order .thanks-ya__caption {
 	margin-bottom: 32px;
@@ -1047,7 +1064,7 @@ body {
 	border-radius: 4px;
 }
 .thanks-ya__button:hover {
-	background-color: #ffffff;
+	background: none;
 	color: #02aaec;
 }
 .thanks-ya__dear {
@@ -1085,7 +1102,8 @@ body {
 	width: 56px;
 	height: 60px;
 	margin: auto;
-	background-image: url("../img/icon-loader.png");
+	background-image: url("../img/spritesheet.png");
+	background-position: -5px -125px;
 	background-repeat: no-repeat;
 }
 .loader-rotate {
