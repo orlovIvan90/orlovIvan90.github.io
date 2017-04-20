@@ -52,7 +52,10 @@
                             </div>
                             
                             <div class="order__tariff-section order__tariff-section--value">
-                                <div class="order__caption order__value">Стоимость: <span class="order__value-sum">3 800 руб.</span></div>
+                                <div class="order__caption order__value">
+									<span class="order__text">Стоимость:<div class="order__piece">за шт.</div></span> 
+									<span class="order__value-sum order__value-sum--green">3 800 руб<div class="order__piece-old">3 600 руб.</div></span>
+                                </div>
                             </div>
                             
                             <div class="order__tariff-section order__tariff-section--discount">
@@ -88,7 +91,10 @@
                             </div>
                             
                             <div class="order__tariff-section order__tariff-section--value">
-                                <div class="order__caption order__value">Стоимость: <span class="order__value-sum">3 800 руб.</span></div>
+                                <div class="order__caption order__value">
+									<span class="order__text">Стоимость:<div class="order__piece">за шт.</div></span> 
+									<span class="order__value-sum order__value-sum--red">3 800 руб<div class="order__piece-old">3 600 руб.</div></span>
+                                </div>
                             </div>
                             
                             <div class="order__tariff-section order__tariff-section--discount">
@@ -105,6 +111,7 @@
                         
                         
                         <div class="order__total-right">
+<!--
                             <div class="order__total-tariff order__total-wrap">
                                 <span class="order__total-caption">Тарифы</span>
                                 <span class="order__total-money order__total-tariff-money">7 900 руб.</span>
@@ -121,10 +128,16 @@
                                 <span class="order__total-money order__total-delivery-money">300 руб.</span>
                                 <div class="order__total-decor"></div>
                             </div>
+-->
                             
                             <div class="order__total-total order__total-wrap">
                                 <span class="order__total-caption">Итого</span>
                                 <span class="order__total-money order__total-total-money">8 200 руб.</span>
+                                
+                                <div class="order__eco-wrap">
+                                	<span class="order__eco-caption">Экономия</span>
+                                	<span class="order__eco-money">1 500 руб.</span>
+                                </div>
                             </div>     
                         </div>
                         
@@ -151,7 +164,7 @@
                 <div class="body__left-column">
                     <div id="button-step-1" class="next-button__wrap next-button__wrap--step1">
                     	<a href="#" id="next-button-step1" class="next-button next-button--order">Оформить заказ</a>
-                    	<p class="next-button__caption">Примерно 2 минуты</p>	
+                    	<p class="next-button__caption">Осталась 1 минута</p>	
                     </div>
                 </div>
                 
@@ -167,18 +180,22 @@
                         <p class="make-order__caption">* Поля обязательны для заполнения</p>
                         
                         <div class="input__wrap">
-                            <input type="text" class="input" name="input-name" placeholder="* Ваше имя">
-                            <div class="input__error">Вы не указали имя</div>    
+                            <input id="make-order__name" type="text" class="input" name="input-name">
+                            <div class="input__error">Вы не указали имя</div>
+                            <label for="make-order__name" class="input__wrap-placeholder">* Ваше имя</label>    
                         </div>
                          
-                        <div class="input__wrap">           
-                            <input type="text" class="input" name="input-mail" placeholder="* Электронная почта">
+                        <div class="input__wrap input__wrap--info">           
+                            <input id="make-order__mail" type="text" class="input" name="input-mail">
                             <div class="input__error">Вы не указали электронную почту</div>
+                            <div class="input__error input__info">На этот адрес мы отправим вам код активации абонемента</div>
+                            <label for="make-order__mail" class="input__wrap-placeholder">* Электронная почта</label>
                         </div>
                         
                         <div class="input__wrap input__wrap--error">                        
-                            <input type="text" class="input" name="input-phone" placeholder="* Телефон">
+                            <input id="make-order__phone" type="text" class="input" name="input-phone">
                             <div class="input__error">Вы не указали телефон</div>
+                            <label for="make-order__phone" class="input__wrap-placeholder">* Телефон</label>
                         </div>            
                     </div>
                      
@@ -189,7 +206,7 @@
                     <div class="body__left-column">
                        
                         <div class="address">
-                            <h3 class="small-title small-title--address">Адрес доставки</h3>
+                            <h3 class="small-title small-title--address">Способ доставки</h3>
                             
                             <div class="address__free">
                                 <div class="address__free-caption">Бесплатная доставка по Москве от 3 000 рублей.</div>
@@ -197,9 +214,20 @@
                                 <a href="#" class="address__tariff">Добавить тариф</a>
                             </div>
                             
-                            <input type="text" class="input" name="input-address" placeholder="Адрес">
+                            <select name="" id="order__select--address" class="order__select order__select--tariff order__select--address">
+                                 <option value="0" selected="selected">Курьер (350 руб в пределах МКАД)</option>
+                                 <option value="1">Самовывоз (бесплатно)</option>
+                            </select>
+                            <div id="address__input" class="input__wrap">
+                            	<input type="text" class="input" name="input-address">
+                            	<label for="make-order__phone" class="input__wrap-placeholder">Адрес</label>
+                            </div>
+                            <div id="address__textarea" class="input__wrap">
+                            	<textarea name="" name="textarea-comment" cols="30" rows="10" class="input textarea"></textarea>
+                            	<label for="make-order__phone" class="input__wrap-placeholder">Комментарий</label>
+                            </div>
                             
-                            <textarea name="" id="" name="textarea-comment" cols="30" rows="10" placeholder="Комментарий" class="input textarea"></textarea>            
+                            <div id="address__text" class="address__text">Вы можете забрать заказ по адресу: Ленинская слобода, 26, БЦ "Омега 2. Время работы офиса: пн - пт с 10:00 до 19:00</div>            
                         </div>
                         
                     </div> 
@@ -207,7 +235,7 @@
                     <div id="button-step-2" class="body__left-column">
                     	<div class="next-button__wrap next-button__wrap--step2">
 							<a href="#" id="next-button-step2" class="next-button next-button--step2">Выбрать способ оплаты</a>
-							<p class="next-button__caption">Еще примерно 1 минута</p>
+							<p class="next-button__caption">Еще примерно полминуты</p>
                			</div>
                 	</div> 
                 </div>
@@ -263,12 +291,6 @@
 									   <td class="table__td table__td-old">1 шт. на 3 мес.</td>
 									   <td class="table__td table__td-price">2 900 руб.</td>
 								   </tr>
-
-								   <tr class="table__row your-order__discounts">
-									   <td class="table__td table__td-caption">Скидки</td>
-									   <td class="table__td table__td-old"></td>
-									   <td class="table__td table__td-price table__td-price--discounts">- 225 руб.</td>
-								   </tr> 
 
 								   <tr class="table__row your-order__delivery">
 									   <td class="table__td table__td-caption">Доставка</td>

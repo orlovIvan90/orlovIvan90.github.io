@@ -79,6 +79,39 @@
 				timer2 = setTimeout(showLastScreen, 2000);
 			}, 2000);
 		});
+		
+		/* Отображение элементов способов доставки в зависимости от выбора в селекте */
+		
+		function checkSelectValue(value) {
+			if (value == 0) {
+				$("#address__input").css("display", "block");
+				$("#address__textarea").css("display", "block");
+				$("#address__text").css("display", "none");
+			} else {
+				$("#address__input").css("display", "none");
+				$("#address__textarea").css("display", "none");
+				$("#address__text").css("display", "block");
+			}
+		};
+		
+		checkSelectValue($("#order__select--address").val());
+		
+		$("#order__select--address").on('change', function() {
+			checkSelectValue(this.value);
+		});
+		
+
+		/* Анимация плейсхолдеров */
+		$(".input").focus(function(){
+			$(this).siblings(".input__wrap-placeholder").stop(true, false).animate({ top: "-8px", fontSize: "13px" }, 300);
+			$(this).css("paddingLeft", "13px");
+		});
+		$(".input").blur(function() {
+			$(this).siblings(".input__wrap-placeholder").stop(true, false).animate({ top: "14px", fontSize: "15px" }, 300);
+			$(this).css("paddingLeft", "165px");
+		});
+		
+
     });
         
 })(jQuery);
