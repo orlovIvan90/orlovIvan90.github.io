@@ -18,7 +18,7 @@
            
            
             <div class="body__top">
-                <div class="order">
+                <div id="order" class="order">
                     <div class="order__top">
                         <h2 class="body__title body__title--order">Ваш заказ</h2>
                         
@@ -38,12 +38,11 @@
                             <div class="order__tariff-section order__tariff-section--amount">
                                 
                                 
-                                <div id="popover-1" class="order__btn-group">
+                                <div class="order__btn-group">
                                     <label for="order__amount-input" class="order__label order__caption">Кол-во:</label>
-                                    <a href="" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
-                                    <input id="order__amount-input" type="text" class="order__amount-input">
-                                    <a href="" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
-                                    <div id="popover" class="popover">dsa</div>
+                                    <a href="#" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
+                                    <input id="order__amount-input" type="text" class="order__amount-input popover-1">
+                                    <a href="#" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
                                 </div>
                                 
                                 <select name="" id="" class="order__select order__select--amount">
@@ -82,9 +81,9 @@
                                 
                                 <div class="order__btn-group">
                                     <label for="order__amount-input" class="order__label order__caption">Кол-во:</label>
-                                    <a href="" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
+                                    <a href="#" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
                                     <input id="order__amount-input" type="text" class="order__amount-input">
-                                    <a href="" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
+                                    <a href="#" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
                                 </div>
                                 
                                 <select name="" id="" class="order__select order__select--amount">
@@ -153,15 +152,15 @@
             
             
             
-            <div id="button-step-1" class="body__bottom">
+            <div  class="body__bottom">
                 <div class="body__left-column">
-                    <div class="next-button__wrap next-button__wrap--step1">
-                    	<a href="#" class="next-button next-button--order">Оформить заказ</a>
+                    <div id="button-step-1" class="next-button__wrap next-button__wrap--step1">
+                    	<a href="#" id="next-button-step1" class="next-button next-button--order">Оформить заказ</a>
                     	<p class="next-button__caption">Примерно 2 минуты</p>	
                     </div>
                 </div>
                 
-                <div id="step2-make-order" class="body__bottom-section">
+                <div id="step2-make-order" class="body__bottom-section body__step-2">
                     <div class="body__left-column">
                     
                     <div class="make-order">
@@ -212,7 +211,7 @@
                     
                     <div id="button-step-2" class="body__left-column">
                     	<div class="next-button__wrap next-button__wrap--step2">
-							<a href="#" class="next-button next-button--step2">Выбрать способ оплаты</a>
+							<a href="#" id="next-button-step2" class="next-button next-button--step2">Выбрать способ оплаты</a>
 							<p class="next-button__caption">Еще примерно 1 минута</p>
                			</div>
                 	</div> 
@@ -227,13 +226,15 @@
                             <h3 class="small-title small-title--pay">Выбор способа оплаты</h3>
                             
                             <div class="pay__ways-wrap clearfix">
-								<div class="pay__way pay__way--card pay__way--active">
+								<div class="pay__way pay__way--card ">
 									<div class="pay__way-icon pay__way-icon--card"></div>
+									<div class="pay__way-icon pay__way-icon--card-blue"></div>
 									<p class="pay__way-caption">Банковская карта</p>
 								</div>
 
-								<div class="pay__way pay__way--cash">
+								<div class="pay__way pay__way--cash pay__way--active">
 									<div class="pay__way-icon pay__way-icon--cash"></div>
+									<div class="pay__way-icon pay__way-icon--cash-blue"></div>
 									<p class="pay__way-caption">Наличными</p>
 								</div>
                             </div>
@@ -289,9 +290,7 @@
                                 <div class="your-order__total-total"></div>    
                             </div>
                             
-                             <p class="your-order__caption">Нажимая “Продолжить”, Вы принимаете <a href="" class="your-order__link">условия оферты</a> и согласны с <a href="" class="your-order__link">политикой обработки</a> персональных данных.</p>
-                             
-                             <div class="specials">
+                            <div class="specials">
 								<div class="specials__item specials__item-guarantee">
 									<div class="specials__icon specials__icon--guarantee"></div>
 									<h4 class="specials__title">Гарантия возврата денег</h4>
@@ -303,7 +302,11 @@
 									<h4 class="specials__title">Безопасная оплата</h4>
 									<p class="specials__caption">Все ваши данные останутся конфиденциальными</p>
 								</div>
-							</div>  
+							</div>
+                            
+                             <p class="your-order__caption">Нажимая “Продолжить”, Вы принимаете <a href="#" class="your-order__link">условия оферты</a> и согласны с <a href="#" class="your-order__link">политикой обработки</a> персональных данных.</p>
+                             
+                               
                         </div>   
                         
                         
@@ -312,13 +315,40 @@
                     </div> 
                     
                     <div id="button-step-3" class="body__left-column">
-                        <button href="#" class="next-button next-button--step3">Оплатить</button>
+                        <button href="#" id="next-button-step3" class="next-button next-button--step3">Оплатить</button>
                     </div> 
                 </div>
             </div>
             
+            <div id="thanks-ya" class="thanks-ya">
+            	<div class="thank-ya__icon"></div>
+            	
+            	<p class="thanks-ya__thanks">Спасибо!</p>
+            	
+            	<p class="thanks-ya__caption"><span class="thanks-ya__desctop-block">Сейчас вы будете перенаправлены на шлюз системы Яндекс.Деньги</span> для совершения оплаты.</p>
+            </div>
             
+            <div id="loader-wrap" class="loader__wrap">
+            	<div id="loader" class="loader"></div>
+            </div>
             
+            <div id="thanks-ya-order" class="thanks-ya thanks-ya--order">
+            	<div class="thank-ya__icon"></div>
+            	
+            	<p class="thanks-ya__thanks">Спасибо!</p>
+            	
+            	<p class="thanks-ya__caption"><span class="thanks-ya__desctop-block">Ваш заказ принят, курьер свяжется с вами по телефону и доставит</span> абонемент в удобное для вас время.</p>
+            	
+            	<a href="#" class="thanks-ya__button">Вернуться на главную</a>
+            	
+            	<div class="thanks-ya__dear">
+            		<p class="thanks-ya__dear-title">Уважаемый клиент!</p>
+            		
+            		<p class="thanks-ya__dear-caption">В качестве благодарности за покупку вам предоставляется возможность выбрать один из предложенных подарков-скидок в магазинах наших партнеров!</p>
+            		
+            		<a href="#" class="thanks-ya__button">Получить скидку</a>
+            	</div>
+            </div>
         </form>
     </div>
 
