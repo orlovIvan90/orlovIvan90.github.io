@@ -1333,18 +1333,21 @@ body {
 	.body__bottom-section--pay {
 		padding-bottom: 34px;
 	}
-	
+
 	.table__td-caption {
-		display: block;
+		float: left;
 		width: 100%;
 	}
 	.table__td-old {
 		display: inline-block;
 		width: auto;
+		float: left;
+		line-height: 30px;
 	}
 	.table__td-price {
 		display: inline-block;
 		width: auto;
+		float: left;
 	}
 	.your-order__delivery .table__td-price,
 	.your-order__discounts .table__td-price {
