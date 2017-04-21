@@ -1,10 +1,12 @@
 @font-face {
       font-family: 'Arial';
       src: url("../fonts/arial.eot");
-      src: url('../fonts/arial.eot?#iefix') format('embedded-opentype'), url('../fonts/arial.woff2') format('woff2'), url('../fonts/arial.woff') format('woff'), url('../fonts/arial.ttf') format('truetype');
-      font-weight:100;
-       font-style: normal;
-    }
+      src: url('../fonts/arial.eot?#iefix') format('embedded-opentype'), url('../fonts/arial.woff2') format('woff2'), 
+	  url('../fonts/arial.woff') format('woff'), 
+	  url('../fonts/arial.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
 
 @font-face {
       font-family: 'ArialBold';
@@ -481,7 +483,7 @@ body {
 .order__promo-error {
 	font-size: 15px;
 	line-height: 21px;
-	color: #797979;
+	color: #f38787;
 	font-family: "Arial";
 }
 .order__promo-input-wrap {
