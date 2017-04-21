@@ -181,12 +181,14 @@ body {
     box-shadow: none;
     border: 1px solid #02aaec;
 }
-.jq-selectbox.focused .jq-selectbox__trigger-arrow,
+
 .jq-selectbox__select:active .jq-selectbox__trigger-arrow,
 .opened .jq-selectbox__trigger-arrow {
     background-image: url("../img/spritesheet.png") !important;
 	background-position: -53px -5px !important;
 }
+
+
 .jq-selectbox__dropdown {
     border: 1px solid #d5e6ed;
     margin-top: 0px;
@@ -331,13 +333,23 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
+	font-size: 15px;
+	
+}
+.order__discount-sum {
+	padding-top: 21px;
+}
+.order__caption-common {
+	text-align: right;
+	padding-right: 3px;
+	font-size: 13px;
 }
 /* Классы для изменения цвета стоимости */
 .order__value-sum--red {
 	color: #f38787;
 }
 .order__value-sum--green {
-	color: #87f387;
+	color: #49b849;
 }
 /* ------------------------------------- */
 .order__btn-group-left-inner {
@@ -364,7 +376,7 @@ body {
 .order__total {
 	border: 1px solid #d5e6ed;
 	background-color: #e4f4fa;
-	height: 150px;
+	height: auto;
 	border-radius: 5px;
 }
 .order__total-left {
@@ -406,8 +418,8 @@ body {
 }
 .order__total-wrap {
 	padding-top: 20px;
-	margin-bottom: 5px;
-	padding-top: 46px;
+	margin-bottom: 15px;
+	padding-top: 11px;
 }
 .order__total-money {
 	float: right;
@@ -441,7 +453,7 @@ body {
 	cursor: pointer;
 }
 .order__promo-input {
-	width: 302px;
+	width: 100%;
 	height: 40px;
 	border: 1px solid #d5e6ed;
 	font-size: 15px;
@@ -452,7 +464,7 @@ body {
 	font-family: 'Arial';
 }
 .order__promo-wrap {
-	padding-top: 53px;
+	padding-top: 15px;
 	padding-right: 24px;
 	position: relative;
 }
@@ -466,11 +478,17 @@ body {
 	width: 15px;
 	height: 10px;
 }
+.order__promo-error {
+	font-size: 15px;
+	line-height: 21px;
+	color: #797979;
+	font-family: "Arial";
+}
 .order__promo-input-wrap {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	
+	width: 400px;
 	display: none;
 }
 .order__promo-button {
@@ -619,7 +637,7 @@ body {
 }
 .input__error {
 	color: #f38787;
-	font-family: 'ArialBold';
+	font-family: 'Arial';
 	position: absolute;
 	right: -340px;
 	top: 15px;
@@ -634,6 +652,7 @@ body {
 	width: 600px;
 	color: #797979;
 	display: none;
+	font-family: "Arial";
 }
 .input__wrap--info .input__info {
 	display: block;
@@ -1281,6 +1300,7 @@ body {
 	}
 	
 	/* order__total */
+/*
 	.order__total-right {
 		padding-right: 28px;
 		width: 288px;
@@ -1289,6 +1309,7 @@ body {
 		right: inherit;
 		left: 74px;
 	}
+*/
 	.input__error {
 		position: static;
 		line-height: 20px;
@@ -1336,14 +1357,63 @@ body {
 		padding-bottom: 49px;
 		padding-top: 11px;
 	}
+	/* order__total */
+	.order__total {
+		height: auto;
+		position: relative;
+	}
+	.order__total-left {
+		float: none;
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		width: 100%;
+		height: 75px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.order__total-right {
+		float: none;
+		display: block;
+		position: relative;
+		margin: auto;
+		margin-top: 84px;
+		margin-bottom: 20px;
+		border: 0px;
+		padding-right: 20px;
+		max-width: 340px;
+		width: auto;
+	}
+	.order__promo-wrap {
+		margin: auto;
+		display: block;
+		float: none;
+		padding-top: 10px;
+		text-align: center;
+    	max-width: 300px;
+		padding-right: 0px;
+	}
+	.order__promo-button {
+		padding-top: 10px;
+		margin: auto;
+		width: 160px;
+		margin-top: 12px;
+	}
+	.order__promo-input-wrap {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 680px) {
+/*
 	.order__promo-wrap {
 		width: 150px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+*/
 	.order__promo-button {
 		text-align: center;
 		border-bottom: 0px dotted #02aaec;
@@ -1377,40 +1447,8 @@ body {
 	}
 }
 @media screen and (max-width: 500px) {
-	.order__total {
-		height: auto;
-		position: relative;
-	}
-	.order__total-left {
-		float: none;
-		display: block;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		width: 100%;
-		height: 150px;
-	}
-	.order__total-right {
-		float: none;
-		display: block;
-		position: relative;
-		margin: auto;
-		margin-top: 30px;
-		margin-bottom: 20px;
-		border: 0px;
-		padding-right: 20px;
-	}
-	.order__promo-wrap {
-		margin: auto;
-		display: block;
-		float: none;
-		width: 250px;
-		padding-top: 20px;
-	}
-	.order__promo-button {
-		padding-top: 10px;
-	}
+	
+	
 	.body__bottom-section {
 		padding-bottom: 31px;
 	}
