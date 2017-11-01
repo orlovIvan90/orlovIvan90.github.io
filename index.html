@@ -1,380 +1,51 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-    <title>ONEFIt</title>
+    <title>Lookshop</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.webui-popover.min.css">
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 </head>
 <body class="body">
-
-
-    <div class="body__wrap">
-        <form method="post" name="form" action="" class="form">
-           
-           
-           
-            <div class="body__top">
-                <div id="order" class="order">
-                    <div class="order__top">
-                        <h2 class="body__title body__title--order">Ваш заказ</h2>
-                        
-                        <a href="#" class="order__add-button"><span class="order__add-button-plus">+</span> Добавить тариф</a>    
-                    </div>
-                    
-                    <div class="order__tariffs">
-                        <div class="order__tariff">
-                           
-                            <div class="order__tariff-section order__tariff-section--select">
-                                <select name="" id="order__select-tariff" class="order__select order__select--tariff">
-                                     <option>Тариф "Серебро"</option>
-                                     <option>Тариф "Золото"</option>
-                                </select>
-                            </div>
-                            
-                            <div class="order__tariff-section order__tariff-section--amount">
-                                
-                                
-                                <div class="order__btn-group">
-                                    <label for="order__amount-input" class="order__label order__caption">Кол-во:</label>
-                                    <a href="#" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
-                                    <input id="order__amount-input" type="text" class="order__amount-input popover-1">
-                                    <a href="#" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
-                                </div>
-                                
-                                <select name="" id="" class="order__select order__select--amount">
-                                     <option>На 1 месяц</option>
-                                     <option>На 2 месяца</option>
-                                </select>
-                            </div>
-                            
-                            <div class="order__tariff-section order__tariff-section--value">
-                                <div class="order__caption order__value">
-									<span class="order__text">Стоимость:<div class="order__piece">за шт.</div></span> 
-									<span class="order__value-sum order__value-sum--green">3 800 руб<div class="order__piece-old">3 600 руб.</div></span>
-                                </div>
-                            </div>
-                            
-                            <div class="order__tariff-section order__tariff-section--discount">
-                                <div class="order__caption order__value">Стоимость:<div class="order__caption-common">общая</div> </div>
-                                <span class="order__discount-sum">3 200 руб.</span>    
-                            </div>
-                            
-                        </div>
-                        
-                        
-                        <div class="order__tariff">
-                           
-                            <div class="order__tariff-section order__tariff-section--select">
-                                <select name="" id="order__select-tariff" class="order__select order__select--tariff">
-                                     <option>Тариф “Серебро”</option>
-                                     <option>Тариф “Золото”</option>
-                                </select>
-                            </div>
-                            
-                            <div class="order__tariff-section order__tariff-section--amount">
-                                
-                                
-                                <div class="order__btn-group">
-                                    <label for="order__amount-input" class="order__label order__caption">Кол-во:</label>
-                                    <a href="#" class="order__btn-group-left "><div class="order__btn-group-left-inner"></div></a>
-                                    <input id="order__amount-input" type="text" class="order__amount-input">
-                                    <a href="#" class="order__btn-group-right"><div class="order__btn-group-right-inner"></div></a>
-                                </div>
-                                
-                                <select name="" id="" class="order__select order__select--amount">
-                                     <option>На 1 месяц</option>
-                                     <option>На 2 месяца</option>
-                                </select>
-                            </div>
-                            
-                            <div class="order__tariff-section order__tariff-section--value">
-                                <div class="order__caption order__value">
-									<span class="order__text">Стоимость:<div class="order__piece">за шт.</div></span> 
-									<span class="order__value-sum order__value-sum--red">3 800 руб<div class="order__piece-old">3 600 руб.</div></span>
-                                </div>
-                            </div>
-                            
-                            <div class="order__tariff-section order__tariff-section--discount">
-                                <div class="order__caption order__value">Стоимость:<div class="order__caption-common">общая</div> </div>
-                                <span class="order__discount-sum">3 200 руб.</span>   
-                            </div>
-                            
-                            <a href="#" class="order__tariff-section order__tariff-section--trash">
-                            	<div class="order__tariff-section-trash-inner"></div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="order__total clearfix">
-                        
-                        
-                        <div class="order__total-right">
-<!--
-                            <div class="order__total-tariff order__total-wrap">
-                                <span class="order__total-caption">Тарифы</span>
-                                <span class="order__total-money order__total-tariff-money">7 900 руб.</span>
-                                <span class="order__total-old">9 900 руб.</span>
-                            </div>
-                            
-                            <div class="order__total-promo order__total-wrap">
-                                <span class="order__total-caption">Промокод</span>
-                                <span class="order__total-money order__total-promo-money">- 225 руб.</span>
-                            </div> 
-                            
-                            <div class="order__total-delivery order__total-wrap">
-                                <span class="order__total-caption">Доставка</span>
-                                <span class="order__total-money order__total-delivery-money">300 руб.</span>
-                                <div class="order__total-decor"></div>
-                            </div>
--->
-                            
-                            <div class="order__total-total order__total-wrap">
-                                <span class="order__total-caption">Итого</span>
-                                <span class="order__total-money order__total-total-money">8 200 руб.</span>
-                                
-                                <div class="order__eco-wrap">
-                                	<span class="order__eco-caption">Экономия</span>
-                                	<span class="order__eco-money">1 500 руб.</span>
-                                </div>
-                            </div>     
-                        </div>
-                        
-                        <div class="order__total-left">
-                           
-                            <div class="order__promo-wrap">
-                                <a href="#" id="order__promo-button" class="order__promo-button">У меня есть промокод</a>
-                                <div id="order__promo-input-button" class="order__promo-input-wrap">
-									<input type="text" class="order__promo-input">
-									<div class="order__promo-input-status"></div>
-                               		<div class="order__promo-error">Промокод указан не верно или акция уже закончилась</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    
-                    
-                </div>    
-            </div>
+    
+    <header class="header">
+        <div class="header__top">
+            <div class="phone">custom care: 555-23-4567</div>
             
-            
-            
-            <div  class="body__bottom">
-                <div class="body__left-column">
-                    <div id="button-step-1" class="next-button__wrap next-button__wrap--step1">
-                    	<a href="#" id="next-button-step1" class="next-button next-button--order">Оформить заказ</a>
-                    	<p class="next-button__caption">Осталась 1 минута</p>	
-                    </div>
+            <div class="header-top-data">
+                <div class="dropdown">
+                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    $ US
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">$ US</a>
+                    <a class="dropdown-item" href="#">₽ RU</a>
+                  </div>
                 </div>
                 
-                <div id="step2-make-order" class="body__bottom-section body__step-2">
-                    <div class="body__left-column">
-                    
-                    <div class="make-order">
-                       
-                        <h2 class="body__title body__title--make-order">Оформление заказа</h2> 
-                        
-                        <h3 class="small-title small-title--make-order">Введите контактные данные</h3>
-                        
-                        <p class="make-order__caption">* Поля обязательны для заполнения</p>
-                        
-                        <div class="input__wrap">
-                            <input id="make-order__name" type="text" class="input" name="input-name">
-                            <div class="input__error">Вы не указали имя</div>
-                            <label for="make-order__name" class="input__wrap-placeholder">* Ваше имя</label>    
-                        </div>
-                         
-                        <div class="input__wrap input__wrap--info">           
-                            <input id="make-order__mail" type="text" class="input" name="input-mail">
-                            <div class="input__error">Вы не указали электронную почту</div>
-                            <div class="input__error input__info">На этот адрес мы отправим вам код активации абонемента</div>
-                            <label for="make-order__mail" class="input__wrap-placeholder">* Электронная почта</label>
-                        </div>
-                        
-                        <div class="input__wrap input__wrap--error">                        
-                            <input id="make-order__phone" type="text" class="input" name="input-phone">
-                            <div class="input__error">Вы не указали телефон</div>
-                            <label for="make-order__phone" class="input__wrap-placeholder">* Телефон</label>
-                        </div>            
-                    </div>
-                     
-                    </div>    
+                <div class="header__account">
+                    <div class="header__account-icon"></div>
+                    <div class="header__account-name">my account</div>
                 </div>
                 
-                <div id="step2-address" class="body__bottom-section  body__step-2">
-                    <div class="body__left-column">
-                       
-                        <div class="address">
-                            <h3 class="small-title small-title--address">Способ доставки</h3>
-                            
-                            <div class="address__free">
-                                <div class="address__free-caption">Бесплатная доставка по Москве от 3 000 рублей.</div>
-                                <div class="address__free-not">Вам не хватает 370 рублей</div>
-                                <a href="#" class="address__tariff">Добавить тариф</a>
-                            </div>
-                            
-                            <select name="" id="order__select--address" class="order__select order__select--tariff order__select--address">
-                                 <option value="0" selected="selected">Курьер (350 руб в пределах МКАД)</option>
-                                 <option value="1">Самовывоз (бесплатно)</option>
-                            </select>
-                            <div id="address__input" class="input__wrap">
-                            	<input type="text" class="input" name="input-address">
-                            	<label for="make-order__phone" class="input__wrap-placeholder">Адрес</label>
-                            </div>
-                            <div id="address__textarea" class="input__wrap">
-                            	<textarea name="" name="textarea-comment" cols="30" rows="10" class="input textarea"></textarea>
-                            	<label for="make-order__phone" class="input__wrap-placeholder">Комментарий</label>
-                            </div>
-                            
-                            <div id="address__text" class="address__text">Вы можете забрать заказ по адресу: Ленинская слобода, 26, БЦ "Омега 2". Время работы офиса: пн - пт с 10:00 до 19:00</div>            
-                        </div>
-                        
-                    </div> 
-                    
-                    <div id="button-step-2" class="body__left-column">
-                    	<div class="next-button__wrap next-button__wrap--step2">
-							<a href="#" id="next-button-step2" class="next-button next-button--step2">Выбрать способ оплаты</a>
-							<p class="next-button__caption">Еще примерно полминуты</p>
-               			</div>
-                	</div> 
-                </div>
-                
-                
-                
-                <div id="step3-pay" class="body__bottom-section body__bottom-section--pay body__step-3">
-                    <div class="body__left-column">
-                       
-                        <div class="pay">
-                            <h3 class="small-title small-title--pay">Выбор способа оплаты</h3>
-                            
-                            <div class="pay__ways-wrap clearfix">
-								<div class="pay__way pay__way--card ">
-									<div class="pay__way-icon pay__way-icon--card"></div>
-									<div class="pay__way-icon pay__way-icon--card-blue"></div>
-									<p class="pay__way-caption">Банковская карта</p>
-								</div>
-
-								<div class="pay__way pay__way--cash pay__way--active">
-									<div class="pay__way-icon pay__way-icon--cash"></div>
-									<div class="pay__way-icon pay__way-icon--cash-blue"></div>
-									<p class="pay__way-caption">Наличными</p>
-								</div>
-                            </div>
-                            
-                            <div class="pay__cards">
-                                <div class="pay__card pay__card--visa"></div>
-                                <div class="pay__card pay__card--master"></div>
-                                <div class="pay__card pay__card--maestro"></div>
-                            </div>        
-                        </div>
-                           
-                    </div>    
-                </div>
-                
-                <div id="step3-order" class="body__bottom-section body__step-3">
-                    <div class="body__left-column">
-                       
-                        <div class="your-order">
-                            <h3 class="small-title small-title--pay">Ваш заказ</h3>
-                            
-                            <div class="your-order__table-wrap">
-                            	<table class="your-order__table">
-								   <tr class="table__row your-order__tariff">
-									   <td class="table__td table__td-caption">Тариф “Серебро”</td>
-									   <td class="table__td table__td-old">2 шт. на 1 мес.</td>
-									   <td class="table__td table__td-price">3 200 руб.</td>
-								   </tr>
-
-								   <tr class="table__row your-order__tariff">
-									   <td class="table__td table__td-caption">Тариф “Золото”</td>
-									   <td class="table__td table__td-old">1 шт. на 3 мес.</td>
-									   <td class="table__td table__td-price">2 900 руб.</td>
-								   </tr>
-
-								   <tr class="table__row your-order__delivery">
-									   <td class="table__td table__td-caption">Доставка</td>
-									   <td class="table__td table__td-old"></td>
-									   <td class="table__td table__td-price table__td-price--delivery"> 300 руб.</td>
-								   </tr>    
-								</table>	
-                            </div>
-                            
-                            
-                            <div class="your-order__total clearfix">
-                                <span class="your-order__total-caption">Всего к оплате</span>
-                                <span class="your-order__total-money order__total-total-money">5 050 руб.</span>
-                                <div class="your-order__total-total"></div>    
-                            </div>
-                            
-                            <div class="specials">
-								<div class="specials__item specials__item-guarantee">
-									<div class="specials__icon specials__icon--guarantee"></div>
-									<h4 class="specials__title">Гарантия возврата денег</h4>
-									<p class="specials__caption">Если выбранное предложение вам не понравится</p>
-								</div>
-
-								<div class="specials__item specials__item-safe">
-									<div class="specials__icon specials__icon--safe"></div>
-									<h4 class="specials__title">Безопасная оплата</h4>
-									<p class="specials__caption">Все ваши данные останутся конфиденциальными</p>
-								</div>
-							</div>
-                            
-                             <p class="your-order__caption">Нажимая “Продолжить”, Вы принимаете <a href="#" class="your-order__link">условия оферты</a> и согласны с <a href="#" class="your-order__link">политикой обработки</a> персональных данных.</p>
-                             
-                               
-                        </div>   
-                        
-                        
-                        
-                          
-                    </div> 
-                    
-                    <div id="button-step-3" class="body__left-column">
-                        <button href="#" id="next-button-step3" class="next-button next-button--step3">Оплатить</button>
-                    </div> 
-                </div>
+                <a href="#" class="headet__search"></a>
             </div>
-            
-            <div id="thanks-ya" class="thanks-ya">
-            	<div class="thank-ya__icon"></div>
-            	
-            	<p class="thanks-ya__thanks">Спасибо!</p>
-            	
-            	<p class="thanks-ya__caption"><span class="thanks-ya__desctop-block">Сейчас вы будете перенаправлены на шлюз системы Яндекс.Деньги</span> для совершения оплаты.</p>
-            </div>
-            
-            <div id="loader-wrap" class="loader__wrap">
-            	<div id="loader" class="loader"></div>
-            </div>
-            
-            <div id="thanks-ya-order" class="thanks-ya thanks-ya--order">
-            	<div class="thank-ya__icon"></div>
-            	
-            	<p class="thanks-ya__thanks">Спасибо!</p>
-            	
-            	<p class="thanks-ya__caption"><span class="thanks-ya__desctop-block">Ваш заказ принят, курьер свяжется с вами по телефону и доставит</span> абонемент в удобное для вас время.</p>
-            	
-            	<a href="#" class="thanks-ya__button">Вернуться на главную</a>
-            	
-            	<div class="thanks-ya__dear">
-            		<p class="thanks-ya__dear-title">Уважаемый клиент!</p>
-            		
-            		<p class="thanks-ya__dear-caption">В качестве благодарности за покупку вам предоставляется возможность выбрать один из предложенных подарков-скидок в магазинах наших партнеров!</p>
-            		
-            		<a href="#" class="thanks-ya__button">Получить скидку</a>
-            	</div>
-            </div>
-        </form>
-    </div>
-
+        </div>
+        
+        
+        <div class="header__bottom"></div>
+    </header>
+    
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.formstyler.min.js"></script>
-    <script src="js/jquery.webui-popover.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js?1703031230"></script>
 
 </body>
