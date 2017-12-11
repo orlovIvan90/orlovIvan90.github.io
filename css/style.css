@@ -78,6 +78,7 @@
   text-align: center;
   height: 99px;
   position: relative;
+  display: block;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
