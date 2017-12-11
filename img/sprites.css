@@ -1,0 +1,138 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ico--up-4x {
+  background-image: url(spritesheet.png);
+  background-position: 0px 0px;
+  width: 184px;
+  height: 184px;
+}
+.icon-ico-akcii-main-4x {
+  background-image: url(spritesheet.png);
+  background-position: -168px -192px;
+  width: 160px;
+  height: 160px;
+}
+.icon-ico-arrow-bottom-4x {
+  background-image: url(spritesheet.png);
+  background-position: -424px -456px;
+  width: 40px;
+  height: 21px;
+}
+.icon-ico-arrow-circle-bottom-4x {
+  background-image: url(spritesheet.png);
+  background-position: -528px -384px;
+  width: 88px;
+  height: 88px;
+}
+.icon-ico-arrow-circle-up-4x {
+  background-image: url(spritesheet.png);
+  background-position: -424px -360px;
+  width: 88px;
+  height: 88px;
+}
+.icon-ico-arrow-right-4x {
+  background-image: url(spritesheet.png);
+  background-position: -64px -589px;
+  width: 31px;
+  height: 48px;
+}
+.icon-ico-arrow-up-4x {
+  background-image: url(spritesheet.png);
+  background-position: -472px -456px;
+  width: 40px;
+  height: 21px;
+}
+.icon-ico-close-menu-4x {
+  background-image: url(spritesheet.png);
+  background-position: 0px -589px;
+  width: 56px;
+  height: 56px;
+}
+.icon-ico-cr-main-4x {
+  background-image: url(spritesheet.png);
+  background-position: 0px -360px;
+  width: 160px;
+  height: 133px;
+}
+.icon-ico-dillers-conf-4x {
+  background-image: url(spritesheet.png);
+  background-position: 0px -192px;
+  width: 160px;
+  height: 160px;
+}
+.icon-ico-dillers-main-4x {
+  background-image: url(spritesheet.png);
+  background-position: -192px 0px;
+  width: 160px;
+  height: 182px;
+}
+.icon-ico-dillers-top-4x {
+  background-image: url(spritesheet.png);
+  background-position: 0px -501px;
+  width: 57px;
+  height: 80px;
+}
+.icon-ico-liz-main-4x {
+  background-image: url(spritesheet.png);
+  background-position: -336px -192px;
+  width: 160px;
+  height: 160px;
+}
+.icon-ico-nal-mainf-4x {
+  background-image: url(spritesheet.png);
+  background-position: -360px 0px;
+  width: 160px;
+  height: 182px;
+}
+.icon-ico-open-menu-4x {
+  background-image: url(spritesheet.png);
+  background-position: -65px -501px;
+  width: 72px;
+  height: 47px;
+}
+.icon-ico-social-fb-4x {
+  background-image: url(spritesheet.png);
+  background-position: -528px -256px;
+  width: 120px;
+  height: 120px;
+}
+.icon-ico-social-inst-4x {
+  background-image: url(spritesheet.png);
+  background-position: -528px -128px;
+  width: 120px;
+  height: 120px;
+}
+.icon-ico-social-tw-4x {
+  background-image: url(spritesheet.png);
+  background-position: -528px 0px;
+  width: 120px;
+  height: 120px;
+}
+.icon-ico-social-vk-4x {
+  background-image: url(spritesheet.png);
+  background-position: -296px -360px;
+  width: 120px;
+  height: 120px;
+}
+.icon-ico-social-yt-4x {
+  background-image: url(spritesheet.png);
+  background-position: -168px -360px;
+  width: 120px;
+  height: 120px;
+}

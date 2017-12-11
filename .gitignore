@@ -3,3 +3,4 @@ Gruntfile.js
 node_modules/
 sass/
 .sass-cache/
+*.map
