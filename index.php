@@ -229,7 +229,7 @@
                    
                     <li class="series-accordion__item">
                         <a class="series-accordion__link series-accordion__link-1 collapsed" data-toggle="collapse" href="#collapse-2-1" aria-controls="collapse-2-1" aria-expanded="false">
-                            <img src="img/300.jpg" alt="Серия 300" class="series-accordion__img">
+                            <img src="img/default/300.jpg" alt="Серия 300" class="series-accordion__img">
                             <p class="series-accordion__link-caption">Серия 300</p>
                             <div class="series-accordion__link-icon"></div>
                             <div class="series-accordion__link-mask"></div>
@@ -247,7 +247,7 @@
                     
                     <li class="series-accordion__item">
                         <a class="series-accordion__link series-accordion__link-2 collapsed" data-toggle="collapse" href="#collapse-2-2" aria-controls="collapse-2-2" aria-expanded="false">
-                            <img src="img/500.jpg" alt="Серия 500" class="series-accordion__img">
+                            <img src="img/default/500.jpg" alt="Серия 500" class="series-accordion__img">
                             <p class="series-accordion__link-caption">Серия 500</p>
                             <div class="series-accordion__link-icon"></div>
                             <div class="series-accordion__link-mask"></div>
@@ -267,7 +267,7 @@
                     
                     <li class="series-accordion__item">
                         <a class="series-accordion__link series-accordion__link-3 collapsed" data-toggle="collapse" href="#collapse-2-3" aria-controls="collapse-2-3" aria-expanded="false">
-                            <img src="img/700.jpg" alt="Серия 700" class="series-accordion__img">
+                            <img src="img/default/700.jpg" alt="Серия 700" class="series-accordion__img">
                             <p class="series-accordion__link-caption">Серия 700</p>
                             <div class="series-accordion__link-icon"></div>
                             <div class="series-accordion__link-mask"></div>
@@ -302,7 +302,7 @@
                    
                     <a href="#" class="news__item news__item-1">
                         <div class="news__item-img-wrap">
-                            <img src="img/news1.jpg" alt="" class="news__item-img">
+                            <img src="img/default/news1.jpg" alt="" class="news__item-img">
                         </div>
                         
                         <p class="news__item-caption">Акция «Неделя бесплатной диагностики HINO» в Южно-Сахалинске</p>
@@ -310,7 +310,7 @@
                     
                     <a href="#" class="news__item news__item-2">
                         <div class="news__item-img-wrap">
-                            <img src="img/news2.jpg" alt="" class="news__item-img">
+                            <img src="img/default/news2.jpg" alt="" class="news__item-img">
                         </div>
                         
                         <p class="news__item-caption">Дилерская конференция HINO 2017</p>
@@ -318,7 +318,7 @@
                     
                     <a href="#" class="news__item news__item-3">
                         <div class="news__item-img-wrap">
-                            <img src="img/news3.jpg" alt="" class="news__item-img">
+                            <img src="img/default/news3.jpg" alt="" class="news__item-img">
                         </div>
                         
                         <p class="news__item-caption">HINO для компании Unilever</p>
