@@ -1,0 +1,66 @@
+/* model */
+.model {
+  color: #ffffff; }
+
+.model:hover {
+  color: #ffffff; }
+
+.model__img {
+  width: 100%;
+  display: block; }
+
+.model__caption {
+  background-color: #171717;
+  height: 50px;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  line-height: 50px;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 19px;
+  padding-right: 19px;
+  position: relative;
+  letter-spacing: 0.2px; }
+
+.model__caption:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/default/spritesheet.png");
+  width: 22px;
+  height: 22px;
+  background-position: -106px -90px;
+  top: 12px;
+  right: 13px; }
+
+/* model-menu */
+.model-menu-item {
+  display: block; }
+
+.model-menu-link {
+  display: block;
+  width: 100%;
+  line-height: 54px;
+  font-size: 15px;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  color: #ffffff;
+  padding-left: 19px;
+  padding-right: 19px;
+  background-color: #000000;
+  border-bottom: 1px solid #414141;
+  letter-spacing: 0.7px;
+  position: relative; }
+
+.model-menu-link:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+.model-menu-link:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/default/spritesheet.png");
+  background-position: -16px -147px;
+  height: 12px;
+  width: 8px;
+  right: 18px;
+  top: 20px; }
+
+/*# sourceMappingURL=polnaya-massa.css.map */

@@ -1,0 +1,140 @@
+/* spetsifikatsiya */
+.spetsifikatsiya {
+  padding-top: 28px; }
+
+.spetsifikatsiya__item .collapsed {
+  border-bottom: 1px solid #cccccc; }
+
+.spetsifikatsiya__item-link {
+  background-color: #e3e3e3;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0.7px;
+  display: block;
+  line-height: 54px;
+  height: 54px;
+  position: relative;
+  padding-left: 19px;
+  padding-right: 19px; }
+
+.spetsifikatsiya__item-link:hover {
+  color: #000000;
+  text-decoration: none; }
+
+.spetsifikatsiya__item-link.collapsed:after {
+  position: absolute;
+  content: "";
+  border-bottom: 5px solid #e60c12;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 0px solid #e60c12;
+  right: 17px;
+  top: 23px; }
+
+.spetsifikatsiya__item-link:after {
+  position: absolute;
+  content: "";
+  border-bottom: 0px solid #e60c12;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #e60c12;
+  right: 17px;
+  top: 23px; }
+
+.spetsifikatsiya__item-link-caption {
+  border-bottom: 1px solid #cccccc;
+  padding-left: 19px;
+  padding-right: 19px; }
+
+.spetsifikatsiya__item-link-caption:last-child {
+  border-bottom: 0px; }
+
+.spetsifikatsiya__item-link-title {
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  padding-top: 18px; }
+
+.spetsifikatsiya__item-link-row {
+  font-family: "HelveticaNeue-bold", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  letter-spacing: 1px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.spetsifikatsiya__item-red-link {
+  background-color: #e60c12;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  letter-spacing: 0.7px;
+  display: inline-block;
+  width: 90px;
+  height: 51px;
+  padding-top: 6px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 8px;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.spetsifikatsiya__item-red-link:hover {
+  opacity: 0.7;
+  color: #ffffff;
+  text-decoration: none; }
+
+.spetsifikatsiya__download {
+  display: block;
+  text-align: center;
+  padding-top: 17px;
+  margin-bottom: 15px;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.spetsifikatsiya__download:hover {
+  text-decoration: none;
+  opacity: 0.7; }
+
+.spetsifikatsiya__download-icon {
+  width: 29px;
+  height: 30px;
+  display: block;
+  margin: auto;
+  background-image: url("../img/default/spritesheet.png");
+  background-position: -86px -122px;
+  margin-bottom: 10px; }
+
+.spetsifikatsiya__download-caption {
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.4px;
+  color: #000000;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=spetsifikatsiya.css.map */

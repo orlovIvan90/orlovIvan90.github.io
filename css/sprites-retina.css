@@ -1,0 +1,176 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    
+    .dillers__icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .collapsed .navbar-toggler-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .navbar-toggler-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .navbar-nav .dropdown-item:after,
+    .footer__links-link:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+
+        
+    .main-links__icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .series-accordion__item .series-accordion__link-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .social__link {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .footer__goUp {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;  
+    }
+    
+    .catalog__download-img {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .model__caption:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    .model-menu-link:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .spetsifikatsiya__download-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .reshenia-carousel__link-caption:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        
+    }
+    
+    .modal .close span {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        
+    }
+    
+    .popup-carousel__left-arrow-inner {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+
+    .popup-carousel__right-arrow-inner {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }    
+    
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 4),
+only screen and (min--moz-device-pixel-ratio: 4),
+only screen and (-o-min-device-pixel-ratio: 4/1),
+only screen and (min-device-pixel-ratio: 4),
+only screen and (min-resolution: 360dpi),
+only screen and (min-resolution: 4dppx) {
+
+    .dillers__icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .collapsed .navbar-toggler-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .navbar-toggler-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .navbar-nav .dropdown-item:after,
+    .footer__links-link:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+
+    .main-links__icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .series-accordion__item .series-accordion__link-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .social__link {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+        
+    .footer__goUp {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .catalog__download-img {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .model__caption:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    .model-menu-link:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .spetsifikatsiya__download-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .reshenia-carousel__link-caption:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+    
+    .modal .close span {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        
+    }
+    
+    .popup-carousel__left-arrow-inner {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    }
+
+    .popup-carousel__right-arrow-inner {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 165px;
+    } 
+}

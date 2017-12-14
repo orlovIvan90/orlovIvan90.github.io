@@ -10,9 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css?081220171715">
-	<link rel="stylesheet" type="text/css" href="css/footer.css?081220171715">
-	<link rel="stylesheet" type="text/css" href="css/style.css?081220171715">
+    <link rel="stylesheet" type="text/css" href="css/header.css?121220171745">
+	<link rel="stylesheet" type="text/css" href="css/footer.css?121220171745">
+	<link rel="stylesheet" type="text/css" href="css/style.css?121220171745">
+	<link rel="stylesheet" type="text/css" href="css/sprites-retina.css?121220171745">
 	
 	
 </head>
@@ -332,31 +333,110 @@
         </main>
         
         <footer class="footer">
-            <ul class="footer__links-list">
-                <li class="footer__links-item"><a href="" class="footer__links-link">О компании</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">В мире</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">Новости</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">Мы в СМИ</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">HINO Cares</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">Запчасти</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">Стать дилером</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">Клиенты</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">Контакты</a></li>
-                <li class="footer__links-item"><a href="" class="footer__links-link">Вакансии</a></li>
-            </ul>
-            
-            <div class="social">
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <a href="#" class="social__link social__link--fb"></a>
-                        <a href="#" class="social__link social__link--yt"></a>
-                        <a href="#" class="social__link social__link--vk"></a>
-                        <a href="#" class="social__link social__link--tw"></a>
-                        <a href="#" class="social__link social__link--inst"></a>
-                    </div>
+           <div class="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#collapse-4-1" aria-controls="collapse-4-1" aria-expanded="false">
+                              О компании
+                </a>
+                <div class="collapse" id="collapse-4-1">
+                  <a class="dropdown-item" href="#">О компании</a>
+                  <a class="dropdown-item" href="#">В мире</a>
+                  <a class="dropdown-item" href="#">Новости</a>
+                  <a class="dropdown-item" href="#">Мы в СМИ</a>
+                  <a class="dropdown-item" href="#">HINO Cares</a>
+                  <a class="dropdown-item" href="#">Запчасти</a>
+                  <a class="dropdown-item" href="#">Стать дилером</a>
+                  <a class="dropdown-item" href="#">Клиенты</a>
+                  <a class="dropdown-item" href="#">Контакты</a>
+                  <a class="dropdown-item" href="#">Вакансии</a>
                 </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#collapse-4-2" aria-controls="collapse-4-2" aria-expanded="false">
+                              Серия 300
+                            </a>
+                <div class="collapse" id="collapse-4-2">
+
+                  <div class="series">
+                      <div class="series__img-wrap">
+                          <img src="img/default/hino300.jpg" alt="Серия 300" class="series__img">
+                                  </div>
+
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 3,5 т | Шасси XZU</a>
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 7,5 т | Шасси XZU</a>
+                  </div>
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#collapse-4-3" aria-controls="collapse-4-3" aria-expanded="false">
+                              Серия 500
+                            </a>
+                <div class="collapse" id="collapse-4-3">
+
+                    <div class="series">
+                      <div class="series__img-wrap">
+                          <img src="img/default/hino500.jpg" alt="Серия 500" class="series__img">
+                      </div>
+
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 12,0 т | Шасси GD</a>
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 17,5 т | Шасси GH</a>
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 26,0 т | Самосвал FM</a>
+                    </div>
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#collapse-4-4" aria-controls="collapse-4-4" aria-expanded="false">
+                              Серия 700
+                </a>
+                <div class="collapse" id="collapse-4-4">
+
+                  <div class="series">
+                      <div class="series__img-wrap">
+                          <img src="img/default/hino700.jpg" alt="Серия 700" class="series__img">
+                      </div>
+
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 30,7 т | Самосвал FS</a>
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 30,7 т | Шасси FS</a>
+                      <a class="dropdown-item series__item-link" href="#">Полная масса 28,3 т | Тягач SS</a>
+                    </div>
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#collapse-4-5" aria-controls="collapse-4-5" aria-expanded="false">
+                              Купить
+                </a>
+                            
+                            
+                <div class="collapse" id="collapse-4-5">
+                  <a class="dropdown-item" href="#">Дилеры</a>
+                  <a class="dropdown-item" href="#">Лизинг</a>
+                  <a class="dropdown-item" href="#">Кредит</a>
+                  <a class="dropdown-item" href="#">Акции</a>
+                  <a class="dropdown-item" href="#">Автомобили в наличии</a>
+                </div>
+
+              </li>
+              <li class="nav-item">
+                  <div class="social">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <a href="#" class="social__link social__link--fb"></a>
+                                <a href="#" class="social__link social__link--yt"></a>
+                                <a href="#" class="social__link social__link--vk"></a>
+                                <a href="#" class="social__link social__link--tw"></a>
+                                <a href="#" class="social__link social__link--inst"></a>
+                            </div>
+                        </div>
+                    </div>
+              </li>
+                          
+                        
+            </ul>
             </div>
-            
             <div class="info">
                 <a href="" class="info__link">Правовая информация</a>
                 <a href="" class="info__link">Вопросы и предложения</a>
@@ -374,10 +454,10 @@
             <div class="footer__goUp"></div>
         </footer>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js?1703031230"></script>
 
 </body>

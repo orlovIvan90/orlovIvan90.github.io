@@ -2,43 +2,10 @@
 .footer {
   position: relative; }
 
-.footer__links-item {
-  display: block; }
-
-.footer__links-link {
-  font-size: 15px;
-  line-height: 18px;
-  color: #000000;
-  letter-spacing: 1px;
-  font-family: "HelveticaNeue-bold", sans-serif;
-  background-color: #ffffff;
-  padding-left: 19px;
-  padding-right: 45px;
-  border-bottom: 1px solid #cccccc;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  position: relative;
-  white-space: normal;
-  display: block;
-  background-color: #000000;
-  color: #ffffff;
-  border-bottom: 1px solid #414141; }
-
-.footer__links-link:hover {
-  text-decoration: none;
-  color: #ffffff; }
-
-.footer__links-link:after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/default/spritesheet.png");
-  background-position: -16px -147px;
-  width: 8px;
-  height: 12px;
-  right: 18px;
-  top: 50%;
-  margin-top: -6px; }
-
+.footer .navbar {
+    padding-top: 0px; }
+.footer .navbar-nav {
+    padding-top: 0px; }
 /* social */
 .social {
   background-color: #000000;
@@ -135,109 +102,18 @@
 .footer__goUp {
   width: 46px;
   height: 46px;
-  position: absolute;
+  position: fixed;
   right: 37px;
   bottom: 51px;
   background-image: url("../img/default/spritesheet.png");
   background-position: 0px 0px;
   opacity: 0.9;
-  cursor: pointer; }
-
-/* retina sprites */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-    .dillers__icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .collapsed .navbar-toggler-icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .navbar-toggler-icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .navbar-nav .dropdown-item:after,
-    .footer__links-link:after {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-
-        
-    .main-links__icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .series-accordion__item .series-accordion__link-icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .social__link {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .footer__goUp {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;  
-    }
-              
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 4),
-only screen and (min--moz-device-pixel-ratio: 4),
-only screen and (-o-min-device-pixel-ratio: 4/1),
-only screen and (min-device-pixel-ratio: 4),
-only screen and (min-resolution: 360dpi),
-only screen and (min-resolution: 4dppx) {
-    .dillers__icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .collapsed .navbar-toggler-icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .navbar-toggler-icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .navbar-nav .dropdown-item:after,
-    .footer__links-link:after {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-
-    .main-links__icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .series-accordion__item .series-accordion__link-icon {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .social__link {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
-    .footer__goUp {
-        background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 156px 153px;
-    }
-        
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+.footer__goUp--visible {
+  opacity: 1; 
 }

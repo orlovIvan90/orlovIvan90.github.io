@@ -1,0 +1,300 @@
+/* reshenia-carousel */
+.reshenia-carousel {
+  background-color: #ffffff;
+  padding-top: 26px; }
+
+.reshenia-carousel__popup-call {
+  display: block; }
+
+.reshenia-carousel__popup-call:hover {
+  color: #ffffff; }
+
+.reshenia-carousel__header {
+  background-color: #000000;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 19px;
+  padding-right: 19px;
+  letter-spacing: 0.7px; }
+
+.reshenia-carousel__img {
+  width: 100%;
+  height: auto; }
+
+.reshenia-carousel__img-wrap {
+  overflow: hidden; }
+
+.reshenia-carousel__link {
+  background-color: #000000;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+  text-align: center; }
+
+.reshenia-carousel__link:hover {
+  color: #ffffff; }
+
+.reshenia-carousel__link-caption {
+  font-size: 15px;
+  line-height: 18px;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.7px;
+  position: relative; }
+
+.reshenia-carousel__link-caption:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/default/spritesheet.png");
+  background-position: -16px -147px;
+  width: 8px;
+  height: 12px;
+  right: 30px;
+  top: 4px; }
+
+.reshenia-carousel__carousel .slick-dots {
+  text-align: center;
+  padding-top: 5px; }
+
+.reshenia-carousel__carousel .slick-dots li {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer; }
+
+.reshenia-carousel__carousel button {
+  font-size: 0px;
+  background-color: #b5b5b5;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 0px;
+  outline: none;
+  cursor: pointer; }
+
+.reshenia-carousel__carousel .slick-dots .slick-active button {
+  border: 2px solid #e60c11;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff; }
+
+/* variants */
+.variants {
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 26px;
+  padding-bottom: 44px; }
+
+.variants__title {
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 1.7px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 42px; }
+
+.variants__link {
+  display: block;
+  margin-bottom: 14px; }
+
+.variants__link:hover {
+  color: #000000; }
+
+.variants__link-title {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  color: #000000;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  text-align: center; }
+
+.variants__img {
+  width: 115%;
+  height: auto;
+  position: absolute;
+  left: -6%;
+  top: -15%; }
+
+.variants__link-img-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 320px;
+  overflow: hidden;
+  position: relative;
+  height: 136px; }
+
+/* popup */
+.modal-content {
+  height: 100%;
+  width: 100%;
+  background-color: #171717;
+  border-radius: 0px;
+  border: 0px; }
+
+.modal-body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  position: relative; }
+
+.popup-carousel {
+  height: 100%;
+  width: 100%; }
+
+.popup-carousel .slick-list {
+  height: 100%; }
+
+.popup-carousel .slick-track {
+  height: 100%; }
+
+.popup__item-header {
+  display: block; }
+
+.popup__item {
+  height: 100%;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 49px; }
+
+.popup__item-img-wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.popup__img {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 1px;
+  min-height: 1px; }
+
+.modal-dialog {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  max-height: 700px; }
+
+.modal .close {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  opacity: 1;
+  text-align: center;
+  text-shadow: none;
+  padding: 17px;
+  cursor: pointer; }
+
+.modal .close span {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/default/spritesheet.png");
+  display: inline-block;
+  background-position: -117px -121px; }
+
+.popup__back {
+  font-size: 9px;
+  line-height: 15px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block; }
+
+.popup__item-header {
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  background-color: #000000;
+  padding-left: 85px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-right: 19px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  min-height: 75px; }
+
+.popup-carousel__arrows-wrap {
+  background-color: #000000;
+  height: 49px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px; }
+
+.popup-carousel__arrow {
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+  z-index: 1; }
+
+.popup-carousel__left-arrow {
+  left: 0px;
+  top: 0px; }
+
+.popup-carousel__left-arrow-inner {
+  display: block;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/default/spritesheet.png");
+  background-position: -26px -147px; }
+
+.popup-carousel__right-arrow {
+  top: 0px;
+  right: 0px; }
+
+.popup-carousel__right-arrow-inner {
+  display: block;
+  width: 8px;
+  height: 12px;
+  background-position: -16px -147px;
+  background-image: url("../img/default/spritesheet.png"); }
+
+.popup-carousel__items-number {
+  position: absolute;
+  font-size: 15px;
+  line-height: 18px;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  font-family: "HelveticaNeue-bold", sans-serif;
+  padding-top: 15px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1px; }
+
+/*# sourceMappingURL=gotovie-reshenia.css.map */
