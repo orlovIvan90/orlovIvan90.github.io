@@ -73,7 +73,7 @@ only screen and (min-resolution: 2dppx) {
     
     .modal .close span {
         background-image: url("../img/retina/spritesheet-4x.png");
-        
+        background-size: 162px 165px;
     }
     
     .popup-carousel__left-arrow-inner {
@@ -161,7 +161,7 @@ only screen and (min-resolution: 4dppx) {
     
     .modal .close span {
         background-image: url("../img/retina/spritesheet-4x.png");
-        
+        background-size: 162px 165px;
     }
     
     .popup-carousel__left-arrow-inner {
