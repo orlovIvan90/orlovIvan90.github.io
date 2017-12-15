@@ -7,63 +7,63 @@ only screen and (min-resolution: 2dppx) {
     
     .dillers__icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .collapsed .navbar-toggler-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .navbar-toggler-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .navbar-nav .dropdown-item:after,
     .footer__links-link:after {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
 
         
     .main-links__icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .series-accordion__item .series-accordion__link-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .social__link {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .footer__goUp {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;  
+        background-size: 162px 237px;  
     }
     
     .catalog__download-img {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .model__caption:after {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     .model-menu-link:after {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .spetsifikatsiya__download-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .reshenia-carousel__link-caption:after {
@@ -73,19 +73,22 @@ only screen and (min-resolution: 2dppx) {
     
     .modal .close span {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .popup-carousel__left-arrow-inner {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
 
     .popup-carousel__right-arrow-inner {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }    
-    
+    .dop-caption__img-wrap-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 4),
 only screen and (min--moz-device-pixel-ratio: 4),
@@ -96,81 +99,85 @@ only screen and (min-resolution: 4dppx) {
 
     .dillers__icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .collapsed .navbar-toggler-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .navbar-toggler-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .navbar-nav .dropdown-item:after,
     .footer__links-link:after {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
 
     .main-links__icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .series-accordion__item .series-accordion__link-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .social__link {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
         
     .footer__goUp {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .catalog__download-img {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .model__caption:after {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     .model-menu-link:after {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .spetsifikatsiya__download-icon {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .reshenia-carousel__link-caption:after {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .modal .close span {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
     
     .popup-carousel__left-arrow-inner {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
+        background-size: 162px 237px;
     }
 
     .popup-carousel__right-arrow-inner {
         background-image: url("../img/retina/spritesheet-4x.png");
-        background-size: 162px 165px;
-    } 
+        background-size: 162px 237px;
+    }
+    .dop-caption__img-wrap-icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
 }

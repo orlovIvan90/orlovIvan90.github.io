@@ -30,7 +30,8 @@
   border-right: 5px solid transparent;
   border-top: 0px solid #e60c12;
   right: 17px;
-  top: 23px; }
+  top: 50%;
+  margin-top: -2.5px; }
 
 .spetsifikatsiya__item-link:after {
   position: absolute;
@@ -40,7 +41,8 @@
   border-right: 5px solid transparent;
   border-top: 5px solid #e60c12;
   right: 17px;
-  top: 23px; }
+  top: 50%;
+  margin-top: -2.5px; }
 
 .spetsifikatsiya__item-link-caption {
   border-bottom: 1px solid #cccccc;
