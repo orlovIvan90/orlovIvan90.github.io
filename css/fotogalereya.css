@@ -1,0 +1,31 @@
+/* fotogalereya */
+.fotogalereya {
+  padding-top: 34px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 37px;
+  font-size: 0px; }
+
+.fotogalereya__img-wrap {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 11px;
+  max-width: 156px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 0 46%;
+  -ms-flex: 0 0 46%;
+  flex: 0 0 46%;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto; }
+
+.fotogalereya__img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+/*# sourceMappingURL=fotogalereya.css.map */
