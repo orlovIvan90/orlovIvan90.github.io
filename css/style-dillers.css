@@ -1,0 +1,398 @@
+.region_title {
+    font-size: 15px;
+    font-weight: bold; /* font-bold */
+    background: #efefef;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 10px;
+}
+
+.city_title {
+    color: #e70012;
+    font-weight: bold; /* font-bold */
+    height: 40px;
+    line-height: 40px;
+}
+
+.diler_name {
+    font-weight: bold; /* font-bold */
+}
+
+.diler_one {
+    line-height: 1.5em;
+}
+
+.diler_line {
+    border-bottom: 8px solid #efefef;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.diler_line.no_border {
+    border: none;
+}
+
+.diler_line.last_diler_line {
+    margin-bottom: 0;
+    border: none;
+}
+
+.city_line.no_border {
+    border: none;
+}
+
+.diler_one_padd {
+    padding-right: 50px;
+}
+
+.region {
+    padding-bottom: 10px;
+}
+
+/*********** map **********/
+#buy_map {
+    position: relative;
+    background: url('images/buy_map_new.jpg')/*tpa=http://www.hino.ru/bitrix/components/aft/dilers.list/templates/.default/images/buy_map_new.jpg*/ center no-repeat;
+    width: 874px;
+    height: 471px;
+    overflow: hidden;
+}
+
+#buy_map .city, .for-reg-image .city {
+    position: absolute;
+}
+
+#buy_map a.city_point, .for-reg-image a.city_point {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    width: 21px;
+    height: 21px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 101;
+    text-indent: -9999px;
+}
+
+#buy_map a.city_icon, .for-reg-image a.city_icon {
+    background: url('images/icon_map_hover.png') center no-repeat;
+    width: 38px;
+    height: 47px;
+    display: block;
+}
+
+.for-reg-image a.city_icon.white {
+    background-image: url('images/icon_map_white_hover.png');
+}
+
+#buy_map a.city_name, .for-reg-image a.city_name {
+    display: block;
+    height: 19px;
+    left: -24px;
+    position: absolute;
+    top: 27px;
+    width: 70px;
+    text-indent: -9999px;
+}
+
+#buy_map .for_city_icon, .for-reg-image .for_city_icon {
+    width: 38px;
+    height: 67px;
+    display: none;
+    position: absolute;
+    left: -9px;
+    bottom: 2px;
+    z-index: 100;
+}
+
+
+.city_name:hover {
+    text-decoration: none;
+}
+
+.city_point:hover {
+    text-decoration: none;
+}
+
+.download-jpg {
+    display: block;
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+
+/*********** end map **********/
+
+ @media (-webkit-min-device-pixel-ratio: 2) {
+    #buy_map {
+        background: url('images/retina/buy_map_new.jpg') center no-repeat;
+        -moz-background-size: 874px auto; /* Firefox 3.6+ */
+        -webkit-background-size:  874px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 874px auto; /* Opera 9.6+ */
+        background-size: 874px auto;
+    }
+
+    #buy_map a.city_icon {
+        background: url('images/retina/icon_map_hover.png') center no-repeat;
+        -moz-background-size: 38px auto; /* Firefox 3.6+ */
+        -webkit-background-size:  38px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 38px auto; /* Opera 9.6+ */
+        background-size: 38px auto;
+    }
+}
+
+.diler_tab td {
+    width: 33.3%;
+}
+
+.diler_tab .url_info td {
+    border-bottom: 8px solid #efefef;
+    padding-top: 10px;
+}
+
+.diler_tab tr.url_info:last-child td {
+    border-bottom: none;
+}
+
+.diler_tab {
+    width: 100%;
+}
+
+.diler_dop_padd {
+    padding-top: 40px;
+}
+
+.one_map_city {
+    position: relative;
+}
+
+.reg-image {
+    display: none;
+}
+
+.for-reg-image {
+    position: relative;
+}
+
+#dilers_map {
+    width: 945px;
+    height: 540px;
+}
+
+/*
+.dilers_map_bg {
+    background: url('../img/dilery/main_diler_map_new_v2.jpg') center no-repeat;
+    height: 540px;
+    position: relative;
+    z-index: 100;
+    margin-left: 23px;
+    margin-right: 23px;
+    background-size: contain;
+}
+*/
+
+.for_all_map {
+    position:relative;
+    z-index: 100;
+}
+
+.for_map_bg {
+    position:relative;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 945px;
+    height: 540px;
+}
+
+.for_map_bg_rel {
+    position: relative;
+    width: 945px;
+    height: 540px;
+}
+
+/* изображения округов при наведении */
+.region_hover {
+    position: absolute;
+    display: none;
+}
+
+#reg_hover_10 {
+    left: 107px;
+    top: 183px;
+    background: url('images/regions/cfo_new.png') no-repeat;
+    width: 153px;
+    height: 126px;
+}
+
+#reg_hover_11 {
+    left: 87px;
+    top: 94px;
+    background: url('images/regions/szfo_new.png') no-repeat;
+    width: 376px;
+    height: 193px;
+}
+
+#reg_hover_34 {
+    left: 149px;
+    top: 232px;
+    background: url('images/regions/pfo_new.png') no-repeat;
+    width: 179px;
+    height: 170px;
+}
+
+#reg_hover_50 {
+    left: 0;
+    top: 235px;
+    background: url('images/regions/kfo_new_v2.png') no-repeat;
+    width: 183px;
+    height: 156px;
+}
+
+#reg_hover_55 {
+    left: 58px;
+    top: 324px;
+    background: url('images/regions/skfo_new.png') no-repeat;
+    width: 85px;
+    height: 101px;
+}
+
+
+#reg_hover_58 {
+    left: 247px;
+    top: 169px;
+    background: url('images/regions/ufo_new.png') no-repeat;
+    width: 230px;
+    height: 223px;
+}
+
+#reg_hover_63 {
+    left: 332px;
+    top: 60px;
+    background: url('images/regions/sfo_new.png') no-repeat;
+    width: 372px;
+    height: 443px;
+}
+
+#reg_hover_70 {
+    left: 556px;
+    top: 25px;
+    background: url('images/regions/dfo_new.png') no-repeat;
+    width: 389px;
+    height: 505px;
+}
+
+.diler_one .diler_name.selected {
+    color: #6069BC;
+}
+
+.diler_tab td.hidden {
+    opacity: 0.5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); /* Хрень для IE чтобы работала opacity */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    #buy_map {
+        background: url('images/retina/buy_map_new.jpg') center no-repeat;
+        -moz-background-size: 874px auto; /* Firefox 3.6+ */
+        -webkit-background-size:  874px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 874px auto; /* Opera 9.6+ */
+        background-size: 874px auto;
+    }
+
+    #buy_map a.city_icon {
+        background: url('images/retina/icon_map_hover.png') center no-repeat;
+        -moz-background-size: 38px auto; /* Firefox 3.6+ */
+        -webkit-background-size:  38px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 38px auto; /* Opera 9.6+ */
+        background-size: 38px auto;
+    }
+
+    .for-reg-image a.city_icon.white {
+        background-image: url('images/retina/icon_map_white_hover.png');
+    }
+
+    .dilers_map_bg {
+        background: url('images/retina/main_diler_map_new_v2.jpg') center no-repeat;
+        -moz-background-size: 954px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 945px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 945px auto; /* Opera 9.6+ */
+        background-size: 945px auto;
+    }
+
+    #reg_hover_10 {
+        background: url('images/retina/regions/cfo_new.png') no-repeat;
+        -moz-background-size: 153px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 153px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 153px auto; /* Opera 9.6+ */
+        background-size: 153px auto;
+    }
+
+    #reg_hover_11 {
+        background: url('images/retina/regions/szfo_new.png') no-repeat;
+        -moz-background-size: 376px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 376px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 376px auto; /* Opera 9.6+ */
+        background-size: 376px auto;
+    }
+
+    #reg_hover_34 {
+        background: url('images/retina/regions/pfo_new.png') no-repeat;
+        -moz-background-size: 179px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 179px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 179px auto; /* Opera 9.6+ */
+        background-size: 179px auto;
+    }
+
+    #reg_hover_50 {
+        background: url('images/retina/regions/kfo_new_v2.png') no-repeat;
+        -moz-background-size: 370px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 370px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 370px auto; /* Opera 9.6+ */
+        background-size: 370px auto;
+    }
+
+    #reg_hover_55 {
+        background: url('images/retina/regions/skfo_new.png') no-repeat;
+        -moz-background-size: 85px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 85px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 85px auto; /* Opera 9.6+ */
+        background-size: 85px auto;
+    }
+
+/*    #reg_hover_87 {
+        background: url('images/retina/regions/kfo_new.png') no-repeat;
+        -moz-background-size: 76px auto; !* Firefox 3.6+ *!
+        -webkit-background-size: 76px auto; !* Safari 3.1+ и Chrome 4.0+ *!
+        -o-background-size: 76px auto; !* Opera 9.6+ *!
+        background-size: 76px auto;
+    }*/
+
+    #reg_hover_58 {
+        background: url('images/retina/regions/ufo_new.png') no-repeat;
+        -moz-background-size: 230px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 230px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 230px auto; /* Opera 9.6+ */
+        background-size: 230px auto;
+    }
+
+    #reg_hover_63 {
+        background: url('images/retina/regions/sfo_new.png') no-repeat;
+        -moz-background-size: 372px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 372px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 372px auto; /* Opera 9.6+ */
+        background-size: 372px auto;
+    }
+
+    #reg_hover_70 {
+        background: url('images/retina/regions/dfo_new.png') no-repeat;
+        -moz-background-size: 389px auto; /* Firefox 3.6+ */
+        -webkit-background-size: 389px auto; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 389px auto; /* Opera 9.6+ */
+        background-size: 389px auto;
+    }
+
+}

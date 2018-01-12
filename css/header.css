@@ -1,6 +1,7 @@
 .body__wrap {
   max-width: 992px;
-  min-width: 320px; }
+  min-width: 320px;
+  position: relative; }
 
 .header {
   background: #e60c12;

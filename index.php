@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/header.css?121220171745">
 	<link rel="stylesheet" type="text/css" href="css/footer.css?121220171745">
-	<link rel="stylesheet" type="text/css" href="css/style.css?121220171745">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/sprites-retina.css?121220171745">
 	
 	

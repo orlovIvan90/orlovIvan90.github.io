@@ -56,6 +56,12 @@ only screen and (min-resolution: 2dppx) {
         background-image: url("../img/retina/spritesheet-4x.png");
         background-size: 162px 237px;
     }
+    
+    .model__caption.collapsed:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
+    
     .model-menu-link:after {
         background-image: url("../img/retina/spritesheet-4x.png");
         background-size: 162px 237px;
@@ -89,7 +95,39 @@ only screen and (min-resolution: 2dppx) {
         background-image: url("../img/retina/spritesheet-4x.png");
         background-size: 162px 237px;
     }
-}
+    .konfigurator__checkbox,
+    .konfigurator__checkbox--agree {
+        background-image: url("../img/default/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
+    .dialers__top:after {
+        background-image: url("../img/default/spritesheet.png");
+        background-size: 162px 237px;
+    }
+    .dillers--page .dillers__icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
+    .pagination-clients .page-link--next .pagination-clients__icon {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+
+    .pagination-clients .page-link--prev .pagination-clients__icon {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+
+    .pagination-clients .page-link--next .pagination-clients__icon.inactive {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+
+    .pagination-clients .page-link--prev .pagination-clients__icon.inactive {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+    
+    .turn-back__text:before {
+      background-image: url("../img/default/spritesheet.png");
+      background-position: -26px -147px; }
+    
 @media only screen and (-webkit-min-device-pixel-ratio: 4),
 only screen and (min--moz-device-pixel-ratio: 4),
 only screen and (-o-min-device-pixel-ratio: 4/1),
@@ -147,6 +185,12 @@ only screen and (min-resolution: 4dppx) {
         background-image: url("../img/retina/spritesheet-4x.png");
         background-size: 162px 237px;
     }
+    
+    .model__caption.collapsed:after {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
+    
     .model-menu-link:after {
         background-image: url("../img/retina/spritesheet-4x.png");
         background-size: 162px 237px;
@@ -180,4 +224,36 @@ only screen and (min-resolution: 4dppx) {
         background-image: url("../img/retina/spritesheet-4x.png");
         background-size: 162px 237px;
     }
-}
+    .konfigurator__checkbox,
+    .konfigurator__checkbox--agree {
+        background-image: url("../img/default/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
+    .dialers__top:after {
+        background-image: url("../img/default/spritesheet.png");
+        background-position: 162px 237px;
+    }
+    .dillers--page .dillers__icon {
+        background-image: url("../img/retina/spritesheet-4x.png");
+        background-size: 162px 237px;
+    }
+    .pagination-clients .page-link--next .pagination-clients__icon {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+
+    .pagination-clients .page-link--prev .pagination-clients__icon {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+
+    .pagination-clients .page-link--next .pagination-clients__icon.inactive {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+
+    .pagination-clients .page-link--prev .pagination-clients__icon.inactive {
+      background-image: url("../img/retina/spritesheet-4x.png");
+      background-size: 162px 237px; }
+    }
+    
+    .turn-back__text:before {
+      background-image: url("../img/default/spritesheet.png");
+      background-position: -26px -147px; }

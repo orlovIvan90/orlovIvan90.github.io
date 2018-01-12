@@ -27,6 +27,13 @@
       font-weight: normal;
       font-style: normal;
 }
+@font-face {
+      font-family: 'HelveticaNeue-lightitalic';
+      src: url('../fonts/helveticaneuecyr-lightitalic.eot');
+      src: url('../fonts/helveticaneuecyr-lightitalic.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneuecyr-lightitalic.woff2') format('woff2'), url('../fonts/helveticaneuecyr-lightitalic.woff') format('woff'), url('../fonts/helveticaneuecyr-lightitalic.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
 
 
 body {

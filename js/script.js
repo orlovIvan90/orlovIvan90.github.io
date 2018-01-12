@@ -86,6 +86,12 @@
             var slideNumber = $(this).attr("data-popup");
             $('.popup-carousel').slick('slickGoTo', slideNumber, false);
         });
+        
+        
+        
+        /* Стилизация элементов формы */
+        $(".konfigurator__checkbox").styler();
+        $(".konfigurator__checkbox--agree").styler();
     });
         
 })(jQuery);
