@@ -17,9 +17,12 @@
     <link rel="stylesheet" type="text/css" href="css/main.css?281220171245">
     <link rel="stylesheet" type="text/css" href="css/sprites-retina.css?121220171745">
 
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="js/desc/jquery.selectbox-0.2.min.js"></script>
+	<script src="js/desc/jquery.textchange.js"></script>
+	<script src="js/desc/jquery.maskedinput-1.2.2.js"></script>
+	<script src="js/desc/scripts.js"></script>
+	<script src="js/desc/validForm.js"></script>
 
 </head>
 
@@ -163,32 +166,152 @@
         </header>
 
         <main class="main">
-            <div class="dialers__top">Новости</div>
-            
-            <a href="#" class="turn-back">
-                <p class="turn-back__text">Вернуться к списку новостей</p>
-            </a>
-            
-            <article class="news-piece">
-                <h2 class="news-piece__title">Приглашаем Вас посетить стенд HINO на COMTRANS'17!</h2>
+            <div class="dialers__top">Контакты</div>
+            <h2 class="dialers__title">Контакты</h2>
+
+            <section class="stat-dilerom">
+                <div class="stat-dilerom__top">
                 
-                <div class="news__item-date">25.08.2017</div>
-              
-                <p class="news-piece__text">С 4 по 9 сентября 2017, в МВЦ «Крокус Экспо», пройдет самая популярная в России выставка коммерческого транспорта - грузовой автосалон COMTRANS. Пресс-день состоится 4 сентября, и 5 сентября выставка станет доступна для широкой публики.</p>
-                <p class="news-piece__text">Приглашаем Вас посетить стенд HINO, в 14 зале павильона №3! На нашем стенде Вы сможете ознакомиться с самыми популярными в России моделями лидера японского рынка, в различном исполнении, и, конечно, увидеть новую модель HINO 500 серии.</p>
-                <p class="news-piece__text">Главной новинкой на нашем стенде станет именно этот автомобиль. Обновление HINO 500 произойдет в модификациях GH и FM. Автомобиль получил улучшенную управляемость, усовершенствованный дизайн кабины, экологический класс Евро 5, а модификация FM - новый двигатель и различные варианты колесной базы для разного типа надстроек.</p>
-                <p class="news-piece__text">Наши специалисты будут рады рассказать Вам об автомобилях, о каждом направлении работы официального дистрибьютора «Хино Моторс Сэйлс» и всей дилерской сети в России.</p>
-                <p class="news-piece__text">До встречи на COMTRANS 2017!</p>
-                
-                <div class="news-piece__img-wrap">
-                    <img src="img/378dbed620e419944924d3520d302155.jpg" alt="" class="news-piece__img">
+                    <p class="stat-dilerom__text">Уважаемые посетители сайта,</p>
+
+                    <p class="stat-dilerom__text">Просим обратить Ваше внимание, что продажи, сервисное обслуживание, гарантийный и послегарантийный ремонт автомобилей HINO осуществляется официальными дилерами HINO.</p>
+
+                    <p class="stat-dilerom__text">Их контакты Вы можете найти в подразделе <a href="" class="link-with-shadow-underlined">Дилеры</a>.</p>
+                    
+                    <p class="stat-dilerom__text">Отзывы и пожелания к работе дилеров Вы можете направлять на следующий адрес:</p>
+                    
+                    <div class="address">
+                        <div class="address__line">
+                            <div class="address__left">Компания:</div>
+                            <div class="address__right">ООО «Хино Моторс Сэйлс»</div>
+                        </div>
+                        
+                        <div class="address__line">
+                            <div class="address__left">Адрес:</div>
+                            <div class="address__right">125464, Россия, г. Москва, Волоколамское шоссе, д. 142, БЦ «ИРБИС», 7 этаж.</div>
+                        </div>
+                        
+                        <div class="address__line">
+                            <div class="address__left">Телефон:</div>
+                            <div class="address__right">+7 (495) 374−55−44</div>
+                        </div>
+                        
+                        <div class="address__line">
+                            <div class="address__left">Факс:</div>
+                            <div class="address__right">+7 (495) 374−55−44</div>
+                        </div>
+                        
+                        <div class="address__line">
+                            <div class="address__left">ИНН:</div>
+                            <div class="address__right">7703669870</div>
+                        </div>
+                        
+                        <div class="address__line">
+                            <div class="address__left">Web-site:</div>
+                            <a href="" class="address__red address__right link-with-shadow-underlined">www.hino.ru</a>
+                        </div>
+                        
+                        <div class="address__line">
+                            <div class="address__left">E-mail:</div>
+                            <a href="mailto:info@hino.ru" class="address__red address__right link-with-shadow-underlined">info@hino.ru</a>
+                        </div>
+                    </div>
+                     
+                    <div class="contacts__map-wrap">
+                        <h3 class="contacts__map-title">Схема проезда</h3>
+                        <div class="ya-map"> 
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34a012d23a6951d589ef00204adcfa26666cc02cc69f0e7d9d6afe9dbe2ac5a1&width=100%&height=100%&lang=ru_RU&scroll=true" ></script>
+                        </div>
+                    </div>
                 </div>
-            </article>
+
+            </section>
+
+            <div class="catalog catalog--about-company">
+                <h3 class="catalog__title">Схема проезда на личном транспорте <span>(7,4 Mb)</span></h3>
+
+                <a href="http://www.hino.ru/bitrix/components/aft/pdf-links/downland.php?file=/upload/iblock/be9/be93c812792afb485a93519161fe4b61.pdf" class="catalog__download" download>
+                    <div class="catalog__download-img"></div>
+                    <span class="catalog__download-caption">Скачать</span>
+                </a>
+            </div>
             
-            
-            
-            
-        </main>    
+            <div class="catalog catalog--about-company">
+                <h3 class="catalog__title">Схема проезда на общественном транспорте <span>(6,8 Mb)</span></h3>
+
+                <a href="http://www.hino.ru/bitrix/components/aft/pdf-links/downland.php?file=/upload/iblock/fe5/fe5731d934e7fe5af251d94f85da1ed6.pdf" class="catalog__download" download>
+                    <div class="catalog__download-img"></div>
+                    <span class="catalog__download-caption">Скачать</span>
+                </a>
+            </div>
+
+            <!-- Струтура комирована из десктопной версии -->
+            <div class="diler_feedback diler_feedback--stat-dilerom">
+                <div class="for_form">
+                    <h2 class="contacts__form-title">Напишите нам</h2>
+                    <form action="http://www.hino.ru/o-kompanii/stat-dilerom/#feedback_diler" method="POST" id="feedback_diler">
+                        <div class="error_message block_error">
+                            <div class="error_message_padd"></div>
+                        </div>
+
+                        <input type="hidden" name="sessid" id="sessid" value="38fe513fd77cb8acaed0c2c054877185" />
+                        <div class="form_line">
+                            <div class="for_input_middle input_block">
+                                <label class="konfigurator__label">Ф.И.О.</label>
+                                <div class="for_input">
+                                    <input type="text" name="USER_NAME" value="" class="konfigurator__input"/>
+                                </div>
+                            </div>
+                            <div class="for_input_short input_block">
+                                <label class="konfigurator__label">Эдектронная почта<span class="req">*</span></label>
+                                <div class="for_input">
+                                    <input type="text" name="USER_EMAIL" value="" class="email required konfigurator__input"/>
+                                </div>
+                            </div>
+                            <div class="for_input_short input_block">
+                                <label class="konfigurator__label">Телефон<span class="req">*</span></label>
+                                <div class="for_input no_padding konfigurator__phone-wrap">
+                                    <div class="phone-first">+7</div> <input type="text" name="USER_PHONE_CODE" value="" class="required client_phone_code konfigurator__input konfigurator__phone-code" />
+                                    <input type="text" name="USER_PHONE" value="" class="required client_phone konfigurator__input konfigurator__phone-number" />
+                                </div>
+                                <div class="input_descr">Электронная почта и телефон служит для обратной связи и не публикуется</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="form_line">
+                            <div class="for_input_checkbox konfigurator__middle-wrap konfigurator__wrap--agree">
+                                <div class="for_checkbox"><input name="USER_AGREE" type="checkbox" class="required konfigurator__checkbox--agree" id="field_agree" /></div>
+                                <label for="field_agree" class="konfigurator__checkbox-label">Я согласен на обработку моих персональных данных<span class="req">*</span></label>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="form_line">
+                            <div class="for_input_long">
+                                <label class="konfigurator__label">Тема сообщения</label>
+                                <div class="for_input">
+                                    <input type="text" name="MESSAGE_THEME" value=""  class="konfigurator__input"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_line">
+                            <label class="konfigurator__label">Текст сообщения<span class="req">*</span></label>
+                            <div class="for_textarea">
+                                <textarea name="MESSAGE_TEXT" class="required konfigurator__input konfigurator__input--textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="form_line form_submit">
+                           <div class="form_submit_right">
+                                <span class="req konfigurator__checkbox-caption">*</span> – поля, обязательные для заполнения
+                            </div>
+                            <input type="submit" class="feedback-submit konfigurator__send" name="submit" value="Отправить" />
+                            
+                            <div class="clear"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
 
         <footer class="footer">
             <div class="navbar">
@@ -315,7 +438,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="js/jquery.min.js"></script>
+<!--    <script src="js/jquery.min.js"></script>-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
