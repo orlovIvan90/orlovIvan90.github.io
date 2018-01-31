@@ -17,7 +17,12 @@
     <link rel="stylesheet" type="text/css" href="css/main.css?170120181020">
     <link rel="stylesheet" type="text/css" href="css/sprites-retina.css?121220171745">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="js/desc/jquery.selectbox-0.2.min.js"></script>
+	<script src="js/desc/jquery.textchange.js"></script>
+	<script src="js/desc/jquery.maskedinput-1.2.2.js"></script>
+	<script src="js/desc/scripts.js"></script>
+	<script src="js/desc/validForm.js"></script>
 
 </head>
 
@@ -25,7 +30,135 @@
 
     <div class="body__wrap">
 
+        <div class="modal fade modal--avtovnal modal--konf" id="ModalKonf" tabindex="-1" role="dialog" aria-labelledby="ModalKonfLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                  <p class="popup__back">Назад</p>
+                </button>
 
+                    <div class="modal-body">
+                        <div class="popup__item popup__item--konf">
+
+                            <div class="popup__item-header">Конфигуратор</div>
+
+                            <div class="popup__item--konf-title">Выберите интересующую Вас серию:</div>
+                            
+                            <div class="popup__item--konf-img-top-wrap">
+                                <img src="img/default/hino300logo.jpg" alt="Hino 300" class="popup__item--top-konf-img">
+                            </div>
+                            
+                            <div class="popup__item--konf-img-wrap">
+                                <img src="img/default/300car.jpg" alt="Hino 300" class="popup__item--konf-img">
+                            </div>
+                            
+                            <p class="popup__item--konf-caption">Малый тоннаж</p>
+                            
+                            <div class="popup__item--konf-lists">
+                                <div class="popup__item--konf-list-wrap">
+                                    <span class="popup__item--konf-list-title">Полная масса:</span>
+                                    
+                                    <ul class="popup__item--konf-list">
+                                        <li class="popup__item--konf-list-item">3,5 тонн</li>
+                                        <li class="popup__item--konf-list-item">7,5 тонн</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="popup__item--konf-list-wrap">
+                                    <span class="popup__item--konf-list-title">Колесная формула:</span>
+                                    
+                                    <ul class="popup__item--konf-list">
+                                        <li class="popup__item--konf-list-item">4 х 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="popup__item--konf-button">Конфигуратор</a>
+                            
+                            <div class="popup__item--konf-decor"></div>
+                        </div>
+                        
+                        
+                        
+                        <div class="popup__item popup__item--konf">
+                            
+                            <div class="popup__item--konf-img-top-wrap">
+                                <img src="img/default/hino500logo.jpg" alt="Hino 500" class="popup__item--top-konf-img">
+                            </div>
+                            
+                            <div class="popup__item--konf-img-wrap">
+                                <img src="img/default/500car.jpg" alt="Hino 500" class="popup__item--konf-img">
+                            </div>
+                            
+                            <p class="popup__item--konf-caption">Средний тоннаж</p>
+                            
+                            <div class="popup__item--konf-lists">
+                                <div class="popup__item--konf-list-wrap">
+                                    <span class="popup__item--konf-list-title">Полная масса:</span>
+                                    
+                                    <ul class="popup__item--konf-list">
+                                        <li class="popup__item--konf-list-item">12,0 тонн</li>
+                                        <li class="popup__item--konf-list-item">17,5 тонн</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="popup__item--konf-list-wrap">
+                                    <span class="popup__item--konf-list-title">Колесная формула:</span>
+                                    
+                                    <ul class="popup__item--konf-list">
+                                        <li class="popup__item--konf-list-item">4 х 2</li>
+                                        <li class="popup__item--konf-list-item">6 х 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="popup__item--konf-button">Конфигуратор</a>
+                            
+                            <div class="popup__item--konf-decor"></div>
+                        </div>
+                        
+                        
+                        
+                        <div class="popup__item popup__item--konf">
+                            
+                            <div class="popup__item--konf-img-top-wrap">
+                                <img src="img/default/hino700logo.jpg" alt="Hino 700" class="popup__item--top-konf-img">
+                            </div>
+                            
+                            <div class="popup__item--konf-img-wrap">
+                                <img src="img/default/700car.jpg" alt="Hino 700" class="popup__item--konf-img">
+                            </div>
+                            
+                            <p class="popup__item--konf-caption">Крупный тоннаж</p>
+                            
+                            <div class="popup__item--konf-lists">
+                                <div class="popup__item--konf-list-wrap">
+                                    <span class="popup__item--konf-list-title">Полная масса:</span>
+                                    
+                                    <ul class="popup__item--konf-list">
+                                        <li class="popup__item--konf-list-item">28,0 тонн</li>
+                                        <li class="popup__item--konf-list-item">30,7 тонн</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="popup__item--konf-list-wrap">
+                                    <span class="popup__item--konf-list-title">Колесная формула:</span>
+                                    
+                                    <ul class="popup__item--konf-list">
+                                        <li class="popup__item--konf-list-item">6 х 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="popup__item--konf-button">Конфигуратор</a>
+                            
+                            <div class="popup__item--konf-decor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <header class="header">
             <div class="container-fluid">
@@ -119,6 +252,7 @@
                                         <a class="dropdown-item" href="#">Кредит</a>
                                         <a class="dropdown-item" href="#">Акции</a>
                                         <a class="dropdown-item" href="#">Автомобили в наличии</a>
+                                        <a class="dropdown-item show-konf-popup" href="#" data-toggle="modal" data-target="#ModalKonf">Оставить заявку</a>
                                     </div>
 
                                 </li>
@@ -161,86 +295,9 @@
         </header>
 
         <main class="main">
-            <div class="dialers__top">Акции</div>
-            <h2 class="dialers__title">Акции</h2>
             
-            <div class="akcii">
-                <article class="akcii__item">
-                    <div class="akcii__date">01.02.2017</div>
-                    
-                    <a href="#" class="akcii__title">Годовое обслуживание в подарок!</a>
-                    
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/banner-godovoe-oblsuzhivanie.jpg" alt="" class="akcii__img">
-                        </a>
-                    </div>
-                    
-                    <p class="akcii__caption">С 1 января 2017 года при покупке автомобиля HINO Вы получаете год технического обслуживания в подарок!</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
-                
-                <article class="akcii__item">
-                    <div class="akcii__date">01.09.2017</div>
-                    
-                    <a href="#" class="akcii__title">Увеличенная гарантия на запчасти</a>
-                    
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/d2b99a181f3791bc36a63e96977286df.jpg" alt="" class="akcii__img">
-                        </a>
-                    </div>
-                    
-                    <p class="akcii__caption">С радостью сообщаем Вам о расширенном гарантийном периоде на оригинальные запасные части Хино, действующем с 1 сентября 2017 года: 2 года или 100 000 км. пробега.</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
-                
-                <article class="akcii__item">
-                    <div class="akcii__date">01.02.2017</div>
-                    
-                    <a href="#" class="akcii__title">Увеличенная гарантия на автомобили HINO</a>
-                    
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/banner.jpg" alt="" class="akcii__img">
-                        </a>
-                    </div>
-                    
-                    <p class="akcii__caption">C 1 января по 31 декабря 2017 года при покупке грузовых автомобилей HINO Серии 300 и 500 (модификации GD и GH) у официальных Дилеров HINO Вы получаете расширенный гарантийный период!</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
-                
-                <article class="akcii__item">
-                    <div class="akcii__date">31.10.2017</div>
-                    
-                    <a href="#" class="akcii__title">Зимняя кампания 2017</a>
-                    
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/deef3185ce0aad426f9a49c5c7082ea0.JPG" alt="" class="akcii__img">
-                        </a>
-                    </div>
-                    
-                    <p class="akcii__caption">Спешим сообщить, что компания  ООО «Хино Моторс Сэйлс» совместно с дилерской сетью подготовила для Вас уникальное сезонное предложение «Зимняя  кампания 2017» - скидка на комплекты запасных частей и масло Лукойл.</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
-            </div>        
-                                    
-            <div class="send">
-                <a href="#" class="send__button">Отправить заявку</a>
-            </div>
+            
+
         </main>
 
         <footer class="footer">
@@ -368,9 +425,11 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="js/jquery.min.js"></script>
+<!--    <script src="js/jquery.min.js"></script>-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/script.js?1703031230"></script>
 </body>
 

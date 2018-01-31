@@ -131,6 +131,11 @@ only screen and (min-resolution: 2dppx) {
     .akcii__link-inner:after {
       background-image: url("../img/default/spritesheet.png");
       background-size: 162px 237px; }
+    
+    .solution--avtovnal .sol-price__inner:after {
+      background-image: url("../img/default/spritesheet.png");
+      background-size: 162px 237px;
+    }
 }
     
 @media only screen and (-webkit-min-device-pixel-ratio: 4),
@@ -265,6 +270,11 @@ only screen and (min-resolution: 4dppx) {
     .akcii__link-inner:after {
       background-image: url("../img/default/spritesheet.png");
       background-size: 162px 237px; }
+    
+    .solution--avtovnal .sol-price__inner:after {
+      background-image: url("../img/default/spritesheet.png");
+      background-size: 162px 237px;
     }
+}
     
     

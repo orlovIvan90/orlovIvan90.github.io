@@ -89,6 +89,22 @@
         
         
         
+        /* Переключение итемов на странице "Автомобили в наличии" при клике на привью */
+        
+        var avtovnalPopupItems = $(".popup__item--avtovnal");
+        
+        $('.solution--avtovnal').on("click", function() {
+            
+            $(avtovnalPopupItems).each(function( index, value ) {
+              $(this).hide();
+            });    
+            
+            var popupItemNumber = $(this).attr("data-popup");
+            
+            $(avtovnalPopupItems).eq(popupItemNumber).show();
+        });
+        
+        
         /* Стилизация элементов формы */
         $(".konfigurator__checkbox").styler();
         $(".konfigurator__checkbox--agree").styler();

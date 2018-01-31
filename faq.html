@@ -17,7 +17,12 @@
     <link rel="stylesheet" type="text/css" href="css/main.css?170120181020">
     <link rel="stylesheet" type="text/css" href="css/sprites-retina.css?121220171745">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="js/desc/jquery.selectbox-0.2.min.js"></script>
+	<script src="js/desc/jquery.textchange.js"></script>
+	<script src="js/desc/jquery.maskedinput-1.2.2.js"></script>
+	<script src="js/desc/scripts.js"></script>
+	<script src="js/desc/validForm.js"></script>
 
 </head>
 
@@ -161,86 +166,174 @@
         </header>
 
         <main class="main">
-            <div class="dialers__top">Акции</div>
-            <h2 class="dialers__title">Акции</h2>
             
-            <div class="akcii">
-                <article class="akcii__item">
-                    <div class="akcii__date">01.02.2017</div>
-                    
-                    <a href="#" class="akcii__title">Годовое обслуживание в подарок!</a>
-                    
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/banner-godovoe-oblsuzhivanie.jpg" alt="" class="akcii__img">
-                        </a>
-                    </div>
-                    
-                    <p class="akcii__caption">С 1 января 2017 года при покупке автомобиля HINO Вы получаете год технического обслуживания в подарок!</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
+            <div class="faq">
+                <div class="faq__img-wrap">
+                    <img src="img/default/faq.jpg" alt="" class="faq__img-wrap-img">
+                </div>
+               
+                <h2 class="dialers__title">FAQ</h2>
                 
-                <article class="akcii__item">
-                    <div class="akcii__date">01.09.2017</div>
-                    
-                    <a href="#" class="akcii__title">Увеличенная гарантия на запчасти</a>
-                    
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/d2b99a181f3791bc36a63e96977286df.jpg" alt="" class="akcii__img">
-                        </a>
-                    </div>
-                    
-                    <p class="akcii__caption">С радостью сообщаем Вам о расширенном гарантийном периоде на оригинальные запасные части Хино, действующем с 1 сентября 2017 года: 2 года или 100 000 км. пробега.</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
+                <div class="faq__top">
+                    <p class="faq__top-p">HINO является динамично развивающимся брендом на рынке грузовых автомобилей в России.</p>
+                    <p class="faq__top-p">За последние несколько лет автомобили HINO завоевали значительную популярность среди клиентов, все чаще и чаще мелькая на российских дорогах.</p>
+                    <p class="faq__top-p">Если вы все же не до конца раскрыли для себя HINO, в данном разделе вы можете найти ответы на часто задаваемые вопросы.</p>
+                </div>
                 
-                <article class="akcii__item">
-                    <div class="akcii__date">01.02.2017</div>
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Что такое HINO? </h3>
                     
-                    <a href="#" class="akcii__title">Увеличенная гарантия на автомобили HINO</a>
-                    
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/banner.jpg" alt="" class="akcii__img">
-                        </a>
-                    </div>
-                    
-                    <p class="akcii__caption">C 1 января по 31 декабря 2017 года при покупке грузовых автомобилей HINO Серии 300 и 500 (модификации GD и GH) у официальных Дилеров HINO Вы получаете расширенный гарантийный период!</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">Это один из крупнейших производителей грузовых автомобилей и автобусов в мире.</li>
+                        <li class="faq__answer__list-item">Представительства HINO имеются в 80 странах мира, а в таких государствах как Малайзия, Таиланд, Индия, Китай, США и Канада локализовано производство полного цикла.</li>
+                        <li class="faq__answer__list-item">В самой Японии имеется 4 завода (Хино, Хамура, Нитта, Кога) и 2 испытательных полигона (Ибараки, Мэмуро).</li>
+                        <li class="faq__answer__list-item">Годовой объем реализации составляет более 168 000 ед. по всему миру (результат 2014 г.).</li>
+                        <li class="faq__answer__list-item">См. более подробную информацию в разделах «<a href="" class="link-with-shadow-underlined">В&nbsp;мире</a>» и «<a href="" class="link-with-shadow-underlined">В&nbsp;России</a>» страницы «<a href="" class="link-with-shadow-underlined">О&nbsp;компании</a>».</li>
+                    </ul>
+                </section>
                 
-                <article class="akcii__item">
-                    <div class="akcii__date">31.10.2017</div>
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Чей это брэнд? </h3>
                     
-                    <a href="#" class="akcii__title">Зимняя кампания 2017</a>
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">HINO – это японский брэнд.</li>
+                    </ul>
+                </section>
+                
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Какое отношение HINO имеет к TOYOTA?</h3>
                     
-                    <div class="akcii__img-wrap">
-                        <a href="#" class="akcii__img-wrap-link">
-                            <img src="img/default/deef3185ce0aad426f9a49c5c7082ea0.JPG" alt="" class="akcii__img">
-                        </a>
-                    </div>
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">	С 1966 г. HINO входит в группу компаний TOYOTA (наряду с такими известными брэндами как LEXUS, DAIHATSU, DENSO, AISIN и еще другими 8 компаниями) с соответствующей культурой производства, гарантией качества, системой его контроля на стадии разработки, анализа, производства и тестирования.</li>
+                    </ul>
+                </section>
+                
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Когда HINO появилось в России?</h3>
                     
-                    <p class="akcii__caption">Спешим сообщить, что компания  ООО «Хино Моторс Сэйлс» совместно с дилерской сетью подготовила для Вас уникальное сезонное предложение «Зимняя  кампания 2017» - скидка на комплекты запасных частей и масло Лукойл.</p>
-                    
-                    <a href="" class="akcii__link">
-                        <span class="akcii__link-inner">Подробнее</span>
-                    </a>
-                </article>
-            </div>        
-                                    
-            <div class="send">
-                <a href="#" class="send__button">Отправить заявку</a>
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">В июле 2008 г. японской компанией Hino Motors, Ltd. и крупнейшим торговым домом Японии MITSUI & CO., Ltd. была учреждена компания ООО «Хино Моторс Сэйлс», представляющая бренд HINO в России.</li>
+                        <li class="faq__answer__list-item">В тот же период стартовали официальные продажи HINO на территории России.</li>
+                        <li class="faq__answer__list-item">См. более подробную информацию в разделе «В России» страницы «О компании».</li>
+
+                    </ul>
+                </section>
+                
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Что такое HINO? </h3>
+           
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">Это один из крупнейших производителей грузовых автомобилей и автобусов в мире.</li>
+                        <li class="faq__answer__list-item">Представительства HINO имеются в 80 странах мира, а в таких государствах как Малайзия, Таиланд, Индия, Китай, США и Канада локализовано производство полного цикла.</li>
+                        <li class="faq__answer__list-item">В самой Японии имеется 4 завода (Хино, Хамура, Нитта, Кога) и 2 испытательных полигона (Ибараки, Мэмуро).</li>
+                        <li class="faq__answer__list-item">Годовой объем реализации составляет более 168 000 ед. по всему миру (результат 2014 г.).</li>
+                        <li class="faq__answer__list-item">См. более подробную информацию в разделах «<a href="" class="link-with-shadow-underlined">В&nbsp;мире</a>» и «<a href="" class="link-with-shadow-underlined">В&nbsp;России</a>» страницы «<a href="" class="link-with-shadow-underlined">О&nbsp;компании</a>».</li>
+
+                    </ul>
+                </section>
+                
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Чей это брэнд?</h3>
+           
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">HINO – это японский брэнд.</li>
+                    </ul>
+                </section>
+                
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Какое отношение HINO имеет к TOYOTA?</h3>
+           
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">С 1966 г. HINO входит в группу компаний TOYOTA (наряду с такими известными брэндами как LEXUS, DAIHATSU, DENSO, AISIN и еще другими 8 компаниями) с соответствующей культурой производства, гарантией качества, системой его контроля на стадии разработки, анализа, производства и тестирования.</li>
+                    </ul>
+                </section>
+                
+                <section class="faq__item">
+                    <h3 class="faq__item-title">Когда HINO появилось в России?</h3>
+   
+                    <ul class="faq__answer-list">
+                        <li class="faq__answer__list-item">В июле 2008 г. японской компанией Hino Motors, Ltd. и крупнейшим торговым домом Японии MITSUI & CO., Ltd. была учреждена компания ООО «Хино Моторс Сэйлс», представляющая бренд HINO в России.</li>
+                        <li class="faq__answer__list-item">В тот же период стартовали официальные продажи HINO на территории России.</li>
+                        <li class="faq__answer__list-item">См. более подробную информацию в разделе «В России» страницы «О компании».</li>
+                    </ul>
+                </section>
             </div>
+            
+            <nav aria-label="Page navigation" class="pagination-clients pagination-clients--faq">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link page-link--prev" href="#"><div class="pagination-clients__icon inactive"></div></a></li>
+                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link page-link--next" href="#"><div class="pagination-clients__icon"></div></a></li>
+              </ul>
+            </nav>
+
+            <!-- Струтура комирована из десктопной версии -->
+            <div class="diler_feedback diler_feedback--stat-dilerom">
+                <div class="for_form">
+                    <div class="faq__form-caption">Если у Вас имеются предварительные вопросы или Вам необходимо что-либо уточнить, пожалуйста, воспользуйтесь формой обратной связи:</div>
+                    <form action="http://www.hino.ru/o-kompanii/stat-dilerom/#feedback_diler" method="POST" id="feedback_diler">
+                        <div class="error_message block_error">
+                            <div class="error_message_padd"></div>
+                        </div>
+
+                        <input type="hidden" name="sessid" id="sessid" value="38fe513fd77cb8acaed0c2c054877185" />
+                        <div class="form_line">
+                            <div class="for_input_middle input_block">
+                                <label class="konfigurator__label">Ф.И.О.</label>
+                                <div class="for_input">
+                                    <input type="text" name="USER_NAME" value="" class="konfigurator__input"/>
+                                </div>
+                            </div>
+                            <div class="for_input_short input_block">
+                                <label class="konfigurator__label">Эдектронная почта<span class="req">*</span></label>
+                                <div class="for_input">
+                                    <input type="text" name="USER_EMAIL" value="" class="email required konfigurator__input"/>
+                                </div>
+                            </div>
+                            <div class="for_input_short input_block">
+                                <label class="konfigurator__label">Телефон<span class="req">*</span></label>
+                                <div class="for_input no_padding konfigurator__phone-wrap">
+                                    <div class="phone-first">+7</div> <input type="text" name="USER_PHONE_CODE" value="" class="required client_phone_code konfigurator__input konfigurator__phone-code" />
+                                    <input type="text" name="USER_PHONE" value="" class="required client_phone konfigurator__input konfigurator__phone-number" />
+                                </div>
+                                <div class="input_descr">Электронная почта и телефон служит для обратной связи и не публикуется</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="form_line">
+                            <div class="for_input_checkbox konfigurator__middle-wrap konfigurator__wrap--agree">
+                                <div class="for_checkbox"><input name="USER_AGREE" type="checkbox" class="required konfigurator__checkbox--agree" id="field_agree" /></div>
+                                <label for="field_agree" class="konfigurator__checkbox-label">Я согласен на обработку моих персональных данных<span class="req">*</span></label>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="form_line">
+                            <div class="for_input_long">
+                                <label class="konfigurator__label">Тема сообщения</label>
+                                <div class="for_input">
+                                    <input type="text" name="MESSAGE_THEME" value=""  class="konfigurator__input"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_line">
+                            <label class="konfigurator__label">Текст сообщения<span class="req">*</span></label>
+                            <div class="for_textarea">
+                                <textarea name="MESSAGE_TEXT" class="required konfigurator__input konfigurator__input--textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="form_line form_submit">
+                           <div class="form_submit_right">
+                                <span class="req konfigurator__checkbox-caption">*</span> – поля, обязательные для заполнения
+                            </div>
+                            <input type="submit" class="feedback-submit konfigurator__send" name="submit" value="Отправить" />
+                            
+                            <div class="clear"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </main>
 
         <footer class="footer">
@@ -368,9 +461,11 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="js/jquery.min.js"></script>
+<!--    <script src="js/jquery.min.js"></script>-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/script.js?1703031230"></script>
 </body>
 
