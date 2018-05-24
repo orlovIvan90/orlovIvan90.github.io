@@ -1,8 +1,0 @@
-package.json
-package-lock.json
-Gruntfile.js
-node_modules/
-sass/
-.sass-cache/
-.idea/
-*.map
