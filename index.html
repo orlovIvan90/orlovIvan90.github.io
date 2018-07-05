@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-flex.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.sidr.dark.min.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css?1703171450">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -25,34 +26,48 @@
 <div canvas="container" class="body__wrap">
         
         <header class="header">
-            <button class="navbar-toggler collapsed header__sliiider-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive search" aria-expanded="false" aria-label="Toggle navigation"></button>
             
-            <a href="/" class="header__logo"></a>
             <div class="header__main-wrap">
                 
-            
-                <nav class="header__nav collapse navbar-toggleable-sm navbar__menu" id="navbarResponsive">
+            	<a id="sidr-menu" href="#sidr" class="header__nav-toggler">
+            		<div id="menuToggle">
+						<span id="span1"></span>
+						<span id="span2"></span>
+						<span id="span3"></span>
+					</div>
+				</a>
+				<div id="sidr">
+				  <!-- Your content -->
+				  <ul class="nav__list">
+					<li><a href="#banner" class="nav__link scrolly">Контакты</a></li>
+					<li class="active"><a href="#master" class="nav__link scrolly">Обо мне</a></li>
+					<li><a href="#banner2" class="nav__link scrolly">Качество</a></li>
+					<li><a href="#services__title" class="nav__link scrolly">Мои услуги</a></li>
+					<li><a href="#works__title" class="nav__link scrolly">Мои работы</a></li>
+				  </ul>
+				  
+				  <div class="header__nav-phone">+7(777)-777-77-77</div>
+				</div>
+
+                <nav class="header__nav">
                    	<div class="nav__list">
 						<a href="#banner" class="nav__link scrolly">Контакты</a>
 						<a href="#master" class="nav__link scrolly">Обо мне</a>
 						<a href="#banner2" class="nav__link scrolly">Качество</a>
 						<a href="#services__title" class="nav__link scrolly">Мои услуги</a>
 						<a href="#works__title" class="nav__link scrolly">Мои работы</a>
-	<!--
-						
-						<a href="#caption-3" class="nav__link scrolly">Как мы делаем</a>
-						<a href="#communities" class="nav__link scrolly">Наши сообщества</a>
-						<a href="#parallax10" class="nav__link scrolly">Контакты</a>
-	-->
                     </div>
-                    <div class="header__nav-phone">+7(777)-777-77-77</div>
+                    
+                    <section class="footer__phone phone phone--header">
+                    
+                    	<a href="" class="phone__button">Записаться</a>
+                    	
+        				<div class="phone__number">+7(777)-777-77-77</div>
+        				
+        				
+        			</section>
                 </nav>
 
-                <div class="header__wrap">
-                    <div class="header__phone">+7 777 777 77 77</div>
-                    <a href="https://www.facebook.com/brandrecommend/" class="header__fb" target="_blank"></a>
-                    <a href="" class="header__en">EN</a>
-                </div>
             </div>
         </header>
         
@@ -72,7 +87,7 @@
                           
                           <div id="banner__nail-text"  class="banner__nail-text">Лучшее качество<br> только у нас!</div>
                           
-                          <div class="social">
+                          <div class="social social--top">
                              
                               <div class="social__trigger"></div>
                              
@@ -192,42 +207,50 @@
             </div>
         </section>
         
-        <section class="banner4">
-            <h2 class="banner__title works__title" id="works__title">Мои работы</h2>
-            
-            <div id="wrapper">
-                <div id="slider">
+        <section id="banner4" class="banner4 homeSlide">
+            <div id="parallax4" class="banner__parallax-wrap">
+               <div class="bcg" data-start="background-position: 0px -2500px;" data-end="background-position: 0px 0px;" data-anchor-target="#banner4">
+                  <div class="hsContainer">
+                      <div class="hsContent">
+							<h2 class="banner__title works__title" id="works__title">Мои работы</h2>
 
-                    <div class="slide">
-                        <img src="img/J6VkdiwvgJ4.jpg" alt="" class="works__img">
-                        <div class="slide-block">
-                            <h4>Комментарий</h4>
-                            <p>Текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
-                        </div>
-                    </div>
+							<div id="wrapper">
+								<div id="slider">
 
-                    <div class="slide">
-                        <img src="img/mBw5qZ6xAdA.jpg" alt="" class="works__img">
-                        <div class="slide-block">
-                            <h4>Комментарий</h4>
-                            <p>Текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
-                        </div>
-                    </div>
+									<div class="slide">
+										<img src="img/J6VkdiwvgJ4.jpg" alt="" class="works__img">
+										<div class="slide-block">
+											<h4>Комментарий</h4>
+											<p>Текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
+										</div>
+									</div>
 
-                    <div class="slide">
-                        <img src="img/NmH1Gve7YcI.jpg" alt="" class="works__img">
-                        <div class="slide-block">
-                            <h4>Комментарий</h4>
-                            <p>Текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
-                        </div>
-                    </div>
-					
-               		<div class="slide">
-                        <img src="img/oVRlFsgWBL0.jpg" alt="" class="works__img">
-                        <div class="slide-block">
-                            <h4>Комментарий</h4>
-                            <p>Текст комментария текст комментария текст комментария текст комментария текст комментария комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
-                        </div>
+									<div class="slide">
+										<img src="img/mBw5qZ6xAdA.jpg" alt="" class="works__img">
+										<div class="slide-block">
+											<h4>Комментарий</h4>
+											<p>Текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
+										</div>
+									</div>
+
+									<div class="slide">
+										<img src="img/NmH1Gve7YcI.jpg" alt="" class="works__img">
+										<div class="slide-block">
+											<h4>Комментарий</h4>
+											<p>Текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
+										</div>
+									</div>
+
+									<div class="slide">
+										<img src="img/oVRlFsgWBL0.jpg" alt="" class="works__img">
+										<div class="slide-block">
+											<h4>Комментарий</h4>
+											<p>Текст комментария текст комментария текст комментария текст комментария текст комментария комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст комментария текст </p>
+										</div>
+									</div>
+								</div>
+							</div>
+            			</div>
                     </div>
                 </div>
             </div>
@@ -293,18 +316,10 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.carouFredSel-6.2.0-packed.js"></script>
+    <script src="assets/js/jquery.sidr.min.js"></script>
    
     <script src="js/script.js?1703031230"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-3749119-25', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    
 
 </body>
 </html>    

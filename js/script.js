@@ -32,7 +32,12 @@
             mobileDeceleration: 0.004
         });
         
-        
+        /* Sidr Menu */
+		$('#sidr-menu').sidr({
+			side: 'right'
+		});
+		
+		
         var scrollrObject = {},
             controller = {},
             controllerDestroyed = true,
@@ -150,30 +155,41 @@
             small:  "(max-width: 544px)",
             xsmall: "(max-width: 480px)"
         });
-            
-        skel.on("change", function() {
-       
-            if (skel.breakpoint("large").active || skel.breakpoint("medium").active || skel.breakpoint("small").active || skel.breakpoint("xsmall").active) {
-                if (!scrollrDestroyed) {
-                    destroyScrollr();
-                };
+		
+		skel.on("change", function() {
+			if (skel.breakpoint("xlarge").active) {
                 
-                
-                if (!controllerDestroyed) {
-                    destroyController();
-                };
+               $.sidr('close', 'sidr');
             };
-            
-            if (skel.breakpoint("xlarge").active) {
-                
-                makeScrollr();
+		});
+//            
+//        skel.on("change", function() {
+//       
+//            if (skel.breakpoint("large").active || skel.breakpoint("medium").active || skel.breakpoint("small").active || skel.breakpoint("xsmall").active) {
+//                if (!scrollrDestroyed) {
+//                    destroyScrollr();
+//                };
+//                
+//                
+//                if (!controllerDestroyed) {
+//                    destroyController();
+//                };
+//            };
+//            
+//            if (skel.breakpoint("small").active) {
+//                
+//                makeScrollr();
+//                
+//                makeController();
+//                makeControllerAnimations();
+//            };
+//            
+//        });
+        
+		makeScrollr();
                 
                 makeController();
                 makeControllerAnimations();
-            };
-            
-        });
-        
         
         $(".services__carousel").owlCarousel({
             items: 1,
