@@ -27,11 +27,15 @@
 
 (function($) {
     $(document).ready(function() {
-        scrollrObject = skrollr.init({
+        var scrollrObject = skrollr.init({
             smoothScrolling: false,
             mobileDeceleration: 0.004
         });
         
+		setTimeout(function () {
+		  skrollr.get().refresh();
+		}, 0);
+		
         /* Sidr Menu */
 		$('#sidr-menu').sidr({
 			side: 'right'
@@ -217,6 +221,16 @@
 				visible: 1,
 				minimum: 1
 			},
+			prev: {
+				button: $('#works__left')
+			},
+			next: {
+				button: $('#works__right')
+			},
+			swipe: {
+				onTouch: true,
+				onMouse: true
+			},
 			scroll: {
 				items: 1,
 				timeoutDuration : 5000,
@@ -225,8 +239,16 @@
 					//	find current and next slide
 					var currentSlide = $('.slide.active', this),
 					nextSlide = data.items.visible,
-					_width = $('#wrapper').width();
-			
+					_width = $('#wrapper').width(),
+					smallScreen = false;
+					
+					// узнаем к какому типу экрана относится данный
+					if (_width <= 1200) {
+						smallScreen = true;
+					} else {
+						smallScreen = false;
+					}
+
 					//	resize currentslide to small version
 					currentSlide.stop().animate({
 						width: _width * 0.15
@@ -238,9 +260,18 @@
 			
 					//	animate clicked slide to large size
 					nextSlide.addClass( 'active' );
-					nextSlide.stop().animate({
-						width: _width * 0.7
-					});						
+					
+					// если экран маленький, поставить активному слайду размер равный экрану
+					if (smallScreen) {
+						nextSlide.stop().animate({
+							width: _width
+						});	
+					} else {
+						nextSlide.stop().animate({
+							width: _width * 0.7
+						});	
+					}
+										
 				},
 				onAfter: function(data) {
 					//	show active slide block
@@ -251,19 +282,37 @@
 			
 				//	clone images for better sliding and insert them dynamacly in slider
 				var newitems = $('.slide',this).clone( true ),
-					_width = $('#wrapper').width();
-
+					_width = $('#wrapper').width(),
+					smallScreen = false;
+				
+				// узнаем к какому типу экрана относится данный
+				if (_width <= 1200) {
+					smallScreen = true;
+				} else {
+					smallScreen = false;
+				}
+				
 				$(this).trigger( 'insertItem', [newitems, newitems.length, false] );
 			
 				//	show images 
 				$('.slide', this).fadeIn();
 				$('.slide:first-child', this).addClass( 'active' );
-				$('.slide', this).width( _width * 0.15 );
+				
+				
+				if (smallScreen) {
+					$('.slide', this).width( _width );
+					
+					$('.slide:first-child', this).animate({
+						width: _width
+					});
+				} else {
+					$('.slide', this).width( _width * 0.15 );
 			
-				//	enlarge first slide
-				$('.slide:first-child', this).animate({
-					width: _width * 0.7
-				});
+					//	enlarge first slide
+					$('.slide:first-child', this).animate({
+						width: _width * 0.7
+					});
+				}
 			
 				//	show first title block and hide the rest
 				$(this).find( '.slide-block' ).hide();
@@ -280,16 +329,31 @@
 		$(window).resize(function(){
 			
 			var slider = $('#slider'),
-			_width = $('#wrapper').width();
+			_width = $('#wrapper').width(),
+			smallScreen = false;
 			
-			//	show images
-			slider.find( '.slide' ).width( _width * 0.15 );
+			// узнаем к какому типу экрана относится данный
+			if (_width <= 1200) {
+				smallScreen = true;
+			} else {
+				smallScreen = false;
+			}
 			
-			//	enlarge first slide
-			slider.find( '.slide.active' ).width( _width * 0.7 );
+			
+			// если экран маленький, поставить активному слайду размер равный экрану
+			if (smallScreen) {
+				//	show images
+				slider.find( '.slide' ).width(_width);
+			} else {
+				//	show images
+				slider.find( '.slide' ).width( _width * 0.15 );
+				//	enlarge first slide
+				slider.find( '.slide.active' ).width( _width * 0.7 );
+			}
 			
 			//	update item width config
 			slider.trigger( 'configuration', ['items.width', _width * 0.15] );
+			
 		});
 
 		

@@ -494,7 +494,8 @@
     background-image: url(../img/prinadlezhnosti-dlya-narashchivaniya-resnic.jpg); }
 
 .banner4 .bcg {
-  background-image: url(../img/beautiful-art.jpg); }
+  background-image: url(../img/beautiful-art.jpg);
+  background-size: auto; }
 
 .ad {
   position: absolute;
@@ -599,9 +600,12 @@
     display: inline-block;
     border: 0;
     outline: inherit;
-    width: 40px;
+    width: 26px;
     height: 45px;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px; }
     .owl-nav button:hover {
       animation: inv 0.3s forwards linear; }
     .owl-nav button span {
@@ -696,7 +700,7 @@
   background-color: #854775;
   padding-bottom: 25px;
   position: relative;
-  height: 670px; }
+  height: 700px; }
 
 .banner4 .works__title {
   position: relative; }
@@ -723,6 +727,30 @@
   height: 127px;
   width: 164px; }
 
+.works__control-wrap {
+  text-align: center;
+  padding-top: 13px; }
+
+.works__control {
+  display: inline-block;
+  vertical-align: top;
+  width: 26px;
+  height: 45px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .works__control:hover {
+    animation: inv 0.3s forwards linear; }
+
+.works__left {
+  background: url(../img/arrow-left.png);
+  background-repeat: no-repeat;
+  background-size: 26px 45px; }
+
+.works__right {
+  background: url(../img/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: 26px 45px; }
+
 /* footer */
 .footer {
   padding-top: 20px;
@@ -735,6 +763,8 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -854,6 +884,13 @@
 
 .skrollr .gap {
   background: transparent !important; }
+
+#banner4__trigger {
+  position: absolute;
+  display: block;
+  top: 0px;
+  bottom: 0px;
+  height: 100%; }
 
 @media screen and (max-width: 1400px) {
   /* header */
@@ -1089,7 +1126,9 @@
 
   .services__item-text {
     font-size: 18px;
-    line-height: 23px; } }
+    line-height: 23px; }
+
+  /* footer */ }
 @media screen and (max-width: 768px) {
   .phone--header {
     display: none; }
@@ -1168,7 +1207,64 @@
     left: 5px; }
 
   .owl-next {
-    right: 5px; } }
+    right: 5px; }
+
+  /* banner 4 */
+  .banner4 .works__title:before {
+    display: none; }
+
+  .banner4 .works__title:after {
+    display: none; }
+
+  .banner4 {
+    height: 670px; }
+
+  .slide {
+    height: 350px !important; }
+
+  #slider {
+    height: 350px !important; }
+
+  .caroufredsel_wrapper {
+    height: 350px !important; }
+
+  .banner4 {
+    height: 520px; }
+
+  .slide-block {
+    display: none !important; }
+
+  /* footer */
+  .footer__wrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+
+  .footer__column {
+    -webkit-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%; }
+
+  .footer__column--list {
+    text-align: left; }
+
+  .footer__phone {
+    text-align: right; } }
 @media screen and (max-width: 544px) {
   .social--top {
     display: none; }
@@ -1196,7 +1292,28 @@
   .services__item-img-wrap {
     border-radius: 0px;
     margin-left: 5px;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+
+  /* footer */
+  .footer__column--list {
+    display: none; }
+
+  .footer__phone {
+    display: none; }
+
+  .footer__address {
+    text-align: center; }
+
+  .footer__column {
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%; }
+
+  .social--footer {
+    text-align: center; }
+
+  .social--footer .social__wrap {
+    text-align: center; } }
 @media screen and (max-width: 390px) {
   .do__title {
     font-size: 28px;
