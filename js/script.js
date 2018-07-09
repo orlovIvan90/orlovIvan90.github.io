@@ -28,7 +28,7 @@
 (function($) {
     $(document).ready(function() {
         var scrollrObject = skrollr.init({
-            smoothScrolling: false,
+            smoothScrolling: true,
             mobileDeceleration: 0.004
         });
         
