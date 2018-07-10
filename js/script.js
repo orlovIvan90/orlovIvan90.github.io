@@ -34,8 +34,10 @@
         
 		setTimeout(function () {
 		  skrollr.get().refresh();
+			
 		}, 0);
 		
+	
         /* Sidr Menu */
 		$('#sidr-menu').sidr({
 			side: 'right'
@@ -56,6 +58,8 @@
             scrollrDestroyed = false;
         };
         
+		
+		
         function destroyScrollr() {
             scrollrObject.destroy();
             scrollrDestroyed = true;

@@ -149,7 +149,8 @@
 .body__wrap {
   background-color: #000000;
   min-width: 320px;
-  width: 100%; }
+  width: 100%;
+  touch-action: manipulation; }
 
 /* Menu icon */
 #menuToggle {
@@ -1203,11 +1204,13 @@
     margin-left: 5px;
     margin-right: 5px; }
 
-  .owl-prev {
-    left: 5px; }
+  .owl-nav .owl-prev {
+    left: 5px;
+    margin-left: 0px; }
 
-  .owl-next {
-    right: 5px; }
+  .owl-nav .owl-next {
+    right: 5px;
+    margin-right: 0px; }
 
   /* banner 4 */
   .banner4 .works__title:before {
@@ -1264,7 +1267,11 @@
     text-align: left; }
 
   .footer__phone {
-    text-align: right; } }
+    text-align: right; }
+
+  .services__carousel-wrap {
+    padding-left: 10px;
+    padding-right: 10px; } }
 @media screen and (max-width: 544px) {
   .social--top {
     display: none; }
@@ -1286,7 +1293,7 @@
     background-size: 250%; }
 
   .services__item-caption {
-    top: -5px;
+    top: -8px;
     border-radius: 10px; }
 
   .services__item-img-wrap {
