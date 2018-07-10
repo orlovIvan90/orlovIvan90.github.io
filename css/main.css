@@ -1,3 +1,6 @@
+html {
+  position: relative; }
+
 /* header */
 .header {
   height: 73px;
