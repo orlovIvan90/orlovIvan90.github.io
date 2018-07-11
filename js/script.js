@@ -29,7 +29,8 @@
     $(document).ready(function() {
         var scrollrObject = skrollr.init({
             smoothScrolling: true,
-            mobileDeceleration: 0.004
+            mobileDeceleration: 0.004,
+			forceHeight: false
         });
         
 		setTimeout(function () {
