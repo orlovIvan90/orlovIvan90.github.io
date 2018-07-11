@@ -50,14 +50,14 @@
             controllerDestroyed = true,
             scrollrDestroyed = true;
         
-        function makeScrollr() {
-            scrollrObject = skrollr.init({
-                smoothScrolling: false,
-                mobileDeceleration: 0.004
-            });
-            
-            scrollrDestroyed = false;
-        };
+//        function makeScrollr() {
+//            scrollrObject = skrollr.init({
+//                smoothScrolling: false,
+//                mobileDeceleration: 0.004
+//            });
+//            
+//            scrollrDestroyed = false;
+//        };
         
 		
 		
@@ -195,7 +195,7 @@
 //            
 //        });
         
-		makeScrollr();
+//		makeScrollr();
                 
                 makeController();
                 makeControllerAnimations();
