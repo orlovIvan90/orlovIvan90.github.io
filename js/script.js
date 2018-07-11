@@ -27,15 +27,15 @@
 
 (function($) {
     $(document).ready(function() {
-        var scrollrObject = skrollr.init({
-            smoothScrolling: true,
-            mobileDeceleration: 0.004
-        });
-        
-		setTimeout(function () {
-		  skrollr.get().refresh();
-			
-		}, 0);
+//        var scrollrObject = skrollr.init({
+//            smoothScrolling: true,
+//            mobileDeceleration: 0.004
+//        });
+//        
+//		setTimeout(function () {
+//		  skrollr.get().refresh();
+//			
+//		}, 0);
 		
 	
         /* Sidr Menu */
