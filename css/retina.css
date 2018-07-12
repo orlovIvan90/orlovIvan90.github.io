@@ -1,0 +1,99 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+	.social__vk {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.social__inst { 
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.social__tw { 
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.owl-prev {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.owl-next {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.works__left {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.works__right {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.banner4 .works__title:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.banner4 .works__title:after {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-contacts:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-about:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-quality:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-services:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-works:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+}
+	
+@media only screen and (-webkit-min-device-pixel-ratio: 4),
+only screen and (min--moz-device-pixel-ratio: 4),
+only screen and (-o-min-device-pixel-ratio: 4/1),
+only screen and (min-device-pixel-ratio: 4),
+only screen and (min-resolution: 360dpi),
+only screen and (min-resolution: 4dppx) {
+	.social__vk {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.social__inst { 
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.social__tw { 
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.owl-prev {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.owl-next {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.works__left {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.works__right {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.banner4 .works__title:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.banner4 .works__title:after {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-contacts:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-about:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-quality:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-services:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.nav__list--footer .nav__link-works:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+}

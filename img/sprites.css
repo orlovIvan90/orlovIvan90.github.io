@@ -1,0 +1,96 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ico-arrow-left {
+  background-image: url(spritesheet.png);
+  background-position: -1104px -515px;
+  width: 104px;
+  height: 180px;
+}
+.icon-ico-arrow-right {
+  background-image: url(spritesheet.png);
+  background-position: -992px -515px;
+  width: 104px;
+  height: 180px;
+}
+.icon-ico-arrow-top {
+  background-image: url(spritesheet.png);
+  background-position: -804px -515px;
+  width: 180px;
+  height: 180px;
+}
+.icon-ico-contacts {
+  background-image: url(spritesheet.png);
+  background-position: -804px -703px;
+  width: 64px;
+  height: 64px;
+}
+.icon-ico-female {
+  background-image: url(spritesheet.png);
+  background-position: -1216px -604px;
+  width: 64px;
+  height: 69px;
+}
+.icon-ico-inst {
+  background-image: url(spritesheet.png);
+  background-position: -536px -515px;
+  width: 260px;
+  height: 260px;
+}
+.icon-ico-my-services {
+  background-image: url(spritesheet.png);
+  background-position: -1216px -515px;
+  width: 64px;
+  height: 81px;
+}
+.icon-ico-myworks {
+  background-image: url(spritesheet.png);
+  background-position: -948px -703px;
+  width: 64px;
+  height: 53px;
+}
+.icon-ico-ornament-left {
+  background-image: url(spritesheet.png);
+  background-position: -664px 0px;
+  width: 656px;
+  height: 507px;
+}
+.icon-ico-ornament-right {
+  background-image: url(spritesheet.png);
+  background-position: 0px 0px;
+  width: 656px;
+  height: 507px;
+}
+.icon-ico-quality {
+  background-image: url(spritesheet.png);
+  background-position: -876px -703px;
+  width: 64px;
+  height: 61px;
+}
+.icon-ico-tw {
+  background-image: url(spritesheet.png);
+  background-position: -268px -515px;
+  width: 260px;
+  height: 260px;
+}
+.icon-ico-vk {
+  background-image: url(spritesheet.png);
+  background-position: 0px -515px;
+  width: 260px;
+  height: 260px;
+}

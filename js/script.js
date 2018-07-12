@@ -1,42 +1,6 @@
-
-//function send_mail(email){ 
-//    if(email){ 
-//          $.ajax({
-//            url: '/mail/send_mail_presentation.php',
-//            type: "POST",
-//            data: 'USER_EMAIL='+email,
-//            dataType : 'html',
-//            success: function(html){  
-//                
-//              } 
-//          });  
-//    }
-//}
-//function send_feedback(params){  
-//    if(params){ 
-//          $.ajax({
-//            url: '/mail/send_feedback.php',
-//            type: "POST",
-//            data: params,
-//            dataType : 'html',
-//            success: function(html){  
-//              } 
-//          });  
-//    }
-//}
-
 (function($) {
     $(document).ready(function() {
-        var scrollrObject = skrollr.init({
-            smoothScrolling: true,
-            mobileDeceleration: 0.004,
-			forceHeight: false
-        });
         
-		setTimeout(function () {
-		  skrollr.get().refresh();
-			
-		}, 0);
 		
 	
         /* Sidr Menu */
@@ -48,22 +12,26 @@
         var scrollrObject = {},
             controller = {},
             controllerDestroyed = true,
-            scrollrDestroyed = true;
+            scrollrInitialized = false;
         
-//        function makeScrollr() {
-//            scrollrObject = skrollr.init({
-//                smoothScrolling: false,
-//                mobileDeceleration: 0.004
-//            });
-//            
-//            scrollrDestroyed = false;
-//        };
+        function makeScrollr() {
+            scrollrObject = skrollr.init({
+				smoothScrolling: true,
+				mobileDeceleration: 0.004,
+				forceHeight: false
+			});
+
+			setTimeout(function () {
+			  skrollr.get().refresh();
+
+			}, 0);
+			
+        };
         
 		
 		
         function destroyScrollr() {
             scrollrObject.destroy();
-            scrollrDestroyed = true;
         };
         
         
@@ -169,7 +137,23 @@
 			if (skel.breakpoint("xlarge").active) {
                 
                $.sidr('close', 'sidr');
+				
+			   if (!scrollrInitialized) {
+				   makeScrollr();
+				   
+				   scrollrInitialized = true;
+			   };
             };
+			
+			if (skel.breakpoint("large").active || skel.breakpoint("medium").active || skel.breakpoint("small").active || skel.breakpoint("xsmall").active) {
+				
+				if (scrollrInitialized) {
+					destroyScrollr();
+					
+					scrollrInitialized = false;
+				};
+				
+			};
 		});
 //            
 //        skel.on("change", function() {
@@ -197,8 +181,8 @@
         
 //		makeScrollr();
                 
-                makeController();
-                makeControllerAnimations();
+        makeController();
+        makeControllerAnimations();
         
         $(".services__carousel").owlCarousel({
             items: 1,
@@ -361,162 +345,32 @@
 			
 		});
 
+		//	Кнопка возврата наверх
 		
-//        
-//        /* content__form validate */
-//        var errorMesIsShown = false,
-//            errorTimer;
-//        
-//        $("#banner-2__thanks-ok").on("click", function(e) {
-//            
-//            e.preventDefault();
-//            
-//            $("#banner-2__title--content").css("display", "block");
-//            $("#banner-2__text--content").css("display", "block");
-//            $("#content__form").css("display", "block");
-//                
-//            $("#banner-2__thanks").css("display", "none");
-//            
-//        });
-//
-//        $("#content__button").on("click", function(e) {
-//            var mail =  $("#content__input").val(); 
-//            send_mail(mail); 
-//        });
-//        
-//        $.validate({
-//            form: "#content__form",
-//            modules : 'security',
-//            onSuccess : function($form) {
-// 
-//                
-//                $("#banner-2__title--content").css("display", "none");
-//                $("#banner-2__text--content").css("display", "none");
-//                $("#content__form").css("display", "none");
-//                
-//                $("#banner-2__thanks").css("display", "block");
-//                
-//                
-//                
-//              return false; // Will stop the submission of the form
-//            },
-//            
-//            onElementValidate : function(valid, $el, $form, errorMess) {
-//
-//                if (!valid) { //если инпут не проходит валидацию
-//
-//                      clearTimeout(errorTimer); //очищается интервал через который убирается сообщение об ошибке
-//
-//                      $( "#data-email-error-dialog" ).fadeIn( "slow", function() {
-//                            errorTimer = setTimeout(function() { //интервал исчезновения обновляется
-//                                $( "#data-email-error-dialog" ).fadeOut("slow");
-//                            }, 1500);
-//                      });
-//                } else { //если инпут прошел валидацию
-//                    clearTimeout(errorTimer); //очищается интервал
-//                    
-//                    $( "#data-email-error-dialog" ).fadeOut("slow"); //и сообщене об ошибке исчезает
-//                }
-//                  
-//                
-//            }
-//        });
-//        
-//        /* send__form validate */
-//        
-//        $("#banner-3__button").on("click", function(e) {
-//            
-//            e.preventDefault();
-//            
-//            $("#banner-2__title-hide").css("display", "none");
-//            $("#banner-2__text-hide").css("display", "none");
-//            $(this).css("display", "none");
-//            $("#send").css("display", "block");
-//                
-//            
-//        });
-//
-//        /* если перешли по ссылке из письма */
-//        var hash = window.location.hash; 
-//        if( hash == '#parallax9'){
-//            $("#banner-2__title-hide").css("display", "none");
-//            $("#banner-2__text-hide").css("display", "none");
-//            $("#banner-3__button").css("display", "none");
-//            $("#send").css("display", "block");
-//
-//        }
-//        
-//        
-//        $("#banner-3__thanks-ok").on("click", function(e) {
-//            
-//            e.preventDefault();
-//            
-//            $("#banner-3__thanks").css("display", "none");
-//            $("#banner-2__title-hide").css("display", "block");
-//            $("#banner-2__text-hide").css("display", "block");
-//            $("#banner-3__button").css("display", "block");    
-//            
-//        });
-//        
-//        var errorMesIsShownSend = false,
-//            errorTimerSend;
-//        
-//        $("#banner-2__thanks-ok").on("click", function(e) {
-//            
-//            e.preventDefault();
-//            
-//            $("#banner-2__title--content").css("display", "block");
-//            $("#banner-2__text--content").css("display", "block");
-//            $("#content__form").css("display", "block");
-//                
-//            $("#banner-2__thanks").css("display", "none");
-//            
-//        });
-//        
-//        
-//        $.validate({
-//            form: "#send__form",
-//            modules : 'security',
-//            onSuccess : function($form) {
-//                
-//                $("#send").css("display", "none");
-//                
-//                $("#banner-3__thanks").css("display", "block");
-//
-//                /* отправка формы */
-//                var arParams = 'send__form=send';
-//                $( "#send__form input" ).each(function( index ) { 
-//                  arParams = arParams + '&' + $( this ).attr('id') +'='+ $( this ).val(); 
-//                }); 
-//                send_feedback(arParams); 
-//                
-//                
-//                
-//              return false; // Will stop the submission of the form
-//            },
-//            
-//            onError : function($form) {
-//
-//                      clearTimeout(errorTimerSend); //очищается интервал через который убирается сообщение об ошибке
-//
-//                      $( "#data-send-error-dialog" ).fadeIn( "slow", function() {
-//                            errorTimerSend = setTimeout(function() { //интервал исчезновения обновляется
-//                                $( "#data-send-error-dialog" ).fadeOut("slow");
-//                            }, 3000);
-//                      });
-//
-//            },
-//            onValidate : function($form) {
-//                clearTimeout(errorTimerSend); //очищается интервал
-//                    
-//                    $( "#data-send-error-dialog" ).fadeOut("slow"); //и сообщене об ошибке исчезает
-//            }
-//        });
-//        
-//        /* Закрытие навигации после нажатия */
-//        $(".nav__link").on("click", function() {
-//            $("#navbarResponsive").collapse('hide');
-//        });
+		$(document).scroll(function() {
+			
+			var pageHeight = $(document).height(),
+				curScroll = $(this).scrollTop();
+			
+			if (pageHeight/2 <= curScroll) {
+				$("#back-to-top").addClass("showTopButton");
+				$("#back-to-top").removeClass("hideTopButton");
+				
+				setTimeout(function() {
+					$("#back-to-top").css("display", "block");
+				}, 500);
+				
+			} else {
+				$("#back-to-top").removeClass("showTopButton");
+				$("#back-to-top").addClass("hideTopButton");
+				
+				setTimeout(function() {
+					$("#back-to-top").css("display", "none");
+				}, 500);
+				
+			}
+			
+		});
         
     });
         
