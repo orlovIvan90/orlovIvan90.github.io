@@ -139,7 +139,7 @@
 //			}).setTween(TweenMax.from('.parallax1', {y: '80%', ease: Power0.easeNone})).addTo(controller);
 			
 			new ScrollMagic.Scene({triggerElement: '#banner__nail-trigger', triggerHook: "onEnter", duration: "200%"})
-					.setTween(".parallax1", {y: "80%", ease: Power0.easeNon})
+					.setTween(".parallax1", {y: "40%", ease: Power0.easeNon})
 					.addTo(controller);
 			
 //			var parallax1 = new TimelineMax().add([TweenMax.to(".parallax1", 1, {backgroundPosition: "0 40%", ease: Linear.easeNone})]);
