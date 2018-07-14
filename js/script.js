@@ -1,7 +1,12 @@
 (function($) {
     $(document).ready(function() {
-        
+        /* Parallax */
 		
+//		$('.parallax-window').parallax({
+//			imageSrc: '../img/people-2605526.jpg',
+//			naturalWidth: 600,
+//			naturalHeight: 400
+//		  });
 	
         /* Sidr Menu */
 		$('#sidr-menu').sidr({
@@ -123,6 +128,23 @@
             var scissors = TweenMax.to("#scissors", 1, { opacity: 1, bottom: "150px", ease: Linear.easeNone});
 
             var scene15 = new ScrollMagic.Scene({triggerHook: "onEnter", triggerElement:"#ad--big__trigger", duration: "70%"}).setTween(scissors).addTo(controller);
+			
+			
+			/* Parallax */
+			
+//			var parallax1scene = new ScrollMagic.Scene({
+//				triggerElement: '#master',
+//				triggerHook: "onEnter",
+//				duraton: '200%'
+//			}).setTween(TweenMax.from('.parallax1', {y: '80%', ease: Power0.easeNone})).addTo(controller);
+			
+			new ScrollMagic.Scene({triggerElement: '#banner__nail-trigger', triggerHook: "onEnter", duration: "200%"})
+					.setTween(".parallax1", {y: "80%", ease: Power0.easeNon})
+					.addTo(controller);
+			
+//			var parallax1 = new TimelineMax().add([TweenMax.to(".parallax1", 1, {backgroundPosition: "0 40%", ease: Linear.easeNone})]);
+//			
+//			var parallaxScene1 = new ScrollMagic.Scene({triggerElement: "#banner", duration: 2000, offset: 450}).setTween(parallax1).setPin("#banner").addTo(controller);
         };        
         
         skel.breakpoints({
@@ -345,6 +367,8 @@
 			
 		});
 
+		
+		
 		//	Кнопка возврата наверх
 		
 		$(document).scroll(function() {

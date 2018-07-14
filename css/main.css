@@ -281,7 +281,7 @@ html {
 .gap-100 {
   height: 100%; }
 
-.bcg {
+.parallax1 {
   position: absolute;
   left: 0;
   top: 0;
@@ -292,6 +292,14 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+.bcg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
 
 .banner__nail-wrap {
   position: absolute;
@@ -1230,18 +1238,7 @@ html {
     font-size: 18px;
     line-height: 23px; }
 
-  /* parallax for mobile */
-  .banner .bcg {
-    background-attachment: fixed;
-    background-position: 50% 0px !important; }
-
-  .banner2 .bcg {
-    background-attachment: fixed;
-    background-position: 50% 0px !important; }
-
-  .banner4 .bcg {
-    background-attachment: fixed;
-    background-position: 50% 0px !important; } }
+  /* parallax for mobile */ }
 @media screen and (max-width: 768px) {
   .phone--header {
     display: none; }

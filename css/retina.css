@@ -46,6 +46,10 @@ only screen and (min-resolution: 2dppx) {
 	.nav__list--footer .nav__link-works:before {
 		background-image: url("../img/spritesheet-4x.png");
 	}
+	.back-to-top__inner {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	
 }
 	
 @media only screen and (-webkit-min-device-pixel-ratio: 4),
@@ -94,6 +98,9 @@ only screen and (min-resolution: 4dppx) {
 		background-image: url("../img/spritesheet-4x.png");
 	}
 	.nav__list--footer .nav__link-works:before {
+		background-image: url("../img/spritesheet-4x.png");
+	}
+	.back-to-top__inner {
 		background-image: url("../img/spritesheet-4x.png");
 	}
 }
